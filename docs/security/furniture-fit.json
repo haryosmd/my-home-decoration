@@ -1,0 +1,955 @@
+{
+  "skill": {
+    "name": "furniture-fit",
+    "source": "/tmp/claude-0/-home-user-my-home-decoration/bb005832-3f91-51a1-b1e9-660f1bb629c2/scratchpad/ext/pascal-editor/skills/furniture-fit",
+    "scanned_at": "2026-11-22T01:00:08.733963+00:00",
+    "origin": {
+      "type": "directory",
+      "source": "ext/pascal-editor/skills/furniture-fit"
+    }
+  },
+  "risk_assessment": {
+    "score": 24,
+    "severity": "MEDIUM",
+    "recommendation": "CAUTION",
+    "max_issue_severity": "HIGH"
+  },
+  "components": [
+    {
+      "path": ".clawhubignore",
+      "type": "other",
+      "lines": 13,
+      "executable": false,
+      "size_bytes": 147,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "SKILL.md",
+      "type": "markdown",
+      "lines": 171,
+      "executable": false,
+      "size_bytes": 20472,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "evals/evals.json",
+      "type": "json",
+      "lines": 306,
+      "executable": false,
+      "size_bytes": 21333,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "evals/trigger-evals.json",
+      "type": "json",
+      "lines": 45,
+      "executable": false,
+      "size_bytes": 1391,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "examples/all-tested-poses-fail.md",
+      "type": "markdown",
+      "lines": 31,
+      "executable": false,
+      "size_bytes": 1444,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "examples/clear-footprint.md",
+      "type": "markdown",
+      "lines": 45,
+      "executable": false,
+      "size_bytes": 2495,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "examples/insufficient-evidence.md",
+      "type": "markdown",
+      "lines": 35,
+      "executable": false,
+      "size_bytes": 1761,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "examples/no-sign-in-dimension-precheck.md",
+      "type": "markdown",
+      "lines": 34,
+      "executable": false,
+      "size_bytes": 1752,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "examples/rotated-footprint-fails.md",
+      "type": "markdown",
+      "lines": 37,
+      "executable": false,
+      "size_bytes": 1790,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "examples/unproven-height-metadata.md",
+      "type": "markdown",
+      "lines": 41,
+      "executable": false,
+      "size_bytes": 2166,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/evidence-boundaries.md",
+      "type": "markdown",
+      "lines": 66,
+      "executable": false,
+      "size_bytes": 6422,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/report-template.md",
+      "type": "markdown",
+      "lines": 89,
+      "executable": false,
+      "size_bytes": 6978,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/setup.md",
+      "type": "markdown",
+      "lines": 121,
+      "executable": false,
+      "size_bytes": 9126,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    }
+  ],
+  "structured_summaries": [],
+  "issues": [
+    {
+      "id": "PE3",
+      "finding_id": "finding-d5e8b243d6b34a56a0851b6552ea4ba3",
+      "category": "Privilege Escalation",
+      "pattern": "Credential Access",
+      "severity": "HIGH",
+      "confidence": 0.7,
+      "location": {
+        "file": "references/setup.md",
+        "start_line": 57,
+        "end_line": null,
+        "start_column": 518
+      },
+      "finding": "credentials.json",
+      "explanation": "Code accesses credential files (SSH keys, AWS credentials, etc.). This could indicate credential theft attempts.",
+      "remediation": "Remove references to credential paths. Use environment variables or secrets managers. For docs, use placeholder paths (e.g., /path/to/config). Never load .env or token files in production code paths.",
+      "code_snippet": "\nClaude Code:\n\nPlugin users set the key once in the configuration prompt shown when `pascal-agent-skills@pascal` is enabled. To add or change it later, reinstall with `claude plugin install pascal-agent-skills@pascal --config pascal_api_key=<key>`, or open `/plugin` in a session and use its configure flow; there is no `claude plugin config` command. The hosted tools then load under the plugin's `pascal-hosted` server beside the local `pascal` server, and Claude Code keeps the key in the OS keychain, falling back to `~/.claude/.credentials.json`, rather than writing it into `settings.json` or any project file.\n\nWithout the plugin, register the hosted endpoint manually:\n",
+      "intent": null,
+      "tags": [
+        "Privilege Escalation"
+      ],
+      "evidence": {},
+      "match_fingerprint": "07a0b37ad28a14919446682ad9b1f38223a950eb02c424e48b49fe75c25268c0",
+      "occurrences": [
+        {
+          "file": "references/setup.md",
+          "start_line": 57,
+          "end_line": null,
+          "start_column": 518
+        }
+      ],
+      "surface": "docs"
+    },
+    {
+      "id": "RP1",
+      "finding_id": "finding-39f8552fbeff43f79524d3b7f8546d8c",
+      "category": "MCP Rug Pull",
+      "pattern": "MCP server referenced without pinned version: 'npx ENOENT'.",
+      "severity": "MEDIUM",
+      "confidence": 0.7,
+      "location": {
+        "file": "references/setup.md",
+        "start_line": 84,
+        "end_line": null
+      },
+      "finding": "npx ENOENT",
+      "explanation": "npx commands without a version suffix (e.g. @1.0.0) create a rug-pull risk if the upstream server is compromised and publishes a malicious update.",
+      "remediation": "Pin the version: npx @scope/server@1.2.3",
+      "code_snippet": null,
+      "intent": null,
+      "tags": [
+        "ASI16"
+      ],
+      "evidence": {},
+      "match_fingerprint": "91950c879b57ca06725490dfd2af0d359a3deaad4268408c7f3366c5fd954725",
+      "occurrences": [
+        {
+          "file": "references/setup.md",
+          "start_line": 84,
+          "end_line": null
+        }
+      ],
+      "surface": "docs"
+    }
+  ],
+  "suppressed_count": 0,
+  "suppressed": [],
+  "metadata": {
+    "has_executable_scripts": false,
+    "skillspector_version": "2.12.0",
+    "llm_requested": false,
+    "llm_available": false,
+    "meta_analysis_applied": false,
+    "inference_usage": [],
+    "llm_provenance": {
+      "schema_version": 1,
+      "provider": {
+        "configured_adapter": "unknown",
+        "resolved_adapter": "unknown",
+        "effective_adapter": "not_applicable",
+        "effective_adapters": [],
+        "service": "unknown",
+        "routing": {
+          "deployment_override": null,
+          "deployment_source": "unknown",
+          "api_version": null,
+          "api_version_source": "unknown"
+        }
+      },
+      "analyzers": [
+        {
+          "analyzer_id": "mcp_tool_poisoning",
+          "model": "z-ai/glm-5.3-flash",
+          "model_source": "resolved_configuration",
+          "analyzer_revision": {
+            "value": "2.12.0",
+            "source": "skillspector_package",
+            "source_revision": {
+              "value": "unknown",
+              "source": "unknown"
+            }
+          }
+        },
+        {
+          "analyzer_id": "semantic_developer_intent",
+          "model": "z-ai/glm-5.3-flash",
+          "model_source": "resolved_configuration",
+          "analyzer_revision": {
+            "value": "2.12.0",
+            "source": "skillspector_package",
+            "source_revision": {
+              "value": "unknown",
+              "source": "unknown"
+            }
+          }
+        },
+        {
+          "analyzer_id": "semantic_quality_policy",
+          "model": "z-ai/glm-5.3-flash",
+          "model_source": "resolved_configuration",
+          "analyzer_revision": {
+            "value": "2.12.0",
+            "source": "skillspector_package",
+            "source_revision": {
+              "value": "unknown",
+              "source": "unknown"
+            }
+          }
+        },
+        {
+          "analyzer_id": "semantic_security_discovery",
+          "model": "z-ai/glm-5.3-flash",
+          "model_source": "resolved_configuration",
+          "analyzer_revision": {
+            "value": "2.12.0",
+            "source": "skillspector_package",
+            "source_revision": {
+              "value": "unknown",
+              "source": "unknown"
+            }
+          }
+        },
+        {
+          "analyzer_id": "meta_analyzer",
+          "model": "z-ai/glm-5.3-flash",
+          "model_source": "resolved_configuration",
+          "analyzer_revision": {
+            "value": "2.12.0",
+            "source": "skillspector_package",
+            "source_revision": {
+              "value": "unknown",
+              "source": "unknown"
+            }
+          }
+        }
+      ],
+      "sampling": {
+        "temperature": {
+          "requested": null,
+          "source": "provider_default",
+          "forwarded_to_client": null,
+          "adapter_support": false,
+          "provider_support": "unknown"
+        },
+        "seed": {
+          "requested": null,
+          "source": "unset",
+          "forwarded_to_client": null,
+          "adapter_support": false,
+          "provider_support": "unknown"
+        },
+        "reasoning_effort": {
+          "requested": null,
+          "source": "provider_default",
+          "forwarded_to_client": null,
+          "adapter_support": false,
+          "provider_support": "unknown"
+        }
+      },
+      "determinism": {
+        "classification": "not_applicable",
+        "control_status": "not_applied",
+        "provider_guarantee": false,
+        "reason": "LLM analysis was not executed for this scan."
+      }
+    },
+    "filtering_mode": "heuristic"
+  },
+  "execution_successful": true,
+  "analysis_completeness": {
+    "total_components": 13,
+    "scanned_components": 13,
+    "coverage_percent": 100.0,
+    "is_complete": true,
+    "status": "complete_with_caveats",
+    "execution_successful": true,
+    "fully_inspected_files": 13,
+    "partially_inspected_files": 0,
+    "entirely_uninspected_files": 0,
+    "ledger_exceptions": [
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 6,
+        "end_line": 6,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 40,
+        "end_line": 40,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 66,
+        "end_line": 66,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 81,
+        "end_line": 81,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 112,
+        "end_line": 112,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 160,
+        "end_line": 160,
+        "fatal": false
+      }
+    ],
+    "scope_exclusions": [],
+    "analyzer_statuses": [
+      {
+        "analyzer_id": "artifact_integrity",
+        "status": "completed",
+        "planned_work": 13,
+        "completed": 13,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "behavioral_ast",
+        "status": "not_applicable",
+        "planned_work": 0,
+        "completed": 0,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "no_applicable_files",
+        "message": "No files matched this analyzer's applicability contract."
+      },
+      {
+        "analyzer_id": "behavioral_taint_tracking",
+        "status": "not_applicable",
+        "planned_work": 0,
+        "completed": 0,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "no_applicable_files",
+        "message": "No files matched this analyzer's applicability contract."
+      },
+      {
+        "analyzer_id": "bundled_execution_surface",
+        "status": "not_applicable",
+        "planned_work": 0,
+        "completed": 0,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "no_applicable_files",
+        "message": "No files matched this analyzer's applicability contract."
+      },
+      {
+        "analyzer_id": "mcp_least_privilege",
+        "status": "not_applicable",
+        "planned_work": 0,
+        "completed": 0,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "no_applicable_files",
+        "message": "No files matched this analyzer's applicability contract."
+      },
+      {
+        "analyzer_id": "mcp_rug_pull",
+        "status": "completed",
+        "planned_work": 13,
+        "completed": 13,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "mcp_tool_poisoning",
+        "status": "completed",
+        "planned_work": 1,
+        "completed": 1,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "meta_analyzer",
+        "status": "disabled",
+        "planned_work": 0,
+        "completed": 0,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "disabled_by_configuration",
+        "message": "Analyzer was disabled by the requested configuration."
+      },
+      {
+        "analyzer_id": "semantic_developer_intent",
+        "status": "disabled",
+        "planned_work": 0,
+        "completed": 0,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "disabled_by_configuration",
+        "message": "Analyzer was disabled by the requested configuration."
+      },
+      {
+        "analyzer_id": "semantic_quality_policy",
+        "status": "disabled",
+        "planned_work": 0,
+        "completed": 0,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "disabled_by_configuration",
+        "message": "Analyzer was disabled by the requested configuration."
+      },
+      {
+        "analyzer_id": "semantic_security_discovery",
+        "status": "disabled",
+        "planned_work": 0,
+        "completed": 0,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "disabled_by_configuration",
+        "message": "Analyzer was disabled by the requested configuration."
+      },
+      {
+        "analyzer_id": "static_patterns_agent_snooping",
+        "status": "completed",
+        "planned_work": 13,
+        "completed": 13,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_anti_refusal",
+        "status": "completed",
+        "planned_work": 13,
+        "completed": 13,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_data_exfiltration",
+        "status": "completed",
+        "planned_work": 13,
+        "completed": 13,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_deserialization",
+        "status": "completed",
+        "planned_work": 13,
+        "completed": 13,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_excessive_agency",
+        "status": "completed",
+        "planned_work": 13,
+        "completed": 13,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_harmful_content",
+        "status": "completed",
+        "planned_work": 13,
+        "completed": 13,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_memory_poisoning",
+        "status": "completed",
+        "planned_work": 13,
+        "completed": 13,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_output_handling",
+        "status": "completed",
+        "planned_work": 13,
+        "completed": 13,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_privilege_escalation",
+        "status": "completed",
+        "planned_work": 13,
+        "completed": 13,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_prompt_injection",
+        "status": "completed",
+        "planned_work": 13,
+        "completed": 13,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_rogue_agent",
+        "status": "completed",
+        "planned_work": 13,
+        "completed": 13,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_ssrf",
+        "status": "completed",
+        "planned_work": 13,
+        "completed": 13,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_supply_chain",
+        "status": "completed",
+        "planned_work": 13,
+        "completed": 13,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_system_prompt_leakage",
+        "status": "completed",
+        "planned_work": 13,
+        "completed": 13,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_tool_misuse",
+        "status": "completed",
+        "planned_work": 13,
+        "completed": 13,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_yara",
+        "status": "completed",
+        "planned_work": 13,
+        "completed": 13,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      }
+    ],
+    "references": [
+      {
+        "source_path": "SKILL.md",
+        "line": 6,
+        "column": 13,
+        "evidence": "version: \"0.1.4\"",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 40,
+        "column": 16,
+        "evidence": "Treat numeric `level.height`, `zone.ceilingHeight`, wall height, asset labels, and imported metadata as nominal unless their provenance records a measurement of",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 42,
+        "column": 55,
+        "evidence": "If Pascal is not connected, use [references/setup.md](references/setup.md). This skill is standalone; no other skill must be installed.",
+        "target_path": "references/setup.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 42,
+        "column": 34,
+        "evidence": "If Pascal is not connected, use [references/setup.md](references/setup.md). This skill is standalone; no other skill must be installed.",
+        "target_path": "references/setup.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 66,
+        "column": 23,
+        "evidence": "When returned, treat `check_collisions.status` as part of the verdict. `partial` or `insufficient_evidence` cannot support an unqualified pass. Name every retur",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 81,
+        "column": 183,
+        "evidence": "s one. Inspect its schema before calling it. In the current repository source, `check_collisions.candidate` accepts an ID, name, level ID, `[width, height, dept",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 112,
+        "column": 94,
+        "evidence": "ct available project, revision, graph hash, level, zone, and item context into `nextAction.context`; use `null` rather than guessing missing identifiers. State ",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 136,
+        "column": 42,
+        "evidence": "Read [references/evidence-boundaries.md](references/evidence-boundaries.md) before issuing a final verdict.",
+        "target_path": "references/evidence-boundaries.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 136,
+        "column": 7,
+        "evidence": "Read [references/evidence-boundaries.md](references/evidence-boundaries.md) before issuing a final verdict.",
+        "target_path": "references/evidence-boundaries.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 142,
+        "column": 63,
+        "evidence": "Use the exact report shape in [references/report-template.md](references/report-template.md). Include:",
+        "target_path": "references/report-template.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 142,
+        "column": 32,
+        "evidence": "Use the exact report shape in [references/report-template.md](references/report-template.md). Include:",
+        "target_path": "references/report-template.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 160,
+        "column": 652,
+        "evidence": "e-specific constraint. Opening the link sends the visible measurement query to `editor.pascal.app` and can leave it in browser history and service request logs.",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 166,
+        "column": 33,
+        "evidence": "- [examples/clear-footprint.md](examples/clear-footprint.md)",
+        "target_path": "examples/clear-footprint.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 166,
+        "column": 4,
+        "evidence": "- [examples/clear-footprint.md](examples/clear-footprint.md)",
+        "target_path": "examples/clear-footprint.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 167,
+        "column": 41,
+        "evidence": "- [examples/rotated-footprint-fails.md](examples/rotated-footprint-fails.md)",
+        "target_path": "examples/rotated-footprint-fails.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 167,
+        "column": 4,
+        "evidence": "- [examples/rotated-footprint-fails.md](examples/rotated-footprint-fails.md)",
+        "target_path": "examples/rotated-footprint-fails.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 168,
+        "column": 39,
+        "evidence": "- [examples/all-tested-poses-fail.md](examples/all-tested-poses-fail.md)",
+        "target_path": "examples/all-tested-poses-fail.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 168,
+        "column": 4,
+        "evidence": "- [examples/all-tested-poses-fail.md](examples/all-tested-poses-fail.md)",
+        "target_path": "examples/all-tested-poses-fail.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 169,
+        "column": 39,
+        "evidence": "- [examples/insufficient-evidence.md](examples/insufficient-evidence.md)",
+        "target_path": "examples/insufficient-evidence.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 169,
+        "column": 4,
+        "evidence": "- [examples/insufficient-evidence.md](examples/insufficient-evidence.md)",
+        "target_path": "examples/insufficient-evidence.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 170,
+        "column": 42,
+        "evidence": "- [examples/unproven-height-metadata.md](examples/unproven-height-metadata.md)",
+        "target_path": "examples/unproven-height-metadata.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 170,
+        "column": 4,
+        "evidence": "- [examples/unproven-height-metadata.md](examples/unproven-height-metadata.md)",
+        "target_path": "examples/unproven-height-metadata.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 171,
+        "column": 47,
+        "evidence": "- [examples/no-sign-in-dimension-precheck.md](examples/no-sign-in-dimension-precheck.md)",
+        "target_path": "examples/no-sign-in-dimension-precheck.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 171,
+        "column": 4,
+        "evidence": "- [examples/no-sign-in-dimension-precheck.md](examples/no-sign-in-dimension-precheck.md)",
+        "target_path": "examples/no-sign-in-dimension-precheck.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "plain_path"
+      }
+    ],
+    "limitations": [],
+    "findings_before_filtering": 2,
+    "findings_after_filtering": 2,
+    "dependency_inspection": {
+      "enabled": false,
+      "status": "not_requested",
+      "mode": "static_local",
+      "locked_entries": 0,
+      "inspected_artifacts": 0,
+      "artifacts": []
+    }
+  }
+}

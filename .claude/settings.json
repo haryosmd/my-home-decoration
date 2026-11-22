@@ -1,0 +1,13 @@
+{
+  "model": "opusplan",
+  "advisorModel": "fable",
+  "effortLevel": "high",
+  "env": {
+    "ANTHROPIC_DEFAULT_OPUS_MODEL": "claude-fable-5-2",
+    "ANTHROPIC_DEFAULT_SONNET_MODEL": "claude-opus-5-5"
+  },
+  "modelSettings": {
+    "claude-fable-5-2": { "effortLevel": "high" },
+    "claude-opus-5-5": { "effortLevel": "high" }
+  }
+}

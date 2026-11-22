@@ -1,0 +1,2753 @@
+{
+  "multi_skill": true,
+  "skill_count": 2,
+  "max_risk_score": 0,
+  "risk_severity": "LOW",
+  "execution_successful": true,
+  "risk_recommendation": "SAFE",
+  "analysis_completeness": {
+    "is_complete": true,
+    "execution_successful": true,
+    "status": "complete",
+    "coverage_percent": 100.0,
+    "fully_inspected_files": 2,
+    "partially_inspected_files": 0,
+    "entirely_uninspected_files": 0,
+    "total_files": 2,
+    "limitations": [],
+    "scope": "recursive_skills"
+  },
+  "skills_scanned": 2,
+  "skills_omitted": 0,
+  "skills_output_omitted": 0,
+  "public_finding_records": 0,
+  "report_characters": 94399,
+  "transitive_finding_count": 0,
+  "transitive_sources": [],
+  "skills": [
+    {
+      "name": "open-pr",
+      "path": "open-pr",
+      "risk_score": 0,
+      "risk_severity": "LOW",
+      "finding_count": 0,
+      "execution_successful": true,
+      "transitive_finding_count": 0,
+      "transitive_sources": [],
+      "skill": {
+        "name": "open-pr",
+        "source": "/tmp/claude-0/-home-user-my-home-decoration/bb005832-3f91-51a1-b1e9-660f1bb629c2/scratchpad/ext/pascal-editor/.agents/skills/open-pr",
+        "scanned_at": "2026-11-22T01:00:53.845811+00:00",
+        "origin": {
+          "type": "directory",
+          "source": "/tmp/claude-0/-home-user-my-home-decoration/bb005832-3f91-51a1-b1e9-660f1bb629c2/scratchpad/ext/pascal-editor/.agents/skills/open-pr"
+        }
+      },
+      "risk_assessment": {
+        "score": 0,
+        "severity": "LOW",
+        "recommendation": "SAFE",
+        "max_issue_severity": "NONE"
+      },
+      "components": [
+        {
+          "path": "SKILL.md",
+          "type": "markdown",
+          "lines": 50,
+          "executable": false,
+          "size_bytes": 2566,
+          "source_url": null,
+          "source_identity": null,
+          "source_digest": null
+        }
+      ],
+      "structured_summaries": [],
+      "issues": [],
+      "suppressed_count": 0,
+      "suppressed": [],
+      "metadata": {
+        "has_executable_scripts": false,
+        "skillspector_version": "2.12.0",
+        "llm_requested": false,
+        "llm_available": false,
+        "meta_analysis_applied": false,
+        "inference_usage": [],
+        "llm_provenance": {
+          "schema_version": 1,
+          "provider": {
+            "configured_adapter": "unknown",
+            "resolved_adapter": "unknown",
+            "effective_adapter": "not_applicable",
+            "effective_adapters": [],
+            "service": "unknown",
+            "routing": {
+              "deployment_override": null,
+              "deployment_source": "unknown",
+              "api_version": null,
+              "api_version_source": "unknown"
+            }
+          },
+          "analyzers": [
+            {
+              "analyzer_id": "mcp_tool_poisoning",
+              "model": "z-ai/glm-5.3-flash",
+              "model_source": "resolved_configuration",
+              "analyzer_revision": {
+                "value": "2.12.0",
+                "source": "skillspector_package",
+                "source_revision": {
+                  "value": "unknown",
+                  "source": "unknown"
+                }
+              }
+            },
+            {
+              "analyzer_id": "semantic_developer_intent",
+              "model": "z-ai/glm-5.3-flash",
+              "model_source": "resolved_configuration",
+              "analyzer_revision": {
+                "value": "2.12.0",
+                "source": "skillspector_package",
+                "source_revision": {
+                  "value": "unknown",
+                  "source": "unknown"
+                }
+              }
+            },
+            {
+              "analyzer_id": "semantic_quality_policy",
+              "model": "z-ai/glm-5.3-flash",
+              "model_source": "resolved_configuration",
+              "analyzer_revision": {
+                "value": "2.12.0",
+                "source": "skillspector_package",
+                "source_revision": {
+                  "value": "unknown",
+                  "source": "unknown"
+                }
+              }
+            },
+            {
+              "analyzer_id": "semantic_security_discovery",
+              "model": "z-ai/glm-5.3-flash",
+              "model_source": "resolved_configuration",
+              "analyzer_revision": {
+                "value": "2.12.0",
+                "source": "skillspector_package",
+                "source_revision": {
+                  "value": "unknown",
+                  "source": "unknown"
+                }
+              }
+            },
+            {
+              "analyzer_id": "meta_analyzer",
+              "model": "z-ai/glm-5.3-flash",
+              "model_source": "resolved_configuration",
+              "analyzer_revision": {
+                "value": "2.12.0",
+                "source": "skillspector_package",
+                "source_revision": {
+                  "value": "unknown",
+                  "source": "unknown"
+                }
+              }
+            }
+          ],
+          "sampling": {
+            "temperature": {
+              "requested": null,
+              "source": "provider_default",
+              "forwarded_to_client": null,
+              "adapter_support": false,
+              "provider_support": "unknown"
+            },
+            "seed": {
+              "requested": null,
+              "source": "unset",
+              "forwarded_to_client": null,
+              "adapter_support": false,
+              "provider_support": "unknown"
+            },
+            "reasoning_effort": {
+              "requested": null,
+              "source": "provider_default",
+              "forwarded_to_client": null,
+              "adapter_support": false,
+              "provider_support": "unknown"
+            }
+          },
+          "determinism": {
+            "classification": "not_applicable",
+            "control_status": "not_applied",
+            "provider_guarantee": false,
+            "reason": "LLM analysis was not executed for this scan."
+          }
+        },
+        "filtering_mode": "heuristic"
+      },
+      "analysis_completeness": {
+        "total_components": 1,
+        "scanned_components": 1,
+        "coverage_percent": 100.0,
+        "is_complete": true,
+        "status": "complete_with_caveats",
+        "execution_successful": true,
+        "fully_inspected_files": 1,
+        "partially_inspected_files": 0,
+        "entirely_uninspected_files": 0,
+        "ledger_exceptions": [
+          {
+            "outcome": "partial",
+            "phase": "reference_resolution",
+            "reason_code": "reference_missing",
+            "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+            "path": "SKILL.md",
+            "start_line": 27,
+            "end_line": 27,
+            "fatal": false
+          }
+        ],
+        "scope_exclusions": [],
+        "analyzer_statuses": [
+          {
+            "analyzer_id": "artifact_integrity",
+            "status": "completed",
+            "planned_work": 1,
+            "completed": 1,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "behavioral_ast",
+            "status": "not_applicable",
+            "planned_work": 0,
+            "completed": 0,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0,
+            "reason_code": "no_applicable_files",
+            "message": "No files matched this analyzer's applicability contract."
+          },
+          {
+            "analyzer_id": "behavioral_taint_tracking",
+            "status": "not_applicable",
+            "planned_work": 0,
+            "completed": 0,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0,
+            "reason_code": "no_applicable_files",
+            "message": "No files matched this analyzer's applicability contract."
+          },
+          {
+            "analyzer_id": "bundled_execution_surface",
+            "status": "not_applicable",
+            "planned_work": 0,
+            "completed": 0,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0,
+            "reason_code": "no_applicable_files",
+            "message": "No files matched this analyzer's applicability contract."
+          },
+          {
+            "analyzer_id": "mcp_least_privilege",
+            "status": "not_applicable",
+            "planned_work": 0,
+            "completed": 0,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0,
+            "reason_code": "no_applicable_files",
+            "message": "No files matched this analyzer's applicability contract."
+          },
+          {
+            "analyzer_id": "mcp_rug_pull",
+            "status": "completed",
+            "planned_work": 1,
+            "completed": 1,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "mcp_tool_poisoning",
+            "status": "completed",
+            "planned_work": 1,
+            "completed": 1,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "meta_analyzer",
+            "status": "not_applicable",
+            "planned_work": 0,
+            "completed": 0,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0,
+            "reason_code": "no_applicable_files",
+            "message": "No files matched this analyzer's applicability contract."
+          },
+          {
+            "analyzer_id": "semantic_developer_intent",
+            "status": "disabled",
+            "planned_work": 0,
+            "completed": 0,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0,
+            "reason_code": "disabled_by_configuration",
+            "message": "Analyzer was disabled by the requested configuration."
+          },
+          {
+            "analyzer_id": "semantic_quality_policy",
+            "status": "disabled",
+            "planned_work": 0,
+            "completed": 0,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0,
+            "reason_code": "disabled_by_configuration",
+            "message": "Analyzer was disabled by the requested configuration."
+          },
+          {
+            "analyzer_id": "semantic_security_discovery",
+            "status": "disabled",
+            "planned_work": 0,
+            "completed": 0,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0,
+            "reason_code": "disabled_by_configuration",
+            "message": "Analyzer was disabled by the requested configuration."
+          },
+          {
+            "analyzer_id": "static_patterns_agent_snooping",
+            "status": "completed",
+            "planned_work": 1,
+            "completed": 1,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "static_patterns_anti_refusal",
+            "status": "completed",
+            "planned_work": 1,
+            "completed": 1,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "static_patterns_data_exfiltration",
+            "status": "completed",
+            "planned_work": 1,
+            "completed": 1,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "static_patterns_deserialization",
+            "status": "completed",
+            "planned_work": 1,
+            "completed": 1,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "static_patterns_excessive_agency",
+            "status": "completed",
+            "planned_work": 1,
+            "completed": 1,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "static_patterns_harmful_content",
+            "status": "completed",
+            "planned_work": 1,
+            "completed": 1,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "static_patterns_memory_poisoning",
+            "status": "completed",
+            "planned_work": 1,
+            "completed": 1,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "static_patterns_output_handling",
+            "status": "completed",
+            "planned_work": 1,
+            "completed": 1,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "static_patterns_privilege_escalation",
+            "status": "completed",
+            "planned_work": 1,
+            "completed": 1,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "static_patterns_prompt_injection",
+            "status": "completed",
+            "planned_work": 1,
+            "completed": 1,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "static_patterns_rogue_agent",
+            "status": "completed",
+            "planned_work": 1,
+            "completed": 1,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "static_patterns_ssrf",
+            "status": "completed",
+            "planned_work": 1,
+            "completed": 1,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "static_patterns_supply_chain",
+            "status": "completed",
+            "planned_work": 1,
+            "completed": 1,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "static_patterns_system_prompt_leakage",
+            "status": "completed",
+            "planned_work": 1,
+            "completed": 1,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "static_patterns_tool_misuse",
+            "status": "completed",
+            "planned_work": 1,
+            "completed": 1,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "static_yara",
+            "status": "completed",
+            "planned_work": 1,
+            "completed": 1,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          }
+        ],
+        "references": [
+          {
+            "source_path": "SKILL.md",
+            "line": 27,
+            "column": 2,
+            "evidence": "`.github/pull_request_template.md` is the source of truth for headings and checklist. Fill it from \u00a71, not from memory:",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          }
+        ],
+        "limitations": [],
+        "findings_before_filtering": 0,
+        "findings_after_filtering": 0,
+        "dependency_inspection": {
+          "enabled": false,
+          "status": "not_requested",
+          "mode": "static_local",
+          "locked_entries": 0,
+          "inspected_artifacts": 0,
+          "artifacts": []
+        }
+      }
+    },
+    {
+      "name": "review-architecture",
+      "path": "review-architecture",
+      "risk_score": 0,
+      "risk_severity": "LOW",
+      "finding_count": 0,
+      "execution_successful": true,
+      "transitive_finding_count": 0,
+      "transitive_sources": [],
+      "skill": {
+        "name": "review-architecture",
+        "source": "/tmp/claude-0/-home-user-my-home-decoration/bb005832-3f91-51a1-b1e9-660f1bb629c2/scratchpad/ext/pascal-editor/.agents/skills/review-architecture",
+        "scanned_at": "2026-11-22T01:00:57.243700+00:00",
+        "origin": {
+          "type": "directory",
+          "source": "/tmp/claude-0/-home-user-my-home-decoration/bb005832-3f91-51a1-b1e9-660f1bb629c2/scratchpad/ext/pascal-editor/.agents/skills/review-architecture"
+        }
+      },
+      "risk_assessment": {
+        "score": 0,
+        "severity": "LOW",
+        "recommendation": "SAFE",
+        "max_issue_severity": "NONE"
+      },
+      "components": [
+        {
+          "path": "SKILL.md",
+          "type": "markdown",
+          "lines": 183,
+          "executable": false,
+          "size_bytes": 30613,
+          "source_url": null,
+          "source_identity": null,
+          "source_digest": null
+        }
+      ],
+      "structured_summaries": [],
+      "issues": [],
+      "suppressed_count": 0,
+      "suppressed": [],
+      "metadata": {
+        "has_executable_scripts": false,
+        "skillspector_version": "2.12.0",
+        "llm_requested": false,
+        "llm_available": false,
+        "meta_analysis_applied": false,
+        "inference_usage": [],
+        "llm_provenance": {
+          "schema_version": 1,
+          "provider": {
+            "configured_adapter": "unknown",
+            "resolved_adapter": "unknown",
+            "effective_adapter": "not_applicable",
+            "effective_adapters": [],
+            "service": "unknown",
+            "routing": {
+              "deployment_override": null,
+              "deployment_source": "unknown",
+              "api_version": null,
+              "api_version_source": "unknown"
+            }
+          },
+          "analyzers": [
+            {
+              "analyzer_id": "mcp_tool_poisoning",
+              "model": "z-ai/glm-5.3-flash",
+              "model_source": "resolved_configuration",
+              "analyzer_revision": {
+                "value": "2.12.0",
+                "source": "skillspector_package",
+                "source_revision": {
+                  "value": "unknown",
+                  "source": "unknown"
+                }
+              }
+            },
+            {
+              "analyzer_id": "semantic_developer_intent",
+              "model": "z-ai/glm-5.3-flash",
+              "model_source": "resolved_configuration",
+              "analyzer_revision": {
+                "value": "2.12.0",
+                "source": "skillspector_package",
+                "source_revision": {
+                  "value": "unknown",
+                  "source": "unknown"
+                }
+              }
+            },
+            {
+              "analyzer_id": "semantic_quality_policy",
+              "model": "z-ai/glm-5.3-flash",
+              "model_source": "resolved_configuration",
+              "analyzer_revision": {
+                "value": "2.12.0",
+                "source": "skillspector_package",
+                "source_revision": {
+                  "value": "unknown",
+                  "source": "unknown"
+                }
+              }
+            },
+            {
+              "analyzer_id": "semantic_security_discovery",
+              "model": "z-ai/glm-5.3-flash",
+              "model_source": "resolved_configuration",
+              "analyzer_revision": {
+                "value": "2.12.0",
+                "source": "skillspector_package",
+                "source_revision": {
+                  "value": "unknown",
+                  "source": "unknown"
+                }
+              }
+            },
+            {
+              "analyzer_id": "meta_analyzer",
+              "model": "z-ai/glm-5.3-flash",
+              "model_source": "resolved_configuration",
+              "analyzer_revision": {
+                "value": "2.12.0",
+                "source": "skillspector_package",
+                "source_revision": {
+                  "value": "unknown",
+                  "source": "unknown"
+                }
+              }
+            }
+          ],
+          "sampling": {
+            "temperature": {
+              "requested": null,
+              "source": "provider_default",
+              "forwarded_to_client": null,
+              "adapter_support": false,
+              "provider_support": "unknown"
+            },
+            "seed": {
+              "requested": null,
+              "source": "unset",
+              "forwarded_to_client": null,
+              "adapter_support": false,
+              "provider_support": "unknown"
+            },
+            "reasoning_effort": {
+              "requested": null,
+              "source": "provider_default",
+              "forwarded_to_client": null,
+              "adapter_support": false,
+              "provider_support": "unknown"
+            }
+          },
+          "determinism": {
+            "classification": "not_applicable",
+            "control_status": "not_applied",
+            "provider_guarantee": false,
+            "reason": "LLM analysis was not executed for this scan."
+          }
+        },
+        "filtering_mode": "heuristic"
+      },
+      "analysis_completeness": {
+        "total_components": 1,
+        "scanned_components": 1,
+        "coverage_percent": 100.0,
+        "is_complete": true,
+        "status": "complete_with_caveats",
+        "execution_successful": true,
+        "fully_inspected_files": 1,
+        "partially_inspected_files": 0,
+        "entirely_uninspected_files": 0,
+        "ledger_exceptions": [
+          {
+            "outcome": "partial",
+            "phase": "reference_resolution",
+            "reason_code": "reference_missing",
+            "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+            "path": "SKILL.md",
+            "start_line": 15,
+            "end_line": 15,
+            "fatal": false
+          },
+          {
+            "outcome": "partial",
+            "phase": "reference_resolution",
+            "reason_code": "reference_missing",
+            "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+            "path": "SKILL.md",
+            "start_line": 16,
+            "end_line": 16,
+            "fatal": false
+          },
+          {
+            "outcome": "partial",
+            "phase": "reference_resolution",
+            "reason_code": "reference_missing",
+            "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+            "path": "SKILL.md",
+            "start_line": 17,
+            "end_line": 17,
+            "fatal": false
+          },
+          {
+            "outcome": "partial",
+            "phase": "reference_resolution",
+            "reason_code": "reference_missing",
+            "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+            "path": "SKILL.md",
+            "start_line": 18,
+            "end_line": 18,
+            "fatal": false
+          },
+          {
+            "outcome": "partial",
+            "phase": "reference_resolution",
+            "reason_code": "reference_missing",
+            "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+            "path": "SKILL.md",
+            "start_line": 19,
+            "end_line": 19,
+            "fatal": false
+          },
+          {
+            "outcome": "partial",
+            "phase": "reference_resolution",
+            "reason_code": "reference_missing",
+            "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+            "path": "SKILL.md",
+            "start_line": 20,
+            "end_line": 20,
+            "fatal": false
+          },
+          {
+            "outcome": "partial",
+            "phase": "reference_resolution",
+            "reason_code": "reference_missing",
+            "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+            "path": "SKILL.md",
+            "start_line": 21,
+            "end_line": 21,
+            "fatal": false
+          },
+          {
+            "outcome": "partial",
+            "phase": "reference_resolution",
+            "reason_code": "reference_missing",
+            "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+            "path": "SKILL.md",
+            "start_line": 22,
+            "end_line": 22,
+            "fatal": false
+          },
+          {
+            "outcome": "partial",
+            "phase": "reference_resolution",
+            "reason_code": "reference_missing",
+            "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+            "path": "SKILL.md",
+            "start_line": 23,
+            "end_line": 23,
+            "fatal": false
+          },
+          {
+            "outcome": "partial",
+            "phase": "reference_resolution",
+            "reason_code": "reference_missing",
+            "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+            "path": "SKILL.md",
+            "start_line": 27,
+            "end_line": 27,
+            "fatal": false
+          },
+          {
+            "outcome": "partial",
+            "phase": "reference_resolution",
+            "reason_code": "reference_missing",
+            "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+            "path": "SKILL.md",
+            "start_line": 28,
+            "end_line": 28,
+            "fatal": false
+          },
+          {
+            "outcome": "partial",
+            "phase": "reference_resolution",
+            "reason_code": "reference_missing",
+            "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+            "path": "SKILL.md",
+            "start_line": 29,
+            "end_line": 29,
+            "fatal": false
+          },
+          {
+            "outcome": "partial",
+            "phase": "reference_resolution",
+            "reason_code": "reference_missing",
+            "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+            "path": "SKILL.md",
+            "start_line": 30,
+            "end_line": 30,
+            "fatal": false
+          },
+          {
+            "outcome": "partial",
+            "phase": "reference_resolution",
+            "reason_code": "reference_missing",
+            "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+            "path": "SKILL.md",
+            "start_line": 31,
+            "end_line": 31,
+            "fatal": false
+          },
+          {
+            "outcome": "partial",
+            "phase": "reference_resolution",
+            "reason_code": "reference_missing",
+            "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+            "path": "SKILL.md",
+            "start_line": 32,
+            "end_line": 32,
+            "fatal": false
+          },
+          {
+            "outcome": "partial",
+            "phase": "reference_resolution",
+            "reason_code": "reference_missing",
+            "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+            "path": "SKILL.md",
+            "start_line": 33,
+            "end_line": 33,
+            "fatal": false
+          },
+          {
+            "outcome": "partial",
+            "phase": "reference_resolution",
+            "reason_code": "reference_missing",
+            "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+            "path": "SKILL.md",
+            "start_line": 35,
+            "end_line": 35,
+            "fatal": false
+          },
+          {
+            "outcome": "partial",
+            "phase": "reference_resolution",
+            "reason_code": "reference_missing",
+            "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+            "path": "SKILL.md",
+            "start_line": 68,
+            "end_line": 68,
+            "fatal": false
+          },
+          {
+            "outcome": "partial",
+            "phase": "reference_resolution",
+            "reason_code": "reference_missing",
+            "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+            "path": "SKILL.md",
+            "start_line": 71,
+            "end_line": 71,
+            "fatal": false
+          },
+          {
+            "outcome": "partial",
+            "phase": "reference_resolution",
+            "reason_code": "reference_missing",
+            "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+            "path": "SKILL.md",
+            "start_line": 81,
+            "end_line": 81,
+            "fatal": false
+          },
+          {
+            "outcome": "partial",
+            "phase": "reference_resolution",
+            "reason_code": "reference_missing",
+            "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+            "path": "SKILL.md",
+            "start_line": 93,
+            "end_line": 93,
+            "fatal": false
+          },
+          {
+            "outcome": "partial",
+            "phase": "reference_resolution",
+            "reason_code": "reference_missing",
+            "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+            "path": "SKILL.md",
+            "start_line": 94,
+            "end_line": 94,
+            "fatal": false
+          },
+          {
+            "outcome": "partial",
+            "phase": "reference_resolution",
+            "reason_code": "reference_missing",
+            "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+            "path": "SKILL.md",
+            "start_line": 98,
+            "end_line": 98,
+            "fatal": false
+          },
+          {
+            "outcome": "partial",
+            "phase": "reference_resolution",
+            "reason_code": "reference_missing",
+            "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+            "path": "SKILL.md",
+            "start_line": 100,
+            "end_line": 100,
+            "fatal": false
+          },
+          {
+            "outcome": "partial",
+            "phase": "reference_resolution",
+            "reason_code": "reference_missing",
+            "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+            "path": "SKILL.md",
+            "start_line": 101,
+            "end_line": 101,
+            "fatal": false
+          },
+          {
+            "outcome": "partial",
+            "phase": "reference_resolution",
+            "reason_code": "reference_missing",
+            "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+            "path": "SKILL.md",
+            "start_line": 102,
+            "end_line": 102,
+            "fatal": false
+          },
+          {
+            "outcome": "partial",
+            "phase": "reference_resolution",
+            "reason_code": "reference_missing",
+            "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+            "path": "SKILL.md",
+            "start_line": 105,
+            "end_line": 105,
+            "fatal": false
+          },
+          {
+            "outcome": "partial",
+            "phase": "reference_resolution",
+            "reason_code": "reference_missing",
+            "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+            "path": "SKILL.md",
+            "start_line": 106,
+            "end_line": 106,
+            "fatal": false
+          },
+          {
+            "outcome": "partial",
+            "phase": "reference_resolution",
+            "reason_code": "reference_missing",
+            "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+            "path": "SKILL.md",
+            "start_line": 107,
+            "end_line": 107,
+            "fatal": false
+          },
+          {
+            "outcome": "partial",
+            "phase": "reference_resolution",
+            "reason_code": "reference_missing",
+            "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+            "path": "SKILL.md",
+            "start_line": 108,
+            "end_line": 108,
+            "fatal": false
+          },
+          {
+            "outcome": "partial",
+            "phase": "reference_resolution",
+            "reason_code": "reference_missing",
+            "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+            "path": "SKILL.md",
+            "start_line": 109,
+            "end_line": 109,
+            "fatal": false
+          },
+          {
+            "outcome": "partial",
+            "phase": "reference_resolution",
+            "reason_code": "reference_missing",
+            "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+            "path": "SKILL.md",
+            "start_line": 111,
+            "end_line": 111,
+            "fatal": false
+          },
+          {
+            "outcome": "partial",
+            "phase": "reference_resolution",
+            "reason_code": "reference_missing",
+            "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+            "path": "SKILL.md",
+            "start_line": 112,
+            "end_line": 112,
+            "fatal": false
+          },
+          {
+            "outcome": "partial",
+            "phase": "reference_resolution",
+            "reason_code": "reference_missing",
+            "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+            "path": "SKILL.md",
+            "start_line": 113,
+            "end_line": 113,
+            "fatal": false
+          },
+          {
+            "outcome": "partial",
+            "phase": "reference_resolution",
+            "reason_code": "reference_missing",
+            "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+            "path": "SKILL.md",
+            "start_line": 114,
+            "end_line": 114,
+            "fatal": false
+          },
+          {
+            "outcome": "partial",
+            "phase": "reference_resolution",
+            "reason_code": "reference_missing",
+            "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+            "path": "SKILL.md",
+            "start_line": 115,
+            "end_line": 115,
+            "fatal": false
+          },
+          {
+            "outcome": "partial",
+            "phase": "reference_resolution",
+            "reason_code": "reference_missing",
+            "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+            "path": "SKILL.md",
+            "start_line": 116,
+            "end_line": 116,
+            "fatal": false
+          },
+          {
+            "outcome": "partial",
+            "phase": "reference_resolution",
+            "reason_code": "reference_missing",
+            "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+            "path": "SKILL.md",
+            "start_line": 117,
+            "end_line": 117,
+            "fatal": false
+          },
+          {
+            "outcome": "partial",
+            "phase": "reference_resolution",
+            "reason_code": "reference_missing",
+            "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+            "path": "SKILL.md",
+            "start_line": 118,
+            "end_line": 118,
+            "fatal": false
+          },
+          {
+            "outcome": "partial",
+            "phase": "reference_resolution",
+            "reason_code": "reference_missing",
+            "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+            "path": "SKILL.md",
+            "start_line": 128,
+            "end_line": 128,
+            "fatal": false
+          },
+          {
+            "outcome": "partial",
+            "phase": "reference_resolution",
+            "reason_code": "reference_missing",
+            "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+            "path": "SKILL.md",
+            "start_line": 135,
+            "end_line": 135,
+            "fatal": false
+          },
+          {
+            "outcome": "partial",
+            "phase": "reference_resolution",
+            "reason_code": "reference_missing",
+            "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+            "path": "SKILL.md",
+            "start_line": 136,
+            "end_line": 136,
+            "fatal": false
+          },
+          {
+            "outcome": "partial",
+            "phase": "reference_resolution",
+            "reason_code": "reference_missing",
+            "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+            "path": "SKILL.md",
+            "start_line": 142,
+            "end_line": 142,
+            "fatal": false
+          },
+          {
+            "outcome": "partial",
+            "phase": "reference_resolution",
+            "reason_code": "reference_missing",
+            "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+            "path": "SKILL.md",
+            "start_line": 143,
+            "end_line": 143,
+            "fatal": false
+          },
+          {
+            "outcome": "partial",
+            "phase": "reference_resolution",
+            "reason_code": "reference_missing",
+            "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+            "path": "SKILL.md",
+            "start_line": 144,
+            "end_line": 144,
+            "fatal": false
+          },
+          {
+            "outcome": "partial",
+            "phase": "reference_resolution",
+            "reason_code": "reference_missing",
+            "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+            "path": "SKILL.md",
+            "start_line": 148,
+            "end_line": 148,
+            "fatal": false
+          },
+          {
+            "outcome": "partial",
+            "phase": "reference_resolution",
+            "reason_code": "reference_missing",
+            "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+            "path": "SKILL.md",
+            "start_line": 151,
+            "end_line": 151,
+            "fatal": false
+          },
+          {
+            "outcome": "partial",
+            "phase": "reference_resolution",
+            "reason_code": "reference_missing",
+            "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+            "path": "SKILL.md",
+            "start_line": 152,
+            "end_line": 152,
+            "fatal": false
+          },
+          {
+            "outcome": "partial",
+            "phase": "reference_resolution",
+            "reason_code": "reference_missing",
+            "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+            "path": "SKILL.md",
+            "start_line": 154,
+            "end_line": 154,
+            "fatal": false
+          },
+          {
+            "outcome": "partial",
+            "phase": "reference_resolution",
+            "reason_code": "reference_missing",
+            "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+            "path": "SKILL.md",
+            "start_line": 155,
+            "end_line": 155,
+            "fatal": false
+          },
+          {
+            "outcome": "partial",
+            "phase": "reference_resolution",
+            "reason_code": "reference_missing",
+            "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+            "path": "SKILL.md",
+            "start_line": 156,
+            "end_line": 156,
+            "fatal": false
+          },
+          {
+            "outcome": "partial",
+            "phase": "reference_resolution",
+            "reason_code": "reference_missing",
+            "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+            "path": "SKILL.md",
+            "start_line": 168,
+            "end_line": 168,
+            "fatal": false
+          },
+          {
+            "outcome": "partial",
+            "phase": "reference_resolution",
+            "reason_code": "reference_missing",
+            "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+            "path": "SKILL.md",
+            "start_line": 170,
+            "end_line": 170,
+            "fatal": false
+          }
+        ],
+        "scope_exclusions": [],
+        "analyzer_statuses": [
+          {
+            "analyzer_id": "artifact_integrity",
+            "status": "completed",
+            "planned_work": 1,
+            "completed": 1,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "behavioral_ast",
+            "status": "not_applicable",
+            "planned_work": 0,
+            "completed": 0,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0,
+            "reason_code": "no_applicable_files",
+            "message": "No files matched this analyzer's applicability contract."
+          },
+          {
+            "analyzer_id": "behavioral_taint_tracking",
+            "status": "not_applicable",
+            "planned_work": 0,
+            "completed": 0,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0,
+            "reason_code": "no_applicable_files",
+            "message": "No files matched this analyzer's applicability contract."
+          },
+          {
+            "analyzer_id": "bundled_execution_surface",
+            "status": "not_applicable",
+            "planned_work": 0,
+            "completed": 0,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0,
+            "reason_code": "no_applicable_files",
+            "message": "No files matched this analyzer's applicability contract."
+          },
+          {
+            "analyzer_id": "mcp_least_privilege",
+            "status": "not_applicable",
+            "planned_work": 0,
+            "completed": 0,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0,
+            "reason_code": "no_applicable_files",
+            "message": "No files matched this analyzer's applicability contract."
+          },
+          {
+            "analyzer_id": "mcp_rug_pull",
+            "status": "completed",
+            "planned_work": 1,
+            "completed": 1,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "mcp_tool_poisoning",
+            "status": "completed",
+            "planned_work": 1,
+            "completed": 1,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "meta_analyzer",
+            "status": "not_applicable",
+            "planned_work": 0,
+            "completed": 0,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0,
+            "reason_code": "no_applicable_files",
+            "message": "No files matched this analyzer's applicability contract."
+          },
+          {
+            "analyzer_id": "semantic_developer_intent",
+            "status": "disabled",
+            "planned_work": 0,
+            "completed": 0,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0,
+            "reason_code": "disabled_by_configuration",
+            "message": "Analyzer was disabled by the requested configuration."
+          },
+          {
+            "analyzer_id": "semantic_quality_policy",
+            "status": "disabled",
+            "planned_work": 0,
+            "completed": 0,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0,
+            "reason_code": "disabled_by_configuration",
+            "message": "Analyzer was disabled by the requested configuration."
+          },
+          {
+            "analyzer_id": "semantic_security_discovery",
+            "status": "disabled",
+            "planned_work": 0,
+            "completed": 0,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0,
+            "reason_code": "disabled_by_configuration",
+            "message": "Analyzer was disabled by the requested configuration."
+          },
+          {
+            "analyzer_id": "static_patterns_agent_snooping",
+            "status": "completed",
+            "planned_work": 1,
+            "completed": 1,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "static_patterns_anti_refusal",
+            "status": "completed",
+            "planned_work": 1,
+            "completed": 1,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "static_patterns_data_exfiltration",
+            "status": "completed",
+            "planned_work": 1,
+            "completed": 1,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "static_patterns_deserialization",
+            "status": "completed",
+            "planned_work": 1,
+            "completed": 1,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "static_patterns_excessive_agency",
+            "status": "completed",
+            "planned_work": 1,
+            "completed": 1,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "static_patterns_harmful_content",
+            "status": "completed",
+            "planned_work": 1,
+            "completed": 1,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "static_patterns_memory_poisoning",
+            "status": "completed",
+            "planned_work": 1,
+            "completed": 1,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "static_patterns_output_handling",
+            "status": "completed",
+            "planned_work": 1,
+            "completed": 1,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "static_patterns_privilege_escalation",
+            "status": "completed",
+            "planned_work": 1,
+            "completed": 1,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "static_patterns_prompt_injection",
+            "status": "completed",
+            "planned_work": 1,
+            "completed": 1,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "static_patterns_rogue_agent",
+            "status": "completed",
+            "planned_work": 1,
+            "completed": 1,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "static_patterns_ssrf",
+            "status": "completed",
+            "planned_work": 1,
+            "completed": 1,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "static_patterns_supply_chain",
+            "status": "completed",
+            "planned_work": 1,
+            "completed": 1,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "static_patterns_system_prompt_leakage",
+            "status": "completed",
+            "planned_work": 1,
+            "completed": 1,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "static_patterns_tool_misuse",
+            "status": "completed",
+            "planned_work": 1,
+            "completed": 1,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          },
+          {
+            "analyzer_id": "static_yara",
+            "status": "completed",
+            "planned_work": 1,
+            "completed": 1,
+            "partial": 0,
+            "skipped": 0,
+            "failed": 0,
+            "unaccounted": 0
+          }
+        ],
+        "references": [
+          {
+            "source_path": "SKILL.md",
+            "line": 15,
+            "column": 4,
+            "evidence": "- `wiki/architecture/layers.md`",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 16,
+            "column": 4,
+            "evidence": "- `wiki/architecture/systems.md` \u2014 core systems vs viewer systems, what each may do",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 17,
+            "column": 4,
+            "evidence": "- `wiki/architecture/renderers.md` \u2014 renderer responsibilities and prohibitions",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 18,
+            "column": 4,
+            "evidence": "- `wiki/architecture/tools.md` \u2014 editor tools live only in `apps/editor/components/tools/` or `packages/nodes/src/<kind>/`",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 19,
+            "column": 4,
+            "evidence": "- `wiki/architecture/viewer-isolation.md` \u2014 viewer must stay editor-agnostic",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 20,
+            "column": 4,
+            "evidence": "- `wiki/architecture/node-definitions.md` \u2014 the three-checkbox composition model (`geometry` / `renderer` / `system`)",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 21,
+            "column": 4,
+            "evidence": "- `wiki/architecture/plugin-authoring.md` \u2014 public contract for external node packs",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 22,
+            "column": 4,
+            "evidence": "- `wiki/architecture/agent-surfaces.md` \u2014 MCP \u2194 hosted chat \u2194 skill parity. Read whenever the diff touches `packages/mcp/**` or `skills/**`.",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 23,
+            "column": 4,
+            "evidence": "- `wiki/architecture/scene-runtime.md` \u2014 detached scenes, tracked reads, `reconcileDocument`. Read whenever the diff touches `packages/core/src/agent-operations",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 27,
+            "column": 4,
+            "evidence": "- `wiki/architecture/selection-managers.md`",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 28,
+            "column": 4,
+            "evidence": "- `wiki/architecture/scene-registry.md`",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 29,
+            "column": 4,
+            "evidence": "- `wiki/architecture/spatial-queries.md`",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 30,
+            "column": 4,
+            "evidence": "- `wiki/architecture/node-schemas.md`",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 31,
+            "column": 4,
+            "evidence": "- `wiki/architecture/inspector-field-limits.md` \u2014 no arbitrary `min`/`max` on dimension fields. Read whenever the diff adds or edits `parametrics.ts`, a kind `p",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 31,
+            "column": 135,
+            "evidence": "rbitrary `min`/`max` on dimension fields. Read whenever the diff adds or edits `parametrics.ts`, a kind `panel.tsx`, or `<SliderControl>` bounds.",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 31,
+            "column": 160,
+            "evidence": "imension fields. Read whenever the diff adds or edits `parametrics.ts`, a kind `panel.tsx`, or `<SliderControl>` bounds.",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 32,
+            "column": 4,
+            "evidence": "- `wiki/architecture/events.md`",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 33,
+            "column": 4,
+            "evidence": "- `wiki/architecture/interaction-scope.md` \u2014 the interaction state machine + the unified snapping/modifier convention. Read whenever the diff touches a tool, a ",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 33,
+            "column": 237,
+            "evidence": ", a `move-tool` / `selection` / endpoint / reshape file, `lib/interaction/**`, `lib/snapping-mode.ts`, or `use-interaction-scope`.",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 35,
+            "column": 91,
+            "evidence": "g in the diff looks like a new dispatch surface or registry concept, also read `DECISIONS.md` E-002 and `wiki/architecture/node-definitions.md` \u2014 they own the c",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 35,
+            "column": 116,
+            "evidence": "a new dispatch surface or registry concept, also read `DECISIONS.md` E-002 and `wiki/architecture/node-definitions.md` \u2014 they own the composition model and the ",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 68,
+            "column": 128,
+            "evidence": "ametricInspector`, `<MoveRegistryNodeTool>`, the registry-aware dispatchers in `tool-manager.tsx` / `MoveTool` / `panel-manager.tsx` / `helper-manager.tsx`), `u",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 68,
+            "column": 162,
+            "evidence": "odeTool>`, the registry-aware dispatchers in `tool-manager.tsx` / `MoveTool` / `panel-manager.tsx` / `helper-manager.tsx`), `useEditor`, action menus, panels, t",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 68,
+            "column": 184,
+            "evidence": "y-aware dispatchers in `tool-manager.tsx` / `MoveTool` / `panel-manager.tsx` / `helper-manager.tsx`), `useEditor`, action menus, panels, the floorplan panel and",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 71,
+            "column": 75,
+            "evidence": "Owns: one folder per node kind (`packages/nodes/src/<kind>/`) containing `definition.ts`, `schema.ts`, optionally `geometry.ts` / `renderer.tsx` / `system.tsx` ",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 71,
+            "column": 92,
+            "evidence": "older per node kind (`packages/nodes/src/<kind>/`) containing `definition.ts`, `schema.ts`, optionally `geometry.ts` / `renderer.tsx` / `system.tsx` / `floorpla",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 71,
+            "column": 116,
+            "evidence": "ckages/nodes/src/<kind>/`) containing `definition.ts`, `schema.ts`, optionally `geometry.ts` / `renderer.tsx` / `system.tsx` / `floorplan.ts` / `tool.tsx` / `mo",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 71,
+            "column": 132,
+            "evidence": "/<kind>/`) containing `definition.ts`, `schema.ts`, optionally `geometry.ts` / `renderer.tsx` / `system.tsx` / `floorplan.ts` / `tool.tsx` / `move-tool.tsx` / `",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 71,
+            "column": 149,
+            "evidence": "ning `definition.ts`, `schema.ts`, optionally `geometry.ts` / `renderer.tsx` / `system.tsx` / `floorplan.ts` / `tool.tsx` / `move-tool.tsx` / `panel.tsx` / `par",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 71,
+            "column": 164,
+            "evidence": "n.ts`, `schema.ts`, optionally `geometry.ts` / `renderer.tsx` / `system.tsx` / `floorplan.ts` / `tool.tsx` / `move-tool.tsx` / `panel.tsx` / `parametrics.ts` / ",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 71,
+            "column": 181,
+            "evidence": "`, optionally `geometry.ts` / `renderer.tsx` / `system.tsx` / `floorplan.ts` / `tool.tsx` / `move-tool.tsx` / `panel.tsx` / `parametrics.ts` / `preview.tsx`. Ex",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 71,
+            "column": 194,
+            "evidence": " `geometry.ts` / `renderer.tsx` / `system.tsx` / `floorplan.ts` / `tool.tsx` / `move-tool.tsx` / `panel.tsx` / `parametrics.ts` / `preview.tsx`. Exports `builti",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 71,
+            "column": 212,
+            "evidence": "renderer.tsx` / `system.tsx` / `floorplan.ts` / `tool.tsx` / `move-tool.tsx` / `panel.tsx` / `parametrics.ts` / `preview.tsx`. Exports `builtinPlugin`. Depends ",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 71,
+            "column": 226,
+            "evidence": "/ `system.tsx` / `floorplan.ts` / `tool.tsx` / `move-tool.tsx` / `panel.tsx` / `parametrics.ts` / `preview.tsx`. Exports `builtinPlugin`. Depends on `editor`, `",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 71,
+            "column": 245,
+            "evidence": "loorplan.ts` / `tool.tsx` / `move-tool.tsx` / `panel.tsx` / `parametrics.ts` / `preview.tsx`. Exports `builtinPlugin`. Depends on `editor`, `viewer`, and `core`",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 81,
+            "column": 158,
+            "evidence": "iewer/`, or `editor/`?** Blocker. The Biome `noRestrictedImports` overrides in `biome.jsonc` already ban this, along with the rest of the arrow (core \u2192 `three`/",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 93,
+            "column": 84,
+            "evidence": "o new `case '<kind>':` clauses (or equivalent kind-specific branching keyed on `node.type`) inside `packages/viewer/**` or `packages/editor/**`. Phase 6 deleted",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 94,
+            "column": 183,
+            "evidence": "eneRegistry` mesh transforms are allowed only under the live-drag exception in `wiki/architecture/tools.md`. No business logic, no imports from `packages/viewer",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 98,
+            "column": 56,
+            "evidence": "If the PR adds or modifies a node kind, check against `wiki/architecture/node-definitions.md` and `wiki/architecture/plugin-authoring.md`:",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 98,
+            "column": 100,
+            "evidence": "If the PR adds or modifies a node kind, check against `wiki/architecture/node-definitions.md` and `wiki/architecture/plugin-authoring.md`:",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 100,
+            "column": 289,
+            "evidence": "ipation. Setting all three is fine if the kind genuinely needs them; setting a `def.system` whose only job is to rebuild geometry on dirty is a smell \u2014 collapse",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 100,
+            "column": 374,
+            "evidence": "ystem` whose only job is to rebuild geometry on dirty is a smell \u2014 collapse to `def.geometry` and let `<GeometrySystem>` do the work.",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 101,
+            "column": 33,
+            "evidence": "- **Builders must be pure.** A `def.geometry` function must not import `useScene`, must not mutate the store, and must not depend on React context. Read other n",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 101,
+            "column": 190,
+            "evidence": " and must not depend on React context. Read other nodes via `GeometryContext` (`ctx.resolve` / `ctx.children` / `ctx.siblings` / `ctx.parent`).",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 101,
+            "column": 206,
+            "evidence": "pend on React context. Read other nodes via `GeometryContext` (`ctx.resolve` / `ctx.children` / `ctx.siblings` / `ctx.parent`).",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 101,
+            "column": 223,
+            "evidence": "text. Read other nodes via `GeometryContext` (`ctx.resolve` / `ctx.children` / `ctx.siblings` / `ctx.parent`).",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 101,
+            "column": 240,
+            "evidence": "nodes via `GeometryContext` (`ctx.resolve` / `ctx.children` / `ctx.siblings` / `ctx.parent`).",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 102,
+            "column": 240,
+            "evidence": " bakes world position into vertex coords, or a system that imperatively writes `group.position` / `group.rotation`, will desync R3F's prop binding \u2014 the node wi",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 102,
+            "column": 259,
+            "evidence": "on into vertex coords, or a system that imperatively writes `group.position` / `group.rotation`, will desync R3F's prop binding \u2014 the node will snap to `(0,0,0)",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 102,
+            "column": 410,
+            "evidence": " `(0,0,0)` after rebuild. Flag any imperative `group.position.set(...)` inside `def.geometry` or a registered system. (Tool-driven `sceneRegistry.nodes.get(id).",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 105,
+            "column": 49,
+            "evidence": "- **Previews must clone cached materials.** If `def.preview` calls the geometry builder and then sets `material.opacity = 0.5`, but the builder caches materials",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 105,
+            "column": 314,
+            "evidence": "utation leaks into every committed instance. Clone, mutate the clone, reassign `mesh.material`, dispose only the clone on unmount. Reference: `nodes/src/shelf/p",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 105,
+            "column": 377,
+            "evidence": "clone, reassign `mesh.material`, dispose only the clone on unmount. Reference: `nodes/src/shelf/preview.tsx`.",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 106,
+            "column": 213,
+            "evidence": "ds a load path for scenes saved before the change (parsed through `AnyNode` in `SceneState.setScene`). A *new* field needs a Zod `.default()` / `.optional()`. A",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 106,
+            "column": 355,
+            "evidence": "/ `.optional()`. A *rename / removal / retype* needs a `migrateNodes` entry in `packages/core/src/store/use-scene.ts` that rewrites the legacy shape before pars",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 106,
+            "column": 573,
+            "evidence": "chema diff that does neither is a blocker: it breaks every existing scene. See `wiki/architecture/node-schemas.md` \u00a7 Schema Evolution.",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 107,
+            "column": 53,
+            "evidence": "- **Host kinds need `children` on the schema.** If `def.relations.hosts` is set, the schema must declare `children: z.array(z.string()).default([])` (and `migra",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 107,
+            "column": 258,
+            "evidence": "ch existing scenes). Otherwise `useScene.createNode(child, parentId)` writes a `parent.children` entry into nothing and the host never sees the new child.",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 108,
+            "column": 82,
+            "evidence": " **Movable opt-in.** `MoveTool` dispatches to `MoveRegistryNodeTool` only when `def.capabilities.movable` is set. Kinds with bespoke move semantics (wall endpoi",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 108,
+            "column": 260,
+            "evidence": "d-wall cascade, slab vertex edit, etc.) deliberately omit `movable` and supply `def.affordanceTools.move` instead. Force-routing a bespoke-move kind through gen",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 108,
+            "column": 392,
+            "evidence": "espoke-move kind through generic dispatch (`nodeRegistry.has(kind)` instead of `def.capabilities.movable`) is a regression \u2014 call it out. See `wiki/architecture",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 108,
+            "column": 455,
+            "evidence": "nd)` instead of `def.capabilities.movable`) is a regression \u2014 call it out. See `wiki/architecture/node-definitions.md` \u00a7 \"Opting out of a generic path\".",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 109,
+            "column": 30,
+            "evidence": "- **Paint dispatch lives on `def.capabilities.paint`.** A paintable kind declares `resolveRole` / `buildPatch` / `applyPreview` (+ optional `getEffectiveMateria",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 109,
+            "column": 493,
+            "evidence": " is a regression \u2014 the behaviour belongs on the kind's `paint` capability. See `packages/core/src/registry/types.ts` (`PaintCapability`).",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 111,
+            "column": 167,
+            "evidence": "rd (`slotId \u2192 MaterialRef`, `scene:`/`library:`) on the schema, resolved via `def.capabilities.paint` \u2014 not ad-hoc per-surface `material` / `materialPreset` fie",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 112,
+            "column": 73,
+            "evidence": "- **Texturable geometry emits UVs in metres (1 UV unit = 1 m).** Any `def.geometry` producing a surface a finish can tile onto must generate UVs at the same wor",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 112,
+            "column": 552,
+            "evidence": "ct via `slot_`-prefixed materials (case-insensitive, `slot_` \u2192 slot id). See `wiki/architecture/materials-and-themes.md` \u00a7 \"Texture world scale\" and `wiki/archi",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 112,
+            "column": 624,
+            "evidence": " See `wiki/architecture/materials-and-themes.md` \u00a7 \"Texture world scale\" and `wiki/architecture/item-authoring.md`.",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 113,
+            "column": 31,
+            "evidence": "- **Floor elevation lives on `def.capabilities.floorPlaced`.** Kinds that rest on a level and lift over overlapping slabs declare a `footprint` (and optional `a",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 113,
+            "column": 496,
+            "evidence": "gression \u2014 the per-kind block was lifted out of `ItemSystem` in Phase 6.1. See `packages/core/src/registry/types.ts` (`FloorPlacedConfig`).",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 114,
+            "column": 41,
+            "evidence": "- **Render-mode behaviour goes through `def.surfaceRole`.** Solid / Rendered / Clay viewer modes look up the kind's `surfaceRole` on `NodeDefinition` to pick th",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 114,
+            "column": 371,
+            "evidence": "mode pipeline or theme application are a regression \u2014 the behaviour belongs on `def.surfaceRole`. See `packages/core/src/registry/types.ts:529`.",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 114,
+            "column": 394,
+            "evidence": "application are a regression \u2014 the behaviour belongs on `def.surfaceRole`. See `packages/core/src/registry/types.ts:529`.",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "plain_path"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 115,
+            "column": 631,
+            "evidence": "e a cut geometry, cascade my dirty mark to my host's parent\"); cuts go through `capabilities.cuts` (cut intents, `packages/core/src/schema/cut.ts`). The single ",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 115,
+            "column": 665,
+            "evidence": " mark to my host's parent\"); cuts go through `capabilities.cuts` (cut intents, `packages/core/src/schema/cut.ts`). The single existing case \u2014 `capabilities.roof",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 115,
+            "column": 758,
+            "evidence": "/src/schema/cut.ts`). The single existing case \u2014 `capabilities.roofAccessory` (`packages/core/src/registry/types.ts:791`, consumed by `packages/viewer/src/syste",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "plain_path"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 115,
+            "column": 813,
+            "evidence": "ilities.roofAccessory` (`packages/core/src/registry/types.ts:791`, consumed by `packages/viewer/src/systems/roof/roof-system.tsx`) \u2014 is documented tech debt; do",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 116,
+            "column": 348,
+            "evidence": "lpers/<kind>-helper.tsx`, or inline `useMemo` floor-plan entry-builders inside `editor/src/components/editor/floorplan-panel.tsx` \u2014 all of these were systematic",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 116,
+            "column": 507,
+            "evidence": "cally deleted at Phase 6. The behavior belongs on the kind's `NodeDefinition` (`def.renderer` / `def.system` / `def.geometry` / `def.tool` / `def.affordanceTool",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 116,
+            "column": 524,
+            "evidence": "Phase 6. The behavior belongs on the kind's `NodeDefinition` (`def.renderer` / `def.system` / `def.geometry` / `def.tool` / `def.affordanceTools` / `parametrics",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 116,
+            "column": 539,
+            "evidence": "havior belongs on the kind's `NodeDefinition` (`def.renderer` / `def.system` / `def.geometry` / `def.tool` / `def.affordanceTools` / `parametrics.customPanel` /",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 116,
+            "column": 556,
+            "evidence": " the kind's `NodeDefinition` (`def.renderer` / `def.system` / `def.geometry` / `def.tool` / `def.affordanceTools` / `parametrics.customPanel` / `def.toolHints` ",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 116,
+            "column": 593,
+            "evidence": "nderer` / `def.system` / `def.geometry` / `def.tool` / `def.affordanceTools` / `parametrics.customPanel` / `def.toolHints` / `def.floorplan`).",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 116,
+            "column": 621,
+            "evidence": "f.geometry` / `def.tool` / `def.affordanceTools` / `parametrics.customPanel` / `def.toolHints` / `def.floorplan`).",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 116,
+            "column": 639,
+            "evidence": ".tool` / `def.affordanceTools` / `parametrics.customPanel` / `def.toolHints` / `def.floorplan`).",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 117,
+            "column": 28,
+            "evidence": "- **Floor-plan output via `def.floorplan`.** New per-kind floor-plan rendering must return `FloorplanGeometry` from `def.floorplan(node, ctx)` and be rendered b",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 117,
+            "column": 215,
+            "evidence": "e, ctx)` and be rendered by `<FloorplanRegistryLayer>`. New inline branches in `floorplan-panel.tsx` are a blocker.",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 118,
+            "column": 82,
+            "evidence": " **Plugin contract surface.** A PR that extends the v1 plugin surface \u2014 adding `plugin.materials`, `plugin.systems`, `plugin.panels`, or making plugins extend h",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 118,
+            "column": 102,
+            "evidence": "urface.** A PR that extends the v1 plugin surface \u2014 adding `plugin.materials`, `plugin.systems`, `plugin.panels`, or making plugins extend host stores (`useScen",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 118,
+            "column": 120,
+            "evidence": "t extends the v1 plugin surface \u2014 adding `plugin.materials`, `plugin.systems`, `plugin.panels`, or making plugins extend host stores (`useScene` / `useEditor` /",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 118,
+            "column": 267,
+            "evidence": "`useEditor` / `useViewer`) \u2014 is out of scope for the v1 contract documented in `wiki/architecture/plugin-authoring.md`. Either the change belongs as a new field",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 128,
+            "column": 377,
+            "evidence": "EffectiveNode`), writing the scene store **once on commit**. A tool that calls `useScene.updateNodes`/`updateNode` on `grid:move` (or any per-pointer-move tick)",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 128,
+            "column": 935,
+            "evidence": "n records (`useInteractive` animations), marking dirty once on completion; see `wiki/architecture/node-definitions.md` \u00a7 \"`geometry` + `system`\". Grep tell: `up",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 128,
+            "column": 1119,
+            "evidence": "GridMove`/`onMove`/`applyPreview` path under `packages/nodes/src/<kind>/`. See `wiki/architecture/tools.md` \u00a7 \"Data-driven live drag\".",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 135,
+            "column": 37,
+            "evidence": "- Inside a `<XxxPanel>` (legacy or `parametrics.customPanel`-mounted), avoid `useScene(s => s.nodes[selectedId])` as a callback dep \u2014 it changes every tick and ",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 135,
+            "column": 230,
+            "evidence": "y tick and pushes `useCallback` into infinite-loop territory. The recipe is in `wiki/architecture/node-definitions.md` \u00a7 \"Custom panels: keep handlers stable du",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 136,
+            "column": 686,
+            "evidence": "g invalidation goes through a per-node epoch, not a whole-layer re-render. See `wiki/architecture/tools.md` \u00a7 \"Floorplan registry: per-node subscriptions\".",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 142,
+            "column": 552,
+            "evidence": "ew). Flag any overlay-component primitive that omits the layer assignment. See `wiki/architecture/layers.md`.",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 143,
+            "column": 121,
+            "evidence": "ne folder under `packages/nodes/src/<kind>/` and registering its definition in `builtinPlugin.nodes`. Adding to a hand-maintained list elsewhere is a sign the r",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 143,
+            "column": 338,
+            "evidence": "s remain (`AnyNode`, `treeNodeByType` in the outliner, the `allTypes` seeds in `editor/src/components/editor/selection-manager.tsx`, the built-in tool unions in",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 143,
+            "column": 420,
+            "evidence": "itor/src/components/editor/selection-manager.tsx`, the built-in tool unions in `use-editor.tsx`): extending one of those is expected; a new one is a finding.",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 144,
+            "column": 93,
+            "evidence": "is hand-maintained for now (full runtime derivation would lose static typing); `packages/nodes/src/index.test.ts` is the drift gate. If a PR adds a kind to `Any",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 144,
+            "column": 201,
+            "evidence": "t.ts` is the drift gate. If a PR adds a kind to `AnyNode` without adding it to `builtinPlugin.nodes` (or vice versa), the parity test catches it \u2014 but flag it i",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 148,
+            "column": 115,
+            "evidence": ", a `move-tool` / `selection` / endpoint / reshape file, `lib/interaction/**`, `lib/snapping-mode.ts`, or `use-interaction-scope`. Source of truth: `wiki/archit",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 148,
+            "column": 184,
+            "evidence": "tion/**`, `lib/snapping-mode.ts`, or `use-interaction-scope`. Source of truth: `wiki/architecture/interaction-scope.md` and `wiki/architecture/tools.md`.",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 148,
+            "column": 229,
+            "evidence": "eraction-scope`. Source of truth: `wiki/architecture/interaction-scope.md` and `wiki/architecture/tools.md`.",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 151,
+            "column": 107,
+            "evidence": "n; Shift is not a bypass.** A tool / `move-tool` / `selection` file that reads `event.shiftKey`, `event.nativeEvent?.shiftKey`, or `modifiers.shiftKey` to **byp",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 151,
+            "column": 159,
+            "evidence": "selection` file that reads `event.shiftKey`, `event.nativeEvent?.shiftKey`, or `modifiers.shiftKey` to **bypass snapping** (raw cursor, skip grid, skip angle) i",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 152,
+            "column": 172,
+            "evidence": "\u2014 always `useEditor.getState().gridSnapStep`, or a constant `WALL_GRID_STEP` / `0.5` / `getSegmentGridStep()` applied unconditionally \u2014 ignores the active mode ",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 154,
+            "column": 185,
+            "evidence": "r` mounts the generic `MoveRegistryNodeTool` whenever it's non-null. A bespoke `move-tool.tsx` that calls `begin(movingScope(...))` or `setMovingNode(node)` re-",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 154,
+            "column": 469,
+            "evidence": "mover must resolve the mode without a global `moving` / `reshaping` scope (see `interaction-scope.md` \u00a7 \"Snapping mode & modifiers\").",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 155,
+            "column": 6,
+            "evidence": "- **`event.altKey` is not an alignment bypass.** A drafting/preview path that reads `event.altKey` to suppress Figma-alignment is a **blocker** in any **new** o",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 155,
+            "column": 86,
+            "evidence": "event.altKey` is not an alignment bypass.** A drafting/preview path that reads `event.altKey` to suppress Figma-alignment is a **blocker** in any **new** or **t",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 155,
+            "column": 488,
+            "evidence": "de toggle** (clean Alt-tap \u2192 `cycleWallChainMode` / `cycleFenceChainMode`, via `hooks/use-keyboard.ts` `isChainModeContext()`), allowed only because wall/fence ",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 155,
+            "column": 608,
+            "evidence": "xt()`), allowed only because wall/fence drafting has no force role. Grep tell: `event.altKey` near an `align` / `bypass` expression in a `tool.tsx` / floorplan ",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 155,
+            "column": 666,
+            "evidence": "rce role. Grep tell: `event.altKey` near an `align` / `bypass` expression in a `tool.tsx` / floorplan preview path.",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 156,
+            "column": 68,
+            "evidence": "- **Known-legacy exceptions (migrate on touch).** Tracked debt in `wiki/architecture/interaction-scope.md` (Known-legacy); a PR that **touches** one must migrat",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 156,
+            "column": 499,
+            "evidence": " `altKey` alignment-bypass in the roof / polygon / slab pointer-move previews (`components/editor/floorplan-panel.tsx`) and the `resolveSlabPlanPointSnap` / `re",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 156,
+            "column": 721,
+            "evidence": "regress:** wall + fence drafting (both modifier patterns) and `zone` drafting (`components/tools/zone/zone-tool.tsx` \u2014 mode-driven grid/angle gates, no Shift by",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 168,
+            "column": 20,
+            "evidence": "1. File and line: `path/to/file.ts:42`",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "plain_path"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 170,
+            "column": 57,
+            "evidence": "3. The rule it violates, linked to the wiki page (e.g. `wiki/architecture/viewer-isolation.md`, `wiki/architecture/node-definitions.md`)",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          },
+          {
+            "source_path": "SKILL.md",
+            "line": 170,
+            "column": 98,
+            "evidence": "3. The rule it violates, linked to the wiki page (e.g. `wiki/architecture/viewer-isolation.md`, `wiki/architecture/node-definitions.md`)",
+            "target_path": null,
+            "status": "missing",
+            "disposition": "partial",
+            "reference_kind": "quoted_or_code"
+          }
+        ],
+        "limitations": [],
+        "findings_before_filtering": 0,
+        "findings_after_filtering": 0,
+        "dependency_inspection": {
+          "enabled": false,
+          "status": "not_requested",
+          "mode": "static_local",
+          "locked_entries": 0,
+          "inspected_artifacts": 0,
+          "artifacts": []
+        }
+      }
+    }
+  ]
+}

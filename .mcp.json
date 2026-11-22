@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "pascal": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["--yes", "--package=@pascal-app/cli@1.1.6", "pascal", "mcp", "connect"]
+    }
+  }
+}

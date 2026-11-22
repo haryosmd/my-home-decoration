@@ -1,0 +1,811 @@
+{
+  "skill": {
+    "name": "pascal-3d",
+    "source": "/tmp/claude-0/-home-user-my-home-decoration/bb005832-3f91-51a1-b1e9-660f1bb629c2/scratchpad/ext/pascal-editor/skills/pascal-3d",
+    "scanned_at": "2026-11-22T01:00:20.840278+00:00",
+    "origin": {
+      "type": "directory",
+      "source": "ext/pascal-editor/skills/pascal-3d"
+    }
+  },
+  "risk_assessment": {
+    "score": 36,
+    "severity": "MEDIUM",
+    "recommendation": "CAUTION",
+    "max_issue_severity": "HIGH"
+  },
+  "components": [
+    {
+      "path": ".clawhubignore",
+      "type": "other",
+      "lines": 13,
+      "executable": false,
+      "size_bytes": 147,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "SKILL.md",
+      "type": "markdown",
+      "lines": 116,
+      "executable": false,
+      "size_bytes": 26723,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "evals/evals.json",
+      "type": "json",
+      "lines": 53,
+      "executable": false,
+      "size_bytes": 2843,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "evals/trigger-evals.json",
+      "type": "json",
+      "lines": 45,
+      "executable": false,
+      "size_bytes": 1466,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "examples/autonomous-private-project.md",
+      "type": "markdown",
+      "lines": 15,
+      "executable": false,
+      "size_bytes": 855,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "examples/hosted-existing-account.md",
+      "type": "markdown",
+      "lines": 15,
+      "executable": false,
+      "size_bytes": 659,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "examples/local-project.md",
+      "type": "markdown",
+      "lines": 16,
+      "executable": false,
+      "size_bytes": 855,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/setup.md",
+      "type": "markdown",
+      "lines": 169,
+      "executable": false,
+      "size_bytes": 11433,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/tool-workflows.md",
+      "type": "markdown",
+      "lines": 130,
+      "executable": false,
+      "size_bytes": 25893,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    }
+  ],
+  "structured_summaries": [],
+  "issues": [
+    {
+      "id": "PE3",
+      "finding_id": "finding-916702e55e8f4b6da01881f6e3e7ac3c",
+      "category": "Privilege Escalation",
+      "pattern": "Credential Access",
+      "severity": "HIGH",
+      "confidence": 0.7,
+      "location": {
+        "file": "references/setup.md",
+        "start_line": 83,
+        "end_line": null,
+        "start_column": 518
+      },
+      "finding": "credentials.json",
+      "explanation": "Code accesses credential files (SSH keys, AWS credentials, etc.). This could indicate credential theft attempts.",
+      "remediation": "Remove references to credential paths. Use environment variables or secrets managers. For docs, use placeholder paths (e.g., /path/to/config). Never load .env or token files in production code paths.",
+      "code_snippet": "\nClaude Code:\n\nPlugin users set the key once in the configuration prompt shown when `pascal-agent-skills@pascal` is enabled. To add or change it later, reinstall with `claude plugin install pascal-agent-skills@pascal --config pascal_api_key=<key>`, or open `/plugin` in a session and use its configure flow; there is no `claude plugin config` command. The hosted tools then load under the plugin's `pascal-hosted` server beside the local `pascal` server, and Claude Code keeps the key in the OS keychain, falling back to `~/.claude/.credentials.json`, rather than writing it into `settings.json` or any project file.\n\nWithout the plugin, register the hosted endpoint manually:\n",
+      "intent": null,
+      "tags": [
+        "Privilege Escalation"
+      ],
+      "evidence": {},
+      "match_fingerprint": "07a0b37ad28a14919446682ad9b1f38223a950eb02c424e48b49fe75c25268c0",
+      "occurrences": [
+        {
+          "file": "references/setup.md",
+          "start_line": 83,
+          "end_line": null,
+          "start_column": 518
+        }
+      ],
+      "surface": "docs"
+    },
+    {
+      "id": "EA2",
+      "finding_id": "finding-bcc67528f89b425f9f45b6c387dd334a",
+      "category": "Excessive Agency",
+      "pattern": "Autonomous Decision Making",
+      "severity": "MEDIUM",
+      "confidence": 0.8,
+      "location": {
+        "file": "SKILL.md",
+        "start_line": 86,
+        "end_line": null,
+        "start_column": 1043
+      },
+      "finding": "do not ask the user",
+      "explanation": "Skill enables autonomous high-impact decisions without human-in-the-loop verification. Critical operations (destructive commands, financial transactions, data deletion) should require explicit user confirmation.",
+      "remediation": "Add human-in-the-loop confirmation for destructive, irreversible, or high-impact operations. Never auto-execute commands that modify files, send data, or alter system state.",
+      "code_snippet": "ht. It returns a picture, not measures: take sizes and counts from the tools. On the hosted server the user's open Pascal editor tab renders the picture: `editor_tab_required` means no tab has the project open (give the user `editorUrl`, wait until they say it is open, then repeat the call), `editor_tab_hidden` means the tab is in the background (ask them to bring it to the front, then repeat), and `editor_tab_busy` means the tab is open but busy or still loading (wait a few seconds and repeat; do not ask the user). A server with no renderer, such as the local CLI, answers `view_unavailable`.\n\nNever empty a project by deleting everything. A write that would leave it empty (deleting its only room, a patch removing every node) is refused with `scene_wipe_blocked` and nothing changes, in the project or the session. When the person asks to start over, call `clear_scene` with their words in `reason`: it resets to a site, a building and one level, and keeps the project's installed plugins. T",
+      "intent": null,
+      "tags": [
+        "Excessive Agency"
+      ],
+      "evidence": {},
+      "match_fingerprint": "6c70454728b03185163a4a49ef0ee04594a078335fd27f5b237f14a877522ca9",
+      "occurrences": [
+        {
+          "file": "SKILL.md",
+          "start_line": 86,
+          "end_line": null,
+          "start_column": 1043
+        }
+      ],
+      "surface": "instructions"
+    },
+    {
+      "id": "RP1",
+      "finding_id": "finding-c0a64e6269aa44a6885a9afe5d1aa3cb",
+      "category": "MCP Rug Pull",
+      "pattern": "MCP server referenced without pinned version: 'npx ENOENT'.",
+      "severity": "MEDIUM",
+      "confidence": 0.7,
+      "location": {
+        "file": "references/setup.md",
+        "start_line": 110,
+        "end_line": null
+      },
+      "finding": "npx ENOENT",
+      "explanation": "npx commands without a version suffix (e.g. @1.0.0) create a rug-pull risk if the upstream server is compromised and publishes a malicious update.",
+      "remediation": "Pin the version: npx @scope/server@1.2.3",
+      "code_snippet": null,
+      "intent": null,
+      "tags": [
+        "ASI16"
+      ],
+      "evidence": {},
+      "match_fingerprint": "91950c879b57ca06725490dfd2af0d359a3deaad4268408c7f3366c5fd954725",
+      "occurrences": [
+        {
+          "file": "references/setup.md",
+          "start_line": 110,
+          "end_line": null
+        }
+      ],
+      "surface": "docs"
+    },
+    {
+      "id": "EA2",
+      "finding_id": "finding-107f0ffbe8af4dfc834123717d6e2f03",
+      "category": "Excessive Agency",
+      "pattern": "Autonomous Decision Making",
+      "severity": "MEDIUM",
+      "confidence": 0.75,
+      "location": {
+        "file": "references/tool-workflows.md",
+        "start_line": 56,
+        "end_line": null,
+        "start_column": 561
+      },
+      "finding": "without asking",
+      "explanation": "Skill enables autonomous high-impact decisions without human-in-the-loop verification. Critical operations (destructive commands, financial transactions, data deletion) should require explicit user confirmation.",
+      "remediation": "Add human-in-the-loop confirmation for destructive, irreversible, or high-impact operations. Never auto-execute commands that modify files, send data, or alter system state.",
+      "code_snippet": "th `code` or new params on a scripted node, compile in the user's open Pascal editor tab of the project (a `bpy` module builds in Pascal's Blender service instead, with no tab). When none is open the call answers `editor_tab_required` with `editorUrl` and `mutationApplied: false`; nothing changed. Show the user the link, wait until they confirm the tab is open, and repeat the same call. `editor_tab_busy` means a tab is open but busy or still loading: wait a few seconds and repeat the same call, without asking the user. Whether you may open the link yourself is the person's setting (\"Agents may open the editor for me\"; Ask first: ask the user to open the link (or bring the tab forward), or ask their permission before opening it yourself; Allow: you may open the link yourself, in a tab in front; Never: ask the user, and do not open or switch windows yourself); the refusal's words say which, so follow them. `editor_tab_timeout` means the tab stopped answering; ask whether it is still open",
+      "intent": null,
+      "tags": [
+        "Excessive Agency"
+      ],
+      "evidence": {},
+      "match_fingerprint": "8dc77d3dce9ba1f2672e813265a1b1a0c8594866ef38a4e978bf4f4451795465",
+      "occurrences": [
+        {
+          "file": "references/tool-workflows.md",
+          "start_line": 56,
+          "end_line": null,
+          "start_column": 561
+        }
+      ],
+      "surface": "docs"
+    }
+  ],
+  "suppressed_count": 0,
+  "suppressed": [],
+  "metadata": {
+    "has_executable_scripts": false,
+    "skillspector_version": "2.12.0",
+    "llm_requested": false,
+    "llm_available": false,
+    "meta_analysis_applied": false,
+    "inference_usage": [],
+    "llm_provenance": {
+      "schema_version": 1,
+      "provider": {
+        "configured_adapter": "unknown",
+        "resolved_adapter": "unknown",
+        "effective_adapter": "not_applicable",
+        "effective_adapters": [],
+        "service": "unknown",
+        "routing": {
+          "deployment_override": null,
+          "deployment_source": "unknown",
+          "api_version": null,
+          "api_version_source": "unknown"
+        }
+      },
+      "analyzers": [
+        {
+          "analyzer_id": "mcp_tool_poisoning",
+          "model": "z-ai/glm-5.3-flash",
+          "model_source": "resolved_configuration",
+          "analyzer_revision": {
+            "value": "2.12.0",
+            "source": "skillspector_package",
+            "source_revision": {
+              "value": "unknown",
+              "source": "unknown"
+            }
+          }
+        },
+        {
+          "analyzer_id": "semantic_developer_intent",
+          "model": "z-ai/glm-5.3-flash",
+          "model_source": "resolved_configuration",
+          "analyzer_revision": {
+            "value": "2.12.0",
+            "source": "skillspector_package",
+            "source_revision": {
+              "value": "unknown",
+              "source": "unknown"
+            }
+          }
+        },
+        {
+          "analyzer_id": "semantic_quality_policy",
+          "model": "z-ai/glm-5.3-flash",
+          "model_source": "resolved_configuration",
+          "analyzer_revision": {
+            "value": "2.12.0",
+            "source": "skillspector_package",
+            "source_revision": {
+              "value": "unknown",
+              "source": "unknown"
+            }
+          }
+        },
+        {
+          "analyzer_id": "semantic_security_discovery",
+          "model": "z-ai/glm-5.3-flash",
+          "model_source": "resolved_configuration",
+          "analyzer_revision": {
+            "value": "2.12.0",
+            "source": "skillspector_package",
+            "source_revision": {
+              "value": "unknown",
+              "source": "unknown"
+            }
+          }
+        },
+        {
+          "analyzer_id": "meta_analyzer",
+          "model": "z-ai/glm-5.3-flash",
+          "model_source": "resolved_configuration",
+          "analyzer_revision": {
+            "value": "2.12.0",
+            "source": "skillspector_package",
+            "source_revision": {
+              "value": "unknown",
+              "source": "unknown"
+            }
+          }
+        }
+      ],
+      "sampling": {
+        "temperature": {
+          "requested": null,
+          "source": "provider_default",
+          "forwarded_to_client": null,
+          "adapter_support": false,
+          "provider_support": "unknown"
+        },
+        "seed": {
+          "requested": null,
+          "source": "unset",
+          "forwarded_to_client": null,
+          "adapter_support": false,
+          "provider_support": "unknown"
+        },
+        "reasoning_effort": {
+          "requested": null,
+          "source": "provider_default",
+          "forwarded_to_client": null,
+          "adapter_support": false,
+          "provider_support": "unknown"
+        }
+      },
+      "determinism": {
+        "classification": "not_applicable",
+        "control_status": "not_applied",
+        "provider_guarantee": false,
+        "reason": "LLM analysis was not executed for this scan."
+      }
+    },
+    "filtering_mode": "heuristic"
+  },
+  "execution_successful": true,
+  "analysis_completeness": {
+    "total_components": 9,
+    "scanned_components": 9,
+    "coverage_percent": 100.0,
+    "is_complete": true,
+    "status": "complete_with_caveats",
+    "execution_successful": true,
+    "fully_inspected_files": 9,
+    "partially_inspected_files": 0,
+    "entirely_uninspected_files": 0,
+    "ledger_exceptions": [
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 6,
+        "end_line": 6,
+        "fatal": false
+      },
+      {
+        "outcome": "partial",
+        "phase": "reference_resolution",
+        "reason_code": "reference_missing",
+        "message": "A local path-like reference does not match any bundled artifact, such as a file the skill writes at runtime.",
+        "path": "SKILL.md",
+        "start_line": 82,
+        "end_line": 82,
+        "fatal": false
+      }
+    ],
+    "scope_exclusions": [],
+    "analyzer_statuses": [
+      {
+        "analyzer_id": "artifact_integrity",
+        "status": "completed",
+        "planned_work": 9,
+        "completed": 9,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "behavioral_ast",
+        "status": "not_applicable",
+        "planned_work": 0,
+        "completed": 0,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "no_applicable_files",
+        "message": "No files matched this analyzer's applicability contract."
+      },
+      {
+        "analyzer_id": "behavioral_taint_tracking",
+        "status": "not_applicable",
+        "planned_work": 0,
+        "completed": 0,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "no_applicable_files",
+        "message": "No files matched this analyzer's applicability contract."
+      },
+      {
+        "analyzer_id": "bundled_execution_surface",
+        "status": "not_applicable",
+        "planned_work": 0,
+        "completed": 0,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "no_applicable_files",
+        "message": "No files matched this analyzer's applicability contract."
+      },
+      {
+        "analyzer_id": "mcp_least_privilege",
+        "status": "not_applicable",
+        "planned_work": 0,
+        "completed": 0,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "no_applicable_files",
+        "message": "No files matched this analyzer's applicability contract."
+      },
+      {
+        "analyzer_id": "mcp_rug_pull",
+        "status": "completed",
+        "planned_work": 9,
+        "completed": 9,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "mcp_tool_poisoning",
+        "status": "completed",
+        "planned_work": 1,
+        "completed": 1,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "meta_analyzer",
+        "status": "disabled",
+        "planned_work": 0,
+        "completed": 0,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "disabled_by_configuration",
+        "message": "Analyzer was disabled by the requested configuration."
+      },
+      {
+        "analyzer_id": "semantic_developer_intent",
+        "status": "disabled",
+        "planned_work": 0,
+        "completed": 0,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "disabled_by_configuration",
+        "message": "Analyzer was disabled by the requested configuration."
+      },
+      {
+        "analyzer_id": "semantic_quality_policy",
+        "status": "disabled",
+        "planned_work": 0,
+        "completed": 0,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "disabled_by_configuration",
+        "message": "Analyzer was disabled by the requested configuration."
+      },
+      {
+        "analyzer_id": "semantic_security_discovery",
+        "status": "disabled",
+        "planned_work": 0,
+        "completed": 0,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "disabled_by_configuration",
+        "message": "Analyzer was disabled by the requested configuration."
+      },
+      {
+        "analyzer_id": "static_patterns_agent_snooping",
+        "status": "completed",
+        "planned_work": 9,
+        "completed": 9,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_anti_refusal",
+        "status": "completed",
+        "planned_work": 9,
+        "completed": 9,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_data_exfiltration",
+        "status": "completed",
+        "planned_work": 9,
+        "completed": 9,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_deserialization",
+        "status": "completed",
+        "planned_work": 9,
+        "completed": 9,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_excessive_agency",
+        "status": "completed",
+        "planned_work": 9,
+        "completed": 9,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_harmful_content",
+        "status": "completed",
+        "planned_work": 9,
+        "completed": 9,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_memory_poisoning",
+        "status": "completed",
+        "planned_work": 9,
+        "completed": 9,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_output_handling",
+        "status": "completed",
+        "planned_work": 9,
+        "completed": 9,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_privilege_escalation",
+        "status": "completed",
+        "planned_work": 9,
+        "completed": 9,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_prompt_injection",
+        "status": "completed",
+        "planned_work": 9,
+        "completed": 9,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_rogue_agent",
+        "status": "completed",
+        "planned_work": 9,
+        "completed": 9,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_ssrf",
+        "status": "completed",
+        "planned_work": 9,
+        "completed": 9,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_supply_chain",
+        "status": "completed",
+        "planned_work": 9,
+        "completed": 9,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_system_prompt_leakage",
+        "status": "completed",
+        "planned_work": 9,
+        "completed": 9,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_tool_misuse",
+        "status": "completed",
+        "planned_work": 9,
+        "completed": 9,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_yara",
+        "status": "completed",
+        "planned_work": 9,
+        "completed": 9,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      }
+    ],
+    "references": [
+      {
+        "source_path": "SKILL.md",
+        "line": 6,
+        "column": 13,
+        "evidence": "version: \"0.1.0\"",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 29,
+        "column": 33,
+        "evidence": "3. Follow [references/setup.md](references/setup.md) for the selected path. Never move a local project to hosted storage or create an account merely to complete",
+        "target_path": "references/setup.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 29,
+        "column": 12,
+        "evidence": "3. Follow [references/setup.md](references/setup.md) for the selected path. Never move a local project to hosted storage or create an account merely to complete",
+        "target_path": "references/setup.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "plain_path"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 82,
+        "column": 3329,
+        "evidence": "A plank, tile or board floor is the room's `floorCode`, a module that receives `params.polygon` and `params.holes` (plan x/z in level coordinates) and builds th",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 82,
+        "column": 3350,
+        "evidence": "d floor is the room's `floorCode`, a module that receives `params.polygon` and `params.holes` (plan x/z in level coordinates) and builds the finish for exactly ",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 82,
+        "column": 3939,
+        "evidence": "oHeight` from the face's base, default the whole face), a module that receives `params.outline`, `params.holes` (its doors and windows), `params.base` and `para",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 82,
+        "column": 3957,
+        "evidence": "face's base, default the whole face), a module that receives `params.outline`, `params.holes` (its doors and windows), `params.base` and `params.thickness` in w",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 82,
+        "column": 3997,
+        "evidence": "module that receives `params.outline`, `params.holes` (its doors and windows), `params.base` and `params.thickness` in wall-local metres and builds the finish f",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 82,
+        "column": 4015,
+        "evidence": "es `params.outline`, `params.holes` (its doors and windows), `params.base` and `params.thickness` in wall-local metres and builds the finish for exactly that fa",
+        "target_path": null,
+        "status": "missing",
+        "disposition": "partial",
+        "reference_kind": "quoted_or_code"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 116,
+        "column": 78,
+        "evidence": "For tool selection and failure recovery, read [references/tool-workflows.md](references/tool-workflows.md). The examples are synthetic and contain no production",
+        "target_path": "references/tool-workflows.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "markdown_link"
+      },
+      {
+        "source_path": "SKILL.md",
+        "line": 116,
+        "column": 48,
+        "evidence": "For tool selection and failure recovery, read [references/tool-workflows.md](references/tool-workflows.md). The examples are synthetic and contain no production",
+        "target_path": "references/tool-workflows.md",
+        "status": "resolved",
+        "disposition": "analyzed",
+        "reference_kind": "plain_path"
+      }
+    ],
+    "limitations": [],
+    "findings_before_filtering": 4,
+    "findings_after_filtering": 4,
+    "dependency_inspection": {
+      "enabled": false,
+      "status": "not_requested",
+      "mode": "static_local",
+      "locked_entries": 0,
+      "inspected_artifacts": 0,
+      "artifacts": []
+    }
+  }
+}
