@@ -1,7 +1,10 @@
-// Mounts an interactive viewer. Usage: mountViewer(THREE, OrbitControls, el, spec, {views, still})
+// Mounts an interactive viewer.
+// mountViewer(THREE, OrbitControls, el, specOrSpecs, {views, start, model, still, bg})
+// Pass an array of specs (e.g. [asIs, redesign]) and switch with setModel(i).
 import { buildHouse } from './scene.js';
 
-export function mountViewer(THREE, OrbitControls, el, spec, o = {}) {
+export function mountViewer(THREE, OrbitControls, el, specs, o = {}) {
+  if (!Array.isArray(specs)) specs = [specs];
   const W = () => el.clientWidth, Hh = () => el.clientHeight;
   const renderer = new THREE.WebGLRenderer({ antialias: true, preserveDrawingBuffer: !!o.still });
   renderer.setPixelRatio(o.pixelRatio || Math.min(2, window.devicePixelRatio || 1));
@@ -12,10 +15,10 @@ export function mountViewer(THREE, OrbitControls, el, spec, o = {}) {
   el.appendChild(renderer.domElement);
   const scene = new THREE.Scene();
   scene.background = new THREE.Color(o.bg || '#e9e5de');
-  const { root, walls, ceilings } = buildHouse(THREE, spec, o);
-  scene.add(root);
+  const models = specs.map(s => { const m = buildHouse(THREE, s, o); m.root.visible = false; scene.add(m.root); return m; });
+  let cur = models[o.model || 0]; cur.root.visible = true;
   // ground
-  const bb = new THREE.Box3().setFromObject(root); const ctr = bb.getCenter(new THREE.Vector3()); const size = bb.getSize(new THREE.Vector3());
+  const bb = new THREE.Box3().setFromObject(cur.root); const ctr = bb.getCenter(new THREE.Vector3()); const size = bb.getSize(new THREE.Vector3());
   const ground = new THREE.Mesh(new THREE.PlaneGeometry(size.x + 12, size.z + 12), new THREE.MeshStandardMaterial({ color: '#d4cfc4', roughness: 1 }));
   ground.rotation.x = -Math.PI / 2; ground.position.set(ctr.x, -0.01, ctr.z); ground.receiveShadow = true; scene.add(ground);
   scene.add(new THREE.HemisphereLight(0xfff6e8, 0x8a7f70, 1.1));
@@ -29,39 +32,34 @@ export function mountViewer(THREE, OrbitControls, el, spec, o = {}) {
   const controls = new OrbitControls(cam, renderer.domElement);
   controls.enableDamping = true; controls.maxPolarAngle = Math.PI / 2 - 0.02;
 
-  const roomsOf = id => spec.rooms.find(r => r.id === id);
-  function applyView(v) {
-    // views are given in plan coords [x, height, y]
-    cam.position.set(v.pos[0], v.pos[1], -v.pos[2]); controls.target.set(v.target[0], v.target[1], -v.target[2]); cam.fov = v.fov || o.fov || 50; cam.updateProjectionMatrix(); controls.update();
-    ceilings.visible = !!v.ceiling;
-    sun.intensity = v.ceiling ? 0.9 : 1.6;
-    const focus = v.rooms; // room ids or undefined
+  let lastView = null;
+  function cutaway(v) {
     const cp = cam.position;
-    for (const w of walls) {
+    cur.ceilings.visible = !!(v && v.ceiling);
+    sun.intensity = v && v.ceiling ? 0.9 : 1.6;
+    for (const w of cur.walls) {
       const dx = cp.x - w.c[0], dz = cp.z - w.c[1];
       let vis = dx * w.n[0] + dz * w.n[1] <= 0; // back-facing walls stay
-      if (focus && !focus.includes(w.roomId)) {
-        // other rooms: drop walls that sit between the camera and the target
+      if (v && v.rooms && !v.rooms.includes(w.roomId)) {
         const t = controls.target; const dWall = Math.hypot(dx, dz); const dT = Math.hypot(cp.x - t.x, cp.z - t.z);
-        if (dWall < dT) vis = false;
+        if (dWall < dT) vis = false; // other rooms' walls between camera and target
       }
-      if (v.hideAll) vis = false;
-      if (v.showAll) vis = true;
+      if (v && v.hideAll) vis = false;
+      if (v && v.showAll) vis = true;
       w.grp.visible = vis;
     }
   }
+  function applyView(v) {
+    // views are given in plan coords [x, height, y]
+    cam.position.set(v.pos[0], v.pos[1], -v.pos[2]); controls.target.set(v.target[0], v.target[1], -v.target[2]); cam.fov = v.fov || o.fov || 50; cam.updateProjectionMatrix(); controls.update();
+    lastView = v; cutaway(v);
+  }
+  function setModel(i) { cur.root.visible = false; cur = models[i]; cur.root.visible = true; cutaway(lastView); if (o.still) renderer.render(scene, cam); }
   function resize() { renderer.setSize(W(), Hh()); cam.aspect = W() / Hh(); cam.updateProjectionMatrix(); }
   window.addEventListener('resize', resize);
-  let dirty = true; controls.addEventListener('change', () => { dirty = true; });
   function loop() { requestAnimationFrame(loop); controls.update(); renderer.render(scene, cam); }
   if (o.views && o.views.length) applyView(o.views[o.start || 0]);
-  if (o.still) { renderer.render(scene, cam); } else loop();
-  controls.addEventListener('end', () => {
-    // re-evaluate cutaway as user orbits
-    const v = { pos: cam.position.toArray(), target: controls.target.toArray(), fov: cam.fov, rooms: undefined };
-    ceilings.visible = false;
-    const cp = cam.position;
-    for (const w of walls) { const dx = cp.x - w.c[0], dz = cp.z - w.c[1]; w.grp.visible = dx * w.n[0] + dz * w.n[1] <= 0; }
-  });
-  return { applyView, render: () => renderer.render(scene, cam), renderer, cam, controls, center: ctr, size };
+  if (o.still) renderer.render(scene, cam); else loop();
+  controls.addEventListener('end', () => { lastView = null; cutaway(null); }); // re-evaluate cutaway as the user orbits
+  return { applyView, setModel, render: () => renderer.render(scene, cam), renderer, cam, controls, center: ctr, size };
 }

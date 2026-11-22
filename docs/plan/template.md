@@ -1,6 +1,6 @@
 # Rencana Penataan Rumah Blok DD-30
 
-Disusun dari 26 foto (16 foto awal + 10 foto tambahan dapur, kamar belakang, dan sisi rumah). Semua ukuran adalah **perkiraan dari foto**, belum diukur dengan meteran. Semua harga adalah **kisaran** tahun 2026 dengan asumsi tarif kota di Jawa di luar Jakarta (asumsi saya; sesuaikan dengan kota Anda dan cek ulang di toko).
+Disusun dari 26 foto (16 foto awal + 10 foto tambahan dapur, kamar belakang, dan sisi rumah) dan koreksi pemilik (panjang kamar mandi, warna keramik tiap ruang). Semua ukuran adalah **perkiraan dari foto**, belum diukur dengan meteran. Semua harga adalah **kisaran** tahun 2026 dengan asumsi tarif kota di Jawa di luar Jakarta (asumsi saya; sesuaikan dengan kota Anda dan cek ulang di toko).
 
 ## Ringkasan
 
@@ -23,13 +23,13 @@ Disusun dari 26 foto (16 foto awal + 10 foto tambahan dapur, kamar belakang, dan
 - Tapak total 8,15 × 11,8 m. Bagian asli rumah (lebar 5,0 m) ada di kiri; carport dan ruang belakang (lebar 3,15 m) adalah tambahan di kanan.
 
 ```
-y=11.8 +----------------------------+--------+ . . . . . . +
-       | DAPUR (galley) 4.7 x 1.8   | KAMAR  |  belum      |
-       | kompor . . . bak cuci      | MANDI  |  diketahui  |
-y=10.0 +----------+-[pintu]---------+--+-----+-------------+
+y=11.8 +----------------------------+---------------------+.+
+       | DAPUR (galley) 4.7 x 1.8  [p] KAMAR MANDI 3.1 x 1.8|.|
+       | kompor . . . bak cuci      | (keramik hijau muda)  |.|
+y=10.0 +----------+-[pintu]---------+--+---[glass block]----+-+
        | KAMAR    | RUANG TENGAH       | RUANG BELAKANG    |
        | BELAKANG | 2.7 x 4.0          | 3.15 x 5.0        |
-       | 2.3 x 4.0|                    | (ubin oranye,     |
+       | 2.3 x 4.0|                    | (keramik cokelat, |
        |      [pintu]              [pintu]  plafon bocor)  |
 y=6.0  +----------+-[bukaan]-----------+                   |
        | KAMAR    | RUANG TAMU         |                   |
@@ -47,7 +47,9 @@ y=0    +---[j]----+--------------------+-------------------+
 
 {{ROOMS}}
 
-Area x 6,3–8,15 ; y 10,0–11,8 (di belakang ruang belakang, di kanan kamar mandi) tidak terlihat di foto mana pun. Jangan dimodelkan sebagai ruang.
+Kamar mandi digambar x 4,7–7,8 mengikuti keterangan pemilik (memanjang di belakang, hampir sepanjang ruang belakang tetapi sedikit lebih pendek). Sisa 0,35 m di kanannya (x 7,8–8,15 ; y 10,0–11,8) tidak dimodelkan sebagai ruang.
+
+Lantai menurut pemilik: semua ruang memakai ubin hijau motif yang sama, kecuali ruang belakang (keramik cokelat 40×40) dan kamar mandi (keramik hijau lebih muda). Carport memakai keramik batu abu.
 
 ### Pintu dan jendela
 
@@ -61,7 +63,7 @@ Offset diukur dari sudut x-terkecil (dinding depan/belakang) atau y-terkecil (di
 - Ruang tamu, ruang tengah, dan dapur berderet lurus ke belakang. Pintu utama, bukaan bertirai, dan pintu dapur hampir segaris.
 - Pintu kamar belakang dan pintu ruang belakang berhadapan lurus di ujung depan ruang tengah.
 - Ruang belakang ada di belakang carport. Dinding depannya (dengan pintu samping, jendela berteralis, dan 4 lubang angin) adalah dinding belakang carport, dan letaknya sekitar 1 m lebih ke depan daripada batas ruang tamu–ruang tengah.
-- Dapur adalah lorong memanjang kiri–kanan di paling belakang, di belakang kamar belakang dan ruang tengah. Kompor di ujung kiri, bak cuci tepat di seberang pintu dari ruang tengah, kamar mandi di ujung kanan.
+- Dapur adalah lorong memanjang kiri–kanan di paling belakang, di belakang kamar belakang dan ruang tengah. Kompor di ujung kiri, bak cuci tepat di seberang pintu dari ruang tengah, kamar mandi di ujung kanan, memanjang ke kanan di belakang ruang belakang. Tiga glass block di dinding belakang ruang belakang dengan demikian menghadap kamar mandi.
 - Dinding belakang kamar depan punya roster di dekat plafon. Menurut denah ini roster itu tembus ke kamar belakang (belum terlihat dari sisi kamar belakang; mohon dicek). Ini petunjuk bahwa y≈6 dulunya dinding belakang rumah asli, dan semua yang di belakangnya adalah tambahan.
 
 ### Ukur dulu (10 menit dengan meteran)
@@ -108,7 +110,7 @@ Catatan atap: jika lembaran atap lama adalah asbes gelombang, jangan dipotong at
 
 **Dapur.** Lorong dengan lebar bersih ±1,65 m. Hijau stabilo + keramik biru + ubin hijau motif = tiga warna keras di ruang tanpa jendela. Papan rak di ketinggian 1,9 m penuh kardus (berdebu minyak, bisa jatuh). Panci digantung langsung di dinding yang berjamur. Meja tambahan penuh koran dan kardus mempersempit jalan ke kamar mandi. Sampah menumpuk di karung. Lampu satu bohlam, tidak ada lampu di atas meja kerja.
 
-**Kamar mandi.** Hanya terlihat dari pintu: dinding keramik, shower dinding, kondisi tampak layak. Keyakinan rendah; belum bisa didiagnosis lebih jauh.
+**Kamar mandi.** Hanya terlihat dari pintu: dinding keramik, shower dinding, lantai keramik hijau muda, kondisi tampak layak. Panjangnya ±3,1 m menurut pemilik; tata letak dalam belum terlihat. Dindingnya berbagi dengan ruang belakang dan dapur, jadi ia kandidat sumber lembap di kedua ruang itu.
 
 **Ruang belakang.** Meja makan bundar tertimbun barang. Sepatu, galon, jemuran, sapu, gitar, meja setrika, dan kardus bercampur. Kotak meter/panel listrik terhalang rak. Plafon bocor. Satu lampu 6500K.
 
@@ -126,7 +128,7 @@ Tiga aturan yang berlaku di semua ruang:
 
 ### Keputusan ubin hijau
 
-**Pertahankan** di teras, ruang tamu, ruang tengah, kamar belakang, dan dapur. **Tutup dengan SPC** hanya di kamar depan. **Jangan bongkar.**
+**Pertahankan** di teras, ruang tamu, ruang tengah, kamar belakang, dan dapur. **Tutup dengan SPC** hanya di kamar depan. **Jangan bongkar.** Keramik cokelat ruang belakang dan keramik hijau muda kamar mandi juga tetap.
 
 - Kondisi ubin sangat baik: mengilap, tidak retak, nat rapat. Mengganti ±45 m² dengan granit 60×60 berarti sekitar Rp 16–19 juta ditambah 2 minggu debu. Uang itu lebih berguna untuk atap dan dinding lembap.
 - Masalah ubin ini bukan motifnya, tetapi lingkungannya. Motif ramai + dinding kuning + lis emas + barang berserakan = kacau. Motif ramai + dinding putih gading + karpet jute polos di tengah + furnitur berkaki = terlihat seperti tegel lama yang sengaja dipertahankan.
@@ -262,11 +264,12 @@ Urutan kerja dari kanan ke kiri: kulkas → bak cuci → meja persiapan → komp
 
 ### 4.7 Kamar mandi
 
-Hanya terlihat dari pintu dapur. Posisinya di ujung kanan dapur pasti; ukuran dan tata letak dalam adalah tebakan.
+Ruang memanjang 3,1 × 1,8 m (bersih ±2,95 × 1,65 m) di belakang ruang belakang, masuk dari ujung kanan dapur. Panjangnya dari keterangan pemilik; posisi kloset dan shower adalah usulan (hanya shower yang terlihat dari pintu).
 
 {{F_KM}}
 
-- Pasang exhaust fan, nat dan silikon ulang, rak sudut untuk botol.
+- Zona kering di dekat pintu, shower di tengah, kloset di ujung kanan.
+- Pasang exhaust fan plafon (ruang ini tidak punya jendela ke luar; glass block ke ruang belakang hanya meneruskan cahaya), nat dan silikon ulang, rak sudut dan gantungan handuk.
 - Cek apakah air merembes ke dinding ruang belakang atau dapur di sebelahnya. Jika ya, waterproofing lantai ulang masuk daftar perbaikan.
 
 ### 4.8 Ruang belakang (makan + tempat sepatu + utilitas)
@@ -364,8 +367,8 @@ Aturan urutan: atap → listrik → plester → kering → cat → lantai → fu
 | # | Pertanyaan | Jawaban bawaan saya |
 |---|---|---|
 | 1 | Dinding kiri kamar belakang dan kamar depan itu dinding luar, atau menempel rumah tetangga? | Dianggap menempel tetangga: kamar belakang pakai exhaust plafon ber-ducting, tanpa jendela baru. Jika ternyata dinding luar, tambah jalusi 40×60 cm. |
-| 2 | Mesin cuci ada di mana, dan jemur di mana? | Mesin cuci ditempatkan di pojok kanan-belakang ruang belakang (menggantikan parkir keranjang cucian); jemur di carport dengan jemuran lipat dinding. |
-| 3 | Ada apa di kanan kamar mandi / di belakang ruang belakang? | Tidak dimodelkan. Jika ternyata halaman terbuka milik sendiri, itu tempat jemur dan mesin cuci terbaik. |
+| 2 | Mesin cuci ada di mana, dan jemur di mana? | Mesin cuci ditempatkan di pojok kanan-belakang ruang belakang (menggantikan parkir keranjang cucian, bersebelahan dinding kamar mandi sehingga pipa pendek); jemur di carport dengan jemuran lipat dinding. |
+| 3 | Di kamar mandi, kloset, shower, dan bak ada di sebelah mana? | Shower di tengah dinding belakang, kloset di ujung kanan, dekat pintu kering. Mohon satu foto dari dalam. |
 | 4 | Kamar depan dipakai 1 atau 2 orang, dan berapa lebar bersihnya? | 2 orang, tempat tidur 160×200 melintang. Cadangan memanjang jika lebar < 2,10 m. |
 | 5 | Setuju ubin hijau dipertahankan dan hanya kamar depan yang ditutup SPC? | Ya. |
 | 6 | TV pindah ke ruang tamu? | Ya, pakai TV 32" lama dulu. |

@@ -8,8 +8,8 @@ rooms=[
  dict(id="ruang_tengah",name="Ruang Tengah / Keluarga",x=2.3,y=6.0,w=2.7,d=4.0,floor_material="ubin_keramik_hijau_motif_40x40_existing",wall_color_hex=W,ceiling_h_m=2.9,enclosed=True,confidence="sedang (lebar ±0.2 m, kedalaman ±0.4 m)"),
  dict(id="kamar_belakang",name="Kamar Belakang",x=0,y=6.0,w=2.3,d=4.0,floor_material="ubin_keramik_hijau_motif_40x40_existing",wall_color_hex=W,accent_wall={"wall":"back","color_hex":"#9DB0A8"},ceiling_h_m=2.9,enclosed=True,confidence="sedang-rendah (±0.4 m)"),
  dict(id="dapur",name="Dapur (galley)",x=0,y=10.0,w=4.7,d=1.8,floor_material="ubin_keramik_hijau_motif_40x40_existing",wall_color_hex="#F5EFE4",ceiling_h_m=2.8,enclosed=True,confidence="sedang (lebar bersih lorong 1.5-1.8 m, panjang ±0.4 m)"),
- dict(id="kamar_mandi",name="Kamar Mandi",x=4.7,y=10.0,w=1.6,d=1.8,floor_material="keramik_kamar_mandi_existing",wall_color_hex="#FFFFFF",ceiling_h_m=2.6,enclosed=True,confidence="rendah (hanya terlihat dari pintu; posisi di ujung kanan dapur pasti, ukuran dalam tebakan)"),
- dict(id="ruang_belakang",name="Ruang Belakang (makan + tempat sepatu + utilitas)",x=5.0,y=5.0,w=3.15,d=5.0,floor_material="keramik_oranye_40x40_existing",wall_color_hex="#F5EFE4",accent_wall={"wall":"all_lower_1m","color_hex":"#B7BFA9"},ceiling_h_m=2.7,enclosed=True,confidence="sedang (lebar ±0.15 m, kedalaman ±0.3 m)"),
+ dict(id="kamar_mandi",name="Kamar Mandi",x=4.7,y=10.0,w=3.1,d=1.8,floor_material="keramik_hijau_muda_kamar_mandi_existing",wall_color_hex="#FFFFFF",ceiling_h_m=2.6,enclosed=True,confidence="sedang-rendah (panjang menurut keterangan pemilik: hampir sepanjang ruang belakang; tata letak dalam hanya terlihat dari pintu)"),
+ dict(id="ruang_belakang",name="Ruang Belakang (makan + tempat sepatu + utilitas)",x=5.0,y=5.0,w=3.15,d=5.0,floor_material="keramik_coklat_40x40_existing",wall_color_hex="#F5EFE4",accent_wall={"wall":"all_lower_1m","color_hex":"#B7BFA9"},ceiling_h_m=2.7,enclosed=True,confidence="sedang (lebar ±0.15 m, kedalaman ±0.3 m)"),
  dict(id="carport",name="Carport",x=5.0,y=0,w=3.15,d=5.0,floor_material="keramik_batu_abu_existing",wall_color_hex="#EFE8DA",ceiling_h_m=3.0,enclosed=False,open_sides=["front","left_partial_ke_teras"],confidence="sedang (±0.3 m)"),
 ]
 def op(room,wall,off,w,h,t,**k):
@@ -28,7 +28,7 @@ openings=[
  op("ruang_tengah","back",0.1,0.85,2.05,"door",sill_m=0,connects_to="dapur",swing_into="ruang_tengah",hinge="sisi kiri",note="pintu dapur"),
  op("ruang_belakang","front",0.3,0.85,2.05,"door",sill_m=0,connects_to="carport",swing_into="ruang_belakang",hinge="sisi kiri",note="pintu samping dari carport; 2 lubang angin di atasnya"),
  op("ruang_belakang","front",1.6,0.75,1.2,"window",sill_m=0.9,connects_to="carport",note="jendela berteralis ke carport; 2 lubang angin di atasnya"),
- op("ruang_belakang","back",0.7,1.7,0.25,"window",sill_m=2.3,note="3 glass block tinggi (digambar sebagai satu pita); sisi baliknya belum diketahui (kamar mandi atau area belakang)"),
+ op("ruang_belakang","back",0.7,1.7,0.25,"window",sill_m=2.3,connects_to="kamar_mandi",note="3 glass block tinggi (digambar sebagai satu pita); dengan kamar mandi sepanjang ini, glass block menghadap kamar mandi (meminjam cahaya, bukan ventilasi)"),
  op("dapur","back",2.3,1.2,0.25,"window",sill_m=2.3,connects_to_outside=True,note="3 glass block tinggi di atas bak cuci (digambar sebagai satu pita)"),
  op("kamar_mandi","left",0.1,0.7,2.0,"door",sill_m=0,connects_to="dapur",swing_into="kamar_mandi",note="pintu kamar mandi di ujung kanan dapur"),
 ]
@@ -92,8 +92,10 @@ f("dapur","Rak piring gantung stainless 90 cm",3.025,11.585,90,28,60,180,SS,z_m=
 f("dapur","Kabinet atas aluminium sisi kiri",0.245,10.6,34,105,60,90,PUT,z_m=1.5,wall_mounted=True,existing=True)
 f("dapur","Rel gantung + ambalan 15 cm (dinding depan)",1.55,10.15,160,15,60,0,SS,z_m=1.2,wall_mounted=True)
 # KAMAR MANDI
-f("kamar_mandi","Kloset",5.95,11.35,40,65,40,180,"#FFFFFF",existing=True,low_confidence=True)
-f("kamar_mandi","Area shower",5.2,11.3,80,80,2,180,"#DDE3E3",rug=True,existing=True,low_confidence=True)
+f("kamar_mandi","Kloset",7.35,11.35,40,65,40,180,"#FFFFFF",existing=True,low_confidence=True)
+f("kamar_mandi","Area shower",6.0,11.25,90,90,2,180,"#DDE3E3",rug=True,existing=True,low_confidence=True)
+f("kamar_mandi","Exhaust fan plafon",6.6,10.9,25,25,10,0,"#FFFFFF",z_m=2.45,wall_mounted=True)
+f("kamar_mandi","Rak sudut + gantungan handuk",4.86,11.55,15,30,60,90,SS,z_m=1.0,wall_mounted=True)
 # RUANG BELAKANG
 f("ruang_belakang","Lemari sepatu tertutup 120 cm",7.9,5.75,35,120,100,270,PUT)
 f("ruang_belakang","Bangku sepatu (meja jati teras lama + bantalan)",6.95,5.325,100,50,45,0,JATI,existing=True)
@@ -235,6 +237,6 @@ spec=dict(name="SCENE_SPEC",units="meter untuk x,y,w,d,offset,width,height; cm u
   wall_thickness_m=0.15,
   wall_note="muka dalam dinding = 0.075 m di dalam garis ruang; semua furnitur sudah ditempatkan terhadap muka dalam (benda dinding menempel tepat di muka dalam)",
   total_footprint_m=dict(w=8.15,d=11.8),
-  unknown_area="x 6.3-8.15, y 10.0-11.8 (di belakang ruang belakang, kanan kamar mandi) belum diketahui - jangan dimodelkan sebagai ruang"),
+  unknown_area="sisa x 7.8-8.15, y 10.0-11.8 (0.35 m di kanan kamar mandi) tidak dimodelkan sebagai ruang"),
  rooms=rooms,openings=openings,furniture=F)
 json.dump(spec,open("scene_spec.json","w"),ensure_ascii=False,indent=1)

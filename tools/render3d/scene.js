@@ -4,13 +4,16 @@
 // so two neighbouring rooms make a 0.15 m wall with each side in its own paint.
 // Furniture: x,y = footprint centre; w_cm along x, d_cm along y (final orientation);
 // rotation_deg = facing only (0 +y, 90 +x, 180 -y, 270 -x); z_m = bottom height.
+import { drawKind, makeTextures } from './kinds.js';
+
 export function buildHouse(THREE, spec, opts = {}) {
   const root = new THREE.Group();
   const HALF = 0.075;
   const mats = new Map();
   const mat = (hex, o = {}) => {
-    const k = hex + JSON.stringify(o);
-    if (!mats.has(k)) mats.set(k, new THREE.MeshStandardMaterial({ color: new THREE.Color(hex), roughness: o.r ?? 0.8, metalness: o.m ?? 0, transparent: o.op != null, opacity: o.op ?? 1, emissive: o.e ? new THREE.Color(o.e) : undefined, emissiveIntensity: o.ei ?? 1 }));
+    const { map, ...rest } = o;
+    const k = hex + JSON.stringify(rest) + (map ? map.uuid : '');
+    if (!mats.has(k)) mats.set(k, new THREE.MeshStandardMaterial({ color: new THREE.Color(map ? '#ffffff' : hex), map: map || null, roughness: o.r ?? 0.8, metalness: o.m ?? 0, transparent: o.op != null, opacity: o.op ?? 1, emissive: o.e ? new THREE.Color(o.e) : undefined, emissiveIntensity: o.ei ?? 1 }));
     return mats.get(k);
   };
   const add = (mesh, parent) => { mesh.castShadow = true; mesh.receiveShadow = true; parent.add(mesh); return mesh; };
@@ -28,6 +31,10 @@ export function buildHouse(THREE, spec, opts = {}) {
       for (let i = 0; i < 8; i++) { const l = 168 + (i * 37) % 30; g.fillStyle = `rgb(${l + 48},${l + 18},${l - 30})`; g.fillRect(0, i * 32, 256, 32); g.fillStyle = 'rgba(80,50,20,.35)'; g.fillRect(0, i * 32, 256, 1.5); g.fillRect((i * 97) % 256, i * 32, 1.5, 32); }
       for (let k = 0; k < 500; k++) { g.fillStyle = 'rgba(110,70,30,.07)'; g.fillRect(Math.random() * 256, Math.random() * 256, 30 + Math.random() * 60, 1); }
       rep = 1 / 1.2; rough = 0.7;
+    } else if (/muda|mandi/.test(kind)) {
+      g.fillStyle = '#8fb9a0'; g.fillRect(0, 0, 256, 256);
+      g.strokeStyle = '#e8f0e8'; g.lineWidth = 3; g.strokeRect(2, 2, 252, 252); g.beginPath(); g.arc(128, 128, 60, 0, 7); g.stroke();
+      rep = 1 / 0.3; rough = 0.3;
     } else if (/hijau|green/.test(kind)) {
       g.fillStyle = '#17392f'; g.fillRect(0, 0, 256, 256);
       for (let k = 0; k < 600; k++) { g.fillStyle = 'rgba(40,90,70,.25)'; g.fillRect(Math.random() * 256, Math.random() * 256, 3, 3); }
@@ -38,14 +45,14 @@ export function buildHouse(THREE, spec, opts = {}) {
       g.beginPath(); g.arc(128, 128, 15, 0, 7); g.fillStyle = '#cfc39a'; g.fill();
       for (const [x, y] of [[0, 0], [256, 0], [0, 256], [256, 256]]) { g.beginPath(); g.arc(x, y, 18, 0, 7); g.stroke(); }
       rep = 1 / 0.4; rough = 0.25;
-    } else if (/mandi|putih|white/.test(kind)) {
+    } else if (/putih|white/.test(kind)) {
       g.fillStyle = '#e6e8e6'; g.fillRect(0, 0, 256, 256); g.strokeStyle = 'rgba(0,0,0,.15)'; g.lineWidth = 3; g.strokeRect(0, 0, 256, 256); rep = 1 / 0.3; rough = 0.3;
     } else if (/abu|grey|gray|batu|stone/.test(kind)) {
       for (let r = 0; r < 8; r++) for (let q = 0; q < 2; q++) { const l = 120 + ((r * 7 + q * 13) % 5) * 12; g.fillStyle = `rgb(${l},${l - 4},${l - 10})`; g.fillRect(q * 128 + (r % 2) * 64, r * 32, 128, 32); }
       g.strokeStyle = 'rgba(40,40,40,.35)'; g.lineWidth = 2; for (let r = 0; r < 8; r++) { g.strokeRect(0, r * 32, 256, 32); }
       rep = 1 / 0.6; rough = 0.8;
     } else { // orange / terracotta ceramic
-      g.fillStyle = '#c98a56'; g.fillRect(0, 0, 256, 256);
+      g.fillStyle = '#b07a4f'; g.fillRect(0, 0, 256, 256);
       for (let k = 0; k < 300; k++) { g.fillStyle = 'rgba(150,90,40,.15)'; g.fillRect(Math.random() * 256, Math.random() * 256, 20, 2); }
       g.strokeStyle = 'rgba(80,40,10,.3)'; g.lineWidth = 3; g.strokeRect(0, 0, 256, 256); rep = 1 / 0.4; rough = 0.3;
     }
@@ -144,7 +151,10 @@ export function buildHouse(THREE, spec, opts = {}) {
   }
 
   // ---------- furniture ----------
+  const tex = makeTextures(THREE);
+  let seed = 1;
   for (const f of spec.furniture || []) {
+    let st = (seed++ * 2654435761) >>> 0; const rnd = () => ((st = (st * 1664525 + 1013904223) >>> 0) / 4294967296);
     const rot = ((f.rotation_deg || 0) % 360 + 360) % 360;
     const sideways = rot === 90 || rot === 270;
     const w = (sideways ? f.d_cm : f.w_cm) / 100; // local width across the face
@@ -158,7 +168,9 @@ export function buildHouse(THREE, spec, opts = {}) {
     const dark = mat('#3B3F3A', { r: 0.5, m: 0.2 });
     const linen = mat('#ECE5D8', { r: 1 });
     let z0 = f.z_m ?? 0;
-    if (f.rug || /karpet|rug/.test(n)) {
+    if (f.kind && drawKind(THREE, { box, cyl, sph, mat, tex }, f.kind, w, d, h, c, g, f, rnd)) {
+      // drawn by kind
+    } else if (f.rug || /karpet|rug/.test(n)) {
       if (/shower/.test(n)) { box(w, 0.03, d, mat('#d4dadb', { r: 0.3 }), 0, 0.015, 0, g); cyl(0.04, 0.04, 0.02, dark, 0, 0.03, 0, g); box(0.04, 1.9, 0.04, mat('#c8c8c8', { m: 0.8, r: 0.2 }), 0, 1.0, -d / 2 + 0.03, g); }
       else { const m = box(w, 0.012, d, mat(c, { r: 1 }), 0, 0.006, 0, g); m.castShadow = false; box(w - 0.08, 0.002, d - 0.08, mat(shade(c, 0.92), { r: 1 }), 0, 0.013, 0, g).castShadow = false; }
     } else if (/tempat tidur|kasur|ranjang|bed\b/.test(n)) {

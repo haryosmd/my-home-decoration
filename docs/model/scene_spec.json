@@ -14,7 +14,7 @@
    "w": 8.15,
    "d": 11.8
   },
-  "unknown_area": "x 6.3-8.15, y 10.0-11.8 (di belakang ruang belakang, kanan kamar mandi) belum diketahui - jangan dimodelkan sebagai ruang"
+  "unknown_area": "sisa x 7.8-8.15, y 10.0-11.8 (0.35 m di kanan kamar mandi) tidak dimodelkan sebagai ruang"
  },
  "rooms": [
   {
@@ -116,13 +116,13 @@
    "name": "Kamar Mandi",
    "x": 4.7,
    "y": 10.0,
-   "w": 1.6,
+   "w": 3.1,
    "d": 1.8,
-   "floor_material": "keramik_kamar_mandi_existing",
+   "floor_material": "keramik_hijau_muda_kamar_mandi_existing",
    "wall_color_hex": "#FFFFFF",
    "ceiling_h_m": 2.6,
    "enclosed": true,
-   "confidence": "rendah (hanya terlihat dari pintu; posisi di ujung kanan dapur pasti, ukuran dalam tebakan)"
+   "confidence": "sedang-rendah (panjang menurut keterangan pemilik: hampir sepanjang ruang belakang; tata letak dalam hanya terlihat dari pintu)"
   },
   {
    "id": "ruang_belakang",
@@ -131,7 +131,7 @@
    "y": 5.0,
    "w": 3.15,
    "d": 5.0,
-   "floor_material": "keramik_oranye_40x40_existing",
+   "floor_material": "keramik_coklat_40x40_existing",
    "wall_color_hex": "#F5EFE4",
    "accent_wall": {
     "wall": "all_lower_1m",
@@ -323,7 +323,8 @@
    "height_m": 0.25,
    "type": "window",
    "sill_m": 2.3,
-   "note": "3 glass block tinggi (digambar sebagai satu pita); sisi baliknya belum diketahui (kamar mandi atau area belakang)"
+   "connects_to": "kamar_mandi",
+   "note": "3 glass block tinggi (digambar sebagai satu pita); dengan kamar mandi sepanjang ini, glass block menghadap kamar mandi (meminjam cahaya, bukan ventilasi)"
   },
   {
    "room_id": "dapur",
@@ -945,7 +946,7 @@
   {
    "room_id": "kamar_mandi",
    "name": "Kloset",
-   "x": 5.95,
+   "x": 7.35,
    "y": 11.35,
    "w_cm": 40,
    "d_cm": 65,
@@ -958,16 +959,42 @@
   {
    "room_id": "kamar_mandi",
    "name": "Area shower",
-   "x": 5.2,
-   "y": 11.3,
-   "w_cm": 80,
-   "d_cm": 80,
+   "x": 6.0,
+   "y": 11.25,
+   "w_cm": 90,
+   "d_cm": 90,
    "h_cm": 2,
    "rotation_deg": 180,
    "color_hex": "#DDE3E3",
    "rug": true,
    "existing": true,
    "low_confidence": true
+  },
+  {
+   "room_id": "kamar_mandi",
+   "name": "Exhaust fan plafon",
+   "x": 6.6,
+   "y": 10.9,
+   "w_cm": 25,
+   "d_cm": 25,
+   "h_cm": 10,
+   "rotation_deg": 0,
+   "color_hex": "#FFFFFF",
+   "z_m": 2.45,
+   "wall_mounted": true
+  },
+  {
+   "room_id": "kamar_mandi",
+   "name": "Rak sudut + gantungan handuk",
+   "x": 4.86,
+   "y": 11.55,
+   "w_cm": 15,
+   "d_cm": 30,
+   "h_cm": 60,
+   "rotation_deg": 90,
+   "color_hex": "#B8BABD",
+   "z_m": 1.0,
+   "wall_mounted": true
   },
   {
    "room_id": "ruang_belakang",
