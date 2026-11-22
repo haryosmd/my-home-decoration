@@ -153,7 +153,9 @@ export function buildHouse(THREE, spec, opts = {}) {
   // ---------- furniture ----------
   const tex = makeTextures(THREE);
   let seed = 1;
+  const maxPhase = spec._maxPhase ?? opts.maxPhase ?? 1;
   for (const f of spec.furniture || []) {
+    if ((f.phase || 1) > maxPhase) continue;
     let st = (seed++ * 2654435761) >>> 0; const rnd = () => ((st = (st * 1664525 + 1013904223) >>> 0) / 4294967296);
     const rot = ((f.rotation_deg || 0) % 360 + 360) % 360;
     const sideways = rot === 90 || rot === 270;
@@ -230,7 +232,8 @@ export function buildHouse(THREE, spec, opts = {}) {
       if (/monitor/.test(n)) { box(0.08, 0.12, 0.08, dark, 0, -0.06, 0, g); z0 = Math.max(z0, 0.74) + 0.12; }
     } else if (/ambalan|rak dinding/.test(n)) {
       box(w, 0.03, d, wood, 0, 0.015, 0, g);
-      for (let i = 0; i < Math.round(w / 0.07); i++) if (rnd() < 0.7) { const bh = 0.15 + rnd() * 0.1; box(0.03 + rnd() * 0.02, bh, d * 0.8, mat(['#8A9A7B', '#C4744F', '#E6DCCB', '#3B3F3A', '#D8B98A'][i % 5]), -w / 2 + 0.05 + i * 0.07, 0.03 + bh / 2, 0, g); }
+      if (/buku/.test(n)) for (let i = 0; i < Math.round(w / 0.07); i++) if (rnd() < 0.7) { const bh = 0.15 + rnd() * 0.1; box(0.03 + rnd() * 0.02, bh, d * 0.8, mat(['#8A9A7B', '#C4744F', '#E6DCCB', '#3B3F3A', '#D8B98A'][i % 5]), -w / 2 + 0.05 + i * 0.07, 0.03 + bh / 2, 0, g); }
+      if (!/buku/.test(n)) for (let i = 0; i < Math.round(w / 0.12); i++) cyl(0.03, 0.03, 0.08 + rnd() * 0.06, mat(['#E6DCCB', '#B8BABD', '#C4744F', '#8A9A7B'][i % 4], { r: 0.5 }), -w / 2 + 0.07 + i * 0.12, 0.08, 0, g, 10);
       if (/tanaman/.test(n)) { cyl(0.05, 0.04, 0.1, mat('#C9A46B'), w / 2 - 0.12, 0.08, 0, g); sph(0.09, mat('#4f7046', { r: 0.9 }), w / 2 - 0.12, 0.2, 0, g); }
     } else if (/tanaman|pot tanaman/.test(n)) {
       cyl(Math.min(w, d) * 0.4, Math.min(w, d) * 0.3, Math.min(0.4, h * 0.3), mat('#C9A46B', { r: 0.9 }), 0, Math.min(0.4, h * 0.3) / 2, 0, g);
@@ -242,7 +245,10 @@ export function buildHouse(THREE, spec, opts = {}) {
       cyl(0.004, 0.004, 1.2, dark, 0, h + 0.6, 0, g);
       sph(0.05, mat('#fff2d8', { e: '#ffcf8a', ei: 2 }), 0, 0.05, 0, g).castShadow = false;
       const L = new THREE.PointLight(0xffd7a8, 1.2, 4, 2); L.position.set(0, -0.05, 0); g.add(L);
-    } else if (/lampu/.test(n)) {
+    } else if (/lampu/.test(n) && !/cermin/.test(n) && (f.wall_mounted || /dinding/.test(n))) {
+      box(0.08, 0.15, 0.08, mat('#3B3F3A', { r: 0.5 }), 0, 0.075, 0, g); cyl(0.05, 0.07, 0.1, mat('#E6DCCB', { r: 1, e: '#ffcf8a', ei: 0.5 }), 0, 0.12, 0.06, g);
+      const L = new THREE.PointLight(0xffd7a8, 0.5, 2.5, 2); L.position.set(0, 0.1, 0.15); g.add(L);
+    } else if (/lampu/.test(n) && !/cermin/.test(n)) {
       cyl(0.13, 0.15, 0.03, dark, 0, 0.015, 0, g); cyl(0.012, 0.012, h - 0.3, dark, 0, (h - 0.3) / 2, 0, g);
       cyl(w * 0.35, w / 2, 0.32, mat('#E6DCCB', { r: 1, e: '#ffcf8a', ei: 0.35 }), 0, h - 0.16, 0, g);
       const L = new THREE.PointLight(0xffd7a8, 1.0, 4, 2); L.position.set(0, h - 0.2, 0); g.add(L);

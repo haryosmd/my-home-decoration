@@ -196,6 +196,24 @@ export function drawKind(THREE, H, kind, w, d, h, c, g, f, rnd) {
       return true;
     }
     case 'generic_box': box(w, h, d, mat(col('#9a8f80'), { r: 0.8 }), 0, h / 2, 0, g); return true;
+    case 'vanity_table': {
+      const top = mat(col('#D8B98A'), { r: 0.55 });
+      const deskH = Math.min(h, 0.76);
+      box(w, 0.03, d, top, 0, deskH - 0.015, 0, g);
+      box(w * 0.42, deskH - 0.03, d - 0.02, top, -w / 2 + w * 0.21, (deskH - 0.03) / 2, 0, g); // drawer stack
+      for (let i = 0; i < 3; i++) box(w * 0.4, 0.004, 0.005, mat('#b39a74'), -w / 2 + w * 0.21, 0.2 + i * 0.2, d / 2 + 0.003, g);
+      box(0.04, deskH - 0.03, d - 0.04, top, w / 2 - 0.02, (deskH - 0.03) / 2, 0, g);
+      box(w - 0.06, 0.1, d - 0.05, top, 0, deskH - 0.08, 0, g); // drawer
+      if (h > deskH + 0.3) {
+      const mh = Math.max(0.5, h - deskH - 0.05), mw = Math.min(w * 0.7, 0.7);
+      box(mw + 0.04, mh + 0.04, 0.03, mat('#E6DCCB', { r: 0.6 }), 0, deskH + 0.05 + mh / 2, -d / 2 + 0.03, g);
+      box(mw, mh, 0.035, mat('#c9d8dd', { r: 0.12, m: 0.15 }), 0, deskH + 0.05 + mh / 2, -d / 2 + 0.035, g);
+      for (let i = 0; i < 4; i++) for (const sx of [-1, 1]) sph(0.02, mat('#fff7e8', { e: '#fff1d6', ei: 2 }), sx * (mw / 2 + 0.03), deskH + 0.12 + i * (mh - 0.1) / 3, -d / 2 + 0.06, g).castShadow = false;
+      }
+      for (let i = 0; i < 6; i++) cyl(0.018, 0.018, 0.06 + rnd() * 0.08, mat(pick(['#ffffff', '#f5b7b1', '#d7bde2', '#E6DCCB', '#C4744F'])), w * 0.1 + i * 0.05, deskH + 0.06, -d / 2 + 0.12, g, 10);
+      box(0.22, 0.12, 0.12, mat('#E6DCCB'), w / 2 - 0.16, deskH + 0.06, -d / 2 + 0.12, g); // organiser
+      return true;
+    }
     // ---- remote-work kit (redesign) ----
     case 'desk_standing': {
       const top = mat(col('#D8B98A'), { r: 0.55 }), frame = mat('#2f3236', { m: 0.4, r: 0.4 });
