@@ -1,0 +1,197 @@
+[
+ {
+  "id": "overview",
+  "label": "Seluruh rumah (potongan)",
+  "pos": [
+   -4.5,
+   12.5,
+   -6.5
+  ],
+  "target": [
+   4.1,
+   0,
+   6.2
+  ],
+  "fov": 45
+ },
+ {
+  "id": "overview-back",
+  "label": "Dari belakang: dapur & kamar belakang",
+  "pos": [
+   12.5,
+   12,
+   17.5
+  ],
+  "target": [
+   4.1,
+   0,
+   6.5
+  ],
+  "fov": 45
+ },
+ {
+  "id": "plan",
+  "label": "Denah dari atas",
+  "pos": [
+   4.075,
+   24,
+   5.8
+  ],
+  "target": [
+   4.075,
+   0,
+   5.9
+  ],
+  "fov": 34,
+  "showAll": true
+ },
+ {
+  "id": "ruang-tamu",
+  "label": "Ruang tamu",
+  "pos": [
+   2.55,
+   1.6,
+   5.75
+  ],
+  "target": [
+   4.3,
+   0.85,
+   2.7
+  ],
+  "fov": 78,
+  "rooms": [
+   "ruang_tamu"
+  ],
+  "ceiling": true
+ },
+ {
+  "id": "kamar-depan",
+  "label": "Kamar depan: tidur + kerja",
+  "pos": [
+   1.3,
+   1.6,
+   5.4
+  ],
+  "target": [
+   1.4,
+   0.9,
+   1.0
+  ],
+  "fov": 78,
+  "rooms": [
+   "kamar_depan"
+  ],
+  "ceiling": true
+ },
+ {
+  "id": "meja-kerja",
+  "label": "Meja kerja",
+  "pos": [
+   0.5,
+   1.55,
+   1.95
+  ],
+  "target": [
+   2.1,
+   0.95,
+   3.6
+  ],
+  "fov": 72,
+  "rooms": [
+   "kamar_depan"
+  ],
+  "ceiling": true
+ },
+ {
+  "id": "ruang-tengah",
+  "label": "Ruang tengah",
+  "pos": [
+   2.65,
+   1.55,
+   6.3
+  ],
+  "target": [
+   4.5,
+   1.0,
+   9.6
+  ],
+  "fov": 78,
+  "rooms": [
+   "ruang_tengah"
+  ],
+  "ceiling": true
+ },
+ {
+  "id": "kamar-belakang",
+  "label": "Kamar belakang",
+  "pos": [
+   2.0,
+   1.6,
+   6.35
+  ],
+  "target": [
+   0.8,
+   0.8,
+   9.2
+  ],
+  "fov": 80,
+  "rooms": [
+   "kamar_belakang"
+  ],
+  "ceiling": true
+ },
+ {
+  "id": "dapur",
+  "label": "Dapur galley",
+  "pos": [
+   0.6,
+   1.6,
+   10.3
+  ],
+  "target": [
+   4.4,
+   1.0,
+   11.45
+  ],
+  "fov": 78,
+  "rooms": [
+   "dapur"
+  ],
+  "ceiling": true
+ },
+ {
+  "id": "ruang-belakang",
+  "label": "Ruang belakang: makan + sepatu",
+  "pos": [
+   5.35,
+   1.6,
+   5.35
+  ],
+  "target": [
+   7.4,
+   0.9,
+   8.9
+  ],
+  "fov": 78,
+  "rooms": [
+   "ruang_belakang"
+  ],
+  "ceiling": true
+ },
+ {
+  "id": "teras",
+  "label": "Teras & fasad",
+  "pos": [
+   3.4,
+   1.65,
+   -4.2
+  ],
+  "target": [
+   4.0,
+   1.3,
+   2.0
+  ],
+  "fov": 60,
+  "showAll": true
+ }
+]

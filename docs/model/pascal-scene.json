@@ -1,0 +1,2425 @@
+{
+  "nodes": {
+    "site_3lh7l3xxd9vm1oyt": {
+      "object": "node",
+      "id": "site_3lh7l3xxd9vm1oyt",
+      "type": "site",
+      "parentId": null,
+      "visible": true,
+      "metadata": {},
+      "polygon": {
+        "type": "polygon",
+        "points": [
+          [
+            -15,
+            -15
+          ],
+          [
+            15,
+            -15
+          ],
+          [
+            15,
+            15
+          ],
+          [
+            -15,
+            15
+          ]
+        ]
+      },
+      "children": [
+        "building_n7uaklj3i8aa76gx"
+      ]
+    },
+    "building_n7uaklj3i8aa76gx": {
+      "object": "node",
+      "id": "building_n7uaklj3i8aa76gx",
+      "type": "building",
+      "parentId": "site_3lh7l3xxd9vm1oyt",
+      "visible": true,
+      "metadata": {},
+      "children": [
+        "level_fmgff6a1cpjb8yro"
+      ],
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    "level_fmgff6a1cpjb8yro": {
+      "object": "node",
+      "id": "level_fmgff6a1cpjb8yro",
+      "type": "level",
+      "parentId": "building_n7uaklj3i8aa76gx",
+      "visible": true,
+      "metadata": {},
+      "children": [
+        "wall_xcdze8ury50m8d04",
+        "wall_jjfm29gddypbiagv",
+        "wall_p8gil0glj9erp3uf",
+        "zone_9p3cbtw8xhr3ohul",
+        "ceiling_o5dtsqpscjknn0xn",
+        "slab_00026i0yd9721lz0",
+        "wall_ukdhbwazbsgtaxtu",
+        "wall_trensw4st1ju77w1",
+        "wall_antyacldfiplzell",
+        "wall_1932xyy0tc2j1lte",
+        "zone_6b1he1hj5u9m2rt9",
+        "ceiling_gov5auv42o3um1p8",
+        "wall_9fkb9zh0p9h3kcfm",
+        "wall_32fhswp6ov5fx7br",
+        "zone_d492mp6m8n1epl5q",
+        "ceiling_8n9r1jc8mawq41i3",
+        "wall_eopvergfk7uef0ld",
+        "wall_ju20zvdrpw3x4hzv",
+        "zone_gg60xullu7511w57",
+        "ceiling_pf2vau58jn1p1b5v",
+        "wall_fw332kollmc2ihvi",
+        "wall_wm0zqdpqj4qkobed",
+        "wall_dmw32qqss2vkb4nz",
+        "wall_bl01vmb9fepswibn",
+        "wall_hvqsrhclhh6bhufu",
+        "zone_fegjwkwx5fvbd69z",
+        "ceiling_8aubonsfnc8emqa3",
+        "wall_u4pgtn3sqv6yh7bl",
+        "wall_aa7qpknsf66zmspf",
+        "wall_9unt3v0lymzwtxf6",
+        "zone_9tgih8km5z7mu9iy",
+        "ceiling_syldrogqugspshxf",
+        "wall_m4ekjavr1he930ik",
+        "wall_dqcsu0wdcj4is6qx",
+        "wall_ilxys1g3ivq90ysp",
+        "wall_30mxxb3ualk9hd89",
+        "wall_9medd2zk4uha0024",
+        "zone_zo9vslgve1funuee",
+        "ceiling_jjqjsqi3zibmkg3a",
+        "separator_md6865uvtc8t2eau",
+        "separator_iuvexwkz40mn42h9",
+        "zone_5plu3xdkff41ybj1",
+        "separator_c4e6t08jtut67tb3",
+        "separator_5n5bgcyksu654l92",
+        "separator_san1oh6k8vreb1w6",
+        "zone_ferxgs06k3ekzewa"
+      ],
+      "level": 0,
+      "baseElevation": 0,
+      "height": 2.5
+    },
+    "wall_xcdze8ury50m8d04": {
+      "object": "node",
+      "id": "wall_xcdze8ury50m8d04",
+      "type": "wall",
+      "name": "Wall 1",
+      "parentId": "level_fmgff6a1cpjb8yro",
+      "visible": true,
+      "metadata": {},
+      "children": [
+        "window_39ktm8mtnnw2kd70"
+      ],
+      "thickness": 0.15,
+      "height": 2.9,
+      "start": [
+        0,
+        0
+      ],
+      "end": [
+        2.3,
+        0
+      ],
+      "frontSide": "exterior",
+      "backSide": "interior"
+    },
+    "wall_jjfm29gddypbiagv": {
+      "object": "node",
+      "id": "wall_jjfm29gddypbiagv",
+      "type": "wall",
+      "name": "Wall 3",
+      "parentId": "level_fmgff6a1cpjb8yro",
+      "visible": true,
+      "metadata": {},
+      "children": [],
+      "thickness": 0.15,
+      "height": 2.9,
+      "start": [
+        2.3,
+        -6
+      ],
+      "end": [
+        0,
+        -6
+      ],
+      "frontSide": "interior",
+      "backSide": "interior"
+    },
+    "wall_p8gil0glj9erp3uf": {
+      "object": "node",
+      "id": "wall_p8gil0glj9erp3uf",
+      "type": "wall",
+      "name": "Wall 4",
+      "parentId": "level_fmgff6a1cpjb8yro",
+      "visible": true,
+      "metadata": {},
+      "children": [],
+      "thickness": 0.15,
+      "height": 2.9,
+      "start": [
+        0,
+        -6
+      ],
+      "end": [
+        0,
+        0
+      ],
+      "frontSide": "exterior",
+      "backSide": "interior"
+    },
+    "zone_9p3cbtw8xhr3ohul": {
+      "object": "node",
+      "id": "zone_9p3cbtw8xhr3ohul",
+      "type": "zone",
+      "name": "Kamar Depan (tidur + kerja)",
+      "parentId": "level_fmgff6a1cpjb8yro",
+      "visible": true,
+      "metadata": {},
+      "polygon": [
+        [
+          0,
+          -6
+        ],
+        [
+          2.3,
+          -6
+        ],
+        [
+          2.3,
+          -2
+        ],
+        [
+          2.3,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "holes": [],
+      "autoFromWalls": true,
+      "boundaryWallIds": [
+        "wall_jjfm29gddypbiagv",
+        "wall_p8gil0glj9erp3uf",
+        "wall_trensw4st1ju77w1",
+        "wall_ukdhbwazbsgtaxtu",
+        "wall_xcdze8ury50m8d04"
+      ],
+      "boundarySeparatorIds": [],
+      "seed": [
+        1.15,
+        -3
+      ],
+      "spaceRole": "room",
+      "roomNumber": "",
+      "enclosureStatus": "enclosed",
+      "floorFinish": "",
+      "wallFinish": "",
+      "ceilingFinish": "",
+      "ceilingHeight": 2.7,
+      "occupancy": "",
+      "clearDimensionPolicy": "none",
+      "color": "#F3EDE1"
+    },
+    "door_26vh6yecwk4fmmc5": {
+      "object": "node",
+      "id": "door_26vh6yecwk4fmmc5",
+      "type": "door",
+      "name": "Door 1",
+      "parentId": "wall_trensw4st1ju77w1",
+      "visible": true,
+      "metadata": {},
+      "position": [
+        3.4749999999999996,
+        1.025,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "side": "front",
+      "floorThresholdVersion": 1,
+      "wallId": "wall_trensw4st1ju77w1",
+      "width": 0.85,
+      "height": 2.05,
+      "constructionType": "framed",
+      "dimensionReference": "nominal",
+      "doorCategory": "interior",
+      "doorType": "hinged",
+      "leafCount": 1,
+      "operationState": 0,
+      "slideDirection": "left",
+      "trackStyle": "none",
+      "garagePanelCount": 4,
+      "openingKind": "door",
+      "openingShape": "rectangle",
+      "openingRadiusMode": "all",
+      "openingTopRadii": [
+        0.15,
+        0.15
+      ],
+      "cornerRadius": 0.15,
+      "archHeight": 0.45,
+      "openingRevealRadius": 0.025,
+      "frameThickness": 0.02,
+      "threshold": true,
+      "thresholdHeight": 0.02,
+      "casingFaceA": true,
+      "casingFaceB": true,
+      "hingesSide": "left",
+      "swingDirection": "inward",
+      "swingAngle": 0,
+      "segments": [
+        {
+          "type": "panel",
+          "heightRatio": 0.4,
+          "columnRatios": [
+            1
+          ],
+          "dividerThickness": 0.03,
+          "panelDepth": 0.01,
+          "panelInset": 0.04
+        },
+        {
+          "type": "panel",
+          "heightRatio": 0.6,
+          "columnRatios": [
+            1
+          ],
+          "dividerThickness": 0.03,
+          "panelDepth": 0.01,
+          "panelInset": 0.04
+        }
+      ],
+      "handle": true,
+      "handleHeight": 1.05,
+      "handleSide": "right",
+      "contentPadding": [
+        0.11,
+        0.11
+      ],
+      "doorCloser": false,
+      "panicBar": false,
+      "panicBarStyle": "crossbar",
+      "panicBarRods": false,
+      "panicBarHeight": 1
+    },
+    "window_39ktm8mtnnw2kd70": {
+      "object": "node",
+      "id": "window_39ktm8mtnnw2kd70",
+      "type": "window",
+      "name": "Window 1",
+      "parentId": "wall_xcdze8ury50m8d04",
+      "visible": true,
+      "metadata": {},
+      "position": [
+        1.15,
+        1.5,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "floorThresholdVersion": 1,
+      "wallId": "wall_xcdze8ury50m8d04",
+      "width": 0.8,
+      "height": 1.2,
+      "constructionType": "framed",
+      "dimensionReference": "nominal",
+      "openingKind": "window",
+      "windowType": "fixed",
+      "operationState": 0,
+      "awningDirection": "up",
+      "casementStyle": "single",
+      "hingesSide": "left",
+      "openingShape": "rectangle",
+      "openingRadiusMode": "all",
+      "openingCornerRadii": [
+        0.15,
+        0.15,
+        0.15,
+        0.15
+      ],
+      "cornerRadius": 0.15,
+      "archHeight": 0.35,
+      "openingRevealRadius": 0.025,
+      "frameThickness": 0.02,
+      "columnRatios": [
+        1
+      ],
+      "rowRatios": [
+        1
+      ],
+      "columnDividerThickness": 0.03,
+      "rowDividerThickness": 0.03,
+      "sill": true,
+      "sillDepth": 0.08,
+      "sillThickness": 0.03,
+      "casingFaceA": true,
+      "casingFaceB": true
+    },
+    "ceiling_o5dtsqpscjknn0xn": {
+      "object": "node",
+      "id": "ceiling_o5dtsqpscjknn0xn",
+      "type": "ceiling",
+      "name": "Kamar Depan (tidur + kerja) Ceiling",
+      "parentId": "level_fmgff6a1cpjb8yro",
+      "visible": true,
+      "metadata": {},
+      "children": [],
+      "polygon": [
+        [
+          0,
+          -6
+        ],
+        [
+          2.3,
+          -6
+        ],
+        [
+          2.3,
+          -2
+        ],
+        [
+          2.3,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "holes": [],
+      "holeMetadata": [],
+      "boundary": "auto",
+      "zoneId": "zone_9p3cbtw8xhr3ohul",
+      "autoFromWalls": true
+    },
+    "slab_00026i0yd9721lz0": {
+      "object": "node",
+      "id": "slab_00026i0yd9721lz0",
+      "type": "slab",
+      "name": "Floor plate",
+      "parentId": "level_fmgff6a1cpjb8yro",
+      "visible": true,
+      "metadata": {},
+      "polygon": [
+        [
+          -0.075,
+          -11.875
+        ],
+        [
+          6.375,
+          -11.875
+        ],
+        [
+          6.375,
+          -10.075
+        ],
+        [
+          8.225,
+          -10.075
+        ],
+        [
+          8.225,
+          -4.925
+        ],
+        [
+          8.15,
+          -4.925
+        ],
+        [
+          8.15,
+          0
+        ],
+        [
+          2.375,
+          0
+        ],
+        [
+          2.375,
+          0.075
+        ],
+        [
+          -0.075,
+          0.075
+        ]
+      ],
+      "holes": [],
+      "holeMetadata": [],
+      "elevation": 0.05,
+      "foundation": {
+        "type": "none"
+      },
+      "thickness": 0.05,
+      "recessed": false,
+      "boundary": "auto",
+      "plateRole": "base",
+      "zoneIds": [
+        "zone_5plu3xdkff41ybj1",
+        "zone_6b1he1hj5u9m2rt9",
+        "zone_9p3cbtw8xhr3ohul",
+        "zone_9tgih8km5z7mu9iy",
+        "zone_d492mp6m8n1epl5q",
+        "zone_fegjwkwx5fvbd69z",
+        "zone_ferxgs06k3ekzewa",
+        "zone_gg60xullu7511w57",
+        "zone_zo9vslgve1funuee"
+      ],
+      "autoFromWalls": true
+    },
+    "wall_ukdhbwazbsgtaxtu": {
+      "object": "node",
+      "id": "wall_ukdhbwazbsgtaxtu",
+      "type": "wall",
+      "name": "Wall 2",
+      "parentId": "level_fmgff6a1cpjb8yro",
+      "visible": true,
+      "metadata": {},
+      "children": [],
+      "thickness": 0.15,
+      "height": 2.9,
+      "start": [
+        2.3,
+        0
+      ],
+      "end": [
+        2.3,
+        -2
+      ],
+      "frontSide": "exterior",
+      "backSide": "interior"
+    },
+    "wall_trensw4st1ju77w1": {
+      "object": "node",
+      "id": "wall_trensw4st1ju77w1",
+      "type": "wall",
+      "name": "Wall 2",
+      "parentId": "level_fmgff6a1cpjb8yro",
+      "visible": true,
+      "metadata": {},
+      "children": [
+        "door_26vh6yecwk4fmmc5"
+      ],
+      "thickness": 0.15,
+      "height": 2.9,
+      "start": [
+        2.3,
+        -2
+      ],
+      "end": [
+        2.3,
+        -6
+      ],
+      "frontSide": "interior",
+      "backSide": "interior"
+    },
+    "wall_antyacldfiplzell": {
+      "object": "node",
+      "id": "wall_antyacldfiplzell",
+      "type": "wall",
+      "name": "Wall 5",
+      "parentId": "level_fmgff6a1cpjb8yro",
+      "visible": true,
+      "metadata": {},
+      "children": [
+        "door_7t1wnb5izps20rrl"
+      ],
+      "thickness": 0.15,
+      "height": 2.9,
+      "start": [
+        2.3,
+        -2
+      ],
+      "end": [
+        5,
+        -2
+      ],
+      "frontSide": "exterior",
+      "backSide": "interior"
+    },
+    "wall_1932xyy0tc2j1lte": {
+      "object": "node",
+      "id": "wall_1932xyy0tc2j1lte",
+      "type": "wall",
+      "name": "Wall 8",
+      "parentId": "level_fmgff6a1cpjb8yro",
+      "visible": true,
+      "metadata": {},
+      "children": [
+        "door_o3avu2kb4srhkb67"
+      ],
+      "thickness": 0.15,
+      "height": 2.9,
+      "start": [
+        5,
+        -6
+      ],
+      "end": [
+        2.3,
+        -6
+      ],
+      "frontSide": "interior",
+      "backSide": "interior"
+    },
+    "zone_6b1he1hj5u9m2rt9": {
+      "object": "node",
+      "id": "zone_6b1he1hj5u9m2rt9",
+      "type": "zone",
+      "name": "Ruang Tamu",
+      "parentId": "level_fmgff6a1cpjb8yro",
+      "visible": true,
+      "metadata": {},
+      "polygon": [
+        [
+          2.3,
+          -6
+        ],
+        [
+          5,
+          -6
+        ],
+        [
+          5,
+          -5
+        ],
+        [
+          5,
+          -2
+        ],
+        [
+          2.3,
+          -2
+        ]
+      ],
+      "holes": [],
+      "autoFromWalls": true,
+      "boundaryWallIds": [
+        "wall_1932xyy0tc2j1lte",
+        "wall_antyacldfiplzell",
+        "wall_dqcsu0wdcj4is6qx",
+        "wall_m4ekjavr1he930ik",
+        "wall_trensw4st1ju77w1"
+      ],
+      "boundarySeparatorIds": [],
+      "seed": [
+        3.65,
+        -4
+      ],
+      "spaceRole": "room",
+      "roomNumber": "",
+      "enclosureStatus": "enclosed",
+      "floorFinish": "",
+      "wallFinish": "",
+      "ceilingFinish": "",
+      "ceilingHeight": 2.7,
+      "occupancy": "",
+      "clearDimensionPolicy": "none",
+      "color": "#F3EDE1"
+    },
+    "door_7t1wnb5izps20rrl": {
+      "object": "node",
+      "id": "door_7t1wnb5izps20rrl",
+      "type": "door",
+      "name": "Door 2",
+      "parentId": "wall_antyacldfiplzell",
+      "visible": true,
+      "metadata": {},
+      "position": [
+        1.35,
+        1.05,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "side": "front",
+      "floorThresholdVersion": 1,
+      "wallId": "wall_antyacldfiplzell",
+      "width": 1.3,
+      "height": 2.1,
+      "constructionType": "framed",
+      "dimensionReference": "nominal",
+      "doorCategory": "interior",
+      "doorType": "double",
+      "leafCount": 2,
+      "operationState": 0,
+      "slideDirection": "left",
+      "trackStyle": "none",
+      "garagePanelCount": 4,
+      "openingKind": "door",
+      "openingShape": "rectangle",
+      "openingRadiusMode": "all",
+      "openingTopRadii": [
+        0.15,
+        0.15
+      ],
+      "cornerRadius": 0.15,
+      "archHeight": 0.45,
+      "openingRevealRadius": 0.025,
+      "frameThickness": 0.02,
+      "threshold": true,
+      "thresholdHeight": 0.02,
+      "casingFaceA": true,
+      "casingFaceB": true,
+      "hingesSide": "left",
+      "swingDirection": "inward",
+      "swingAngle": 0,
+      "segments": [
+        {
+          "type": "panel",
+          "heightRatio": 0.4,
+          "columnRatios": [
+            1
+          ],
+          "dividerThickness": 0.03,
+          "panelDepth": 0.01,
+          "panelInset": 0.04
+        },
+        {
+          "type": "panel",
+          "heightRatio": 0.6,
+          "columnRatios": [
+            1
+          ],
+          "dividerThickness": 0.03,
+          "panelDepth": 0.01,
+          "panelInset": 0.04
+        }
+      ],
+      "handle": true,
+      "handleHeight": 1.05,
+      "handleSide": "right",
+      "contentPadding": [
+        0.11,
+        0.11
+      ],
+      "doorCloser": false,
+      "panicBar": false,
+      "panicBarStyle": "crossbar",
+      "panicBarRods": false,
+      "panicBarHeight": 1
+    },
+    "door_o3avu2kb4srhkb67": {
+      "object": "node",
+      "id": "door_o3avu2kb4srhkb67",
+      "type": "door",
+      "name": "Door 3",
+      "parentId": "wall_1932xyy0tc2j1lte",
+      "visible": true,
+      "metadata": {},
+      "position": [
+        2.15001,
+        1.05,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "side": "front",
+      "floorThresholdVersion": 1,
+      "wallId": "wall_1932xyy0tc2j1lte",
+      "width": 0.9,
+      "height": 2.1,
+      "constructionType": "framed",
+      "dimensionReference": "nominal",
+      "doorCategory": "interior",
+      "doorType": "hinged",
+      "leafCount": 1,
+      "operationState": 0,
+      "slideDirection": "left",
+      "trackStyle": "none",
+      "garagePanelCount": 4,
+      "openingKind": "door",
+      "openingShape": "rectangle",
+      "openingRadiusMode": "all",
+      "openingTopRadii": [
+        0.15,
+        0.15
+      ],
+      "cornerRadius": 0.15,
+      "archHeight": 0.45,
+      "openingRevealRadius": 0.025,
+      "frameThickness": 0.02,
+      "threshold": true,
+      "thresholdHeight": 0.02,
+      "casingFaceA": true,
+      "casingFaceB": true,
+      "hingesSide": "left",
+      "swingDirection": "inward",
+      "swingAngle": 0,
+      "segments": [
+        {
+          "type": "panel",
+          "heightRatio": 0.4,
+          "columnRatios": [
+            1
+          ],
+          "dividerThickness": 0.03,
+          "panelDepth": 0.01,
+          "panelInset": 0.04
+        },
+        {
+          "type": "panel",
+          "heightRatio": 0.6,
+          "columnRatios": [
+            1
+          ],
+          "dividerThickness": 0.03,
+          "panelDepth": 0.01,
+          "panelInset": 0.04
+        }
+      ],
+      "handle": true,
+      "handleHeight": 1.05,
+      "handleSide": "right",
+      "contentPadding": [
+        0.11,
+        0.11
+      ],
+      "doorCloser": false,
+      "panicBar": false,
+      "panicBarStyle": "crossbar",
+      "panicBarRods": false,
+      "panicBarHeight": 1
+    },
+    "ceiling_gov5auv42o3um1p8": {
+      "object": "node",
+      "id": "ceiling_gov5auv42o3um1p8",
+      "type": "ceiling",
+      "name": "Ruang Tamu Ceiling",
+      "parentId": "level_fmgff6a1cpjb8yro",
+      "visible": true,
+      "metadata": {},
+      "children": [],
+      "polygon": [
+        [
+          2.3,
+          -6
+        ],
+        [
+          5,
+          -6
+        ],
+        [
+          5,
+          -5
+        ],
+        [
+          5,
+          -2
+        ],
+        [
+          2.3,
+          -2
+        ]
+      ],
+      "holes": [],
+      "holeMetadata": [],
+      "boundary": "auto",
+      "zoneId": "zone_6b1he1hj5u9m2rt9",
+      "autoFromWalls": true
+    },
+    "wall_9fkb9zh0p9h3kcfm": {
+      "object": "node",
+      "id": "wall_9fkb9zh0p9h3kcfm",
+      "type": "wall",
+      "name": "Wall 9",
+      "parentId": "level_fmgff6a1cpjb8yro",
+      "visible": true,
+      "metadata": {},
+      "children": [
+        "door_6m4knu18n8chxbas"
+      ],
+      "thickness": 0.15,
+      "height": 2.9,
+      "start": [
+        5,
+        -6
+      ],
+      "end": [
+        5,
+        -10
+      ],
+      "frontSide": "interior",
+      "backSide": "interior"
+    },
+    "wall_32fhswp6ov5fx7br": {
+      "object": "node",
+      "id": "wall_32fhswp6ov5fx7br",
+      "type": "wall",
+      "name": "Wall 11",
+      "parentId": "level_fmgff6a1cpjb8yro",
+      "visible": true,
+      "metadata": {},
+      "children": [
+        "door_izu83xtrge31bn8f"
+      ],
+      "thickness": 0.15,
+      "height": 2.9,
+      "start": [
+        2.3,
+        -10
+      ],
+      "end": [
+        2.3,
+        -6
+      ],
+      "frontSide": "interior",
+      "backSide": "interior"
+    },
+    "zone_d492mp6m8n1epl5q": {
+      "object": "node",
+      "id": "zone_d492mp6m8n1epl5q",
+      "type": "zone",
+      "name": "Ruang Tengah / Keluarga",
+      "parentId": "level_fmgff6a1cpjb8yro",
+      "visible": true,
+      "metadata": {},
+      "polygon": [
+        [
+          2.3,
+          -10
+        ],
+        [
+          4.7,
+          -10
+        ],
+        [
+          5,
+          -10
+        ],
+        [
+          5,
+          -6
+        ],
+        [
+          2.3,
+          -6
+        ]
+      ],
+      "holes": [],
+      "autoFromWalls": true,
+      "boundaryWallIds": [
+        "wall_1932xyy0tc2j1lte",
+        "wall_32fhswp6ov5fx7br",
+        "wall_9fkb9zh0p9h3kcfm",
+        "wall_fw332kollmc2ihvi",
+        "wall_wm0zqdpqj4qkobed"
+      ],
+      "boundarySeparatorIds": [],
+      "seed": [
+        3.650000000000001,
+        -8
+      ],
+      "spaceRole": "room",
+      "roomNumber": "",
+      "enclosureStatus": "enclosed",
+      "floorFinish": "",
+      "wallFinish": "",
+      "ceilingFinish": "",
+      "ceilingHeight": 2.7,
+      "occupancy": "",
+      "clearDimensionPolicy": "none",
+      "color": "#F3EDE1"
+    },
+    "door_izu83xtrge31bn8f": {
+      "object": "node",
+      "id": "door_izu83xtrge31bn8f",
+      "type": "door",
+      "name": "Door 4",
+      "parentId": "wall_32fhswp6ov5fx7br",
+      "visible": true,
+      "metadata": {},
+      "position": [
+        3.4247999999999994,
+        1.025,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "side": "front",
+      "floorThresholdVersion": 1,
+      "wallId": "wall_32fhswp6ov5fx7br",
+      "width": 0.85,
+      "height": 2.05,
+      "constructionType": "framed",
+      "dimensionReference": "nominal",
+      "doorCategory": "interior",
+      "doorType": "hinged",
+      "leafCount": 1,
+      "operationState": 0,
+      "slideDirection": "left",
+      "trackStyle": "none",
+      "garagePanelCount": 4,
+      "openingKind": "door",
+      "openingShape": "rectangle",
+      "openingRadiusMode": "all",
+      "openingTopRadii": [
+        0.15,
+        0.15
+      ],
+      "cornerRadius": 0.15,
+      "archHeight": 0.45,
+      "openingRevealRadius": 0.025,
+      "frameThickness": 0.02,
+      "threshold": true,
+      "thresholdHeight": 0.02,
+      "casingFaceA": true,
+      "casingFaceB": true,
+      "hingesSide": "left",
+      "swingDirection": "inward",
+      "swingAngle": 0,
+      "segments": [
+        {
+          "type": "panel",
+          "heightRatio": 0.4,
+          "columnRatios": [
+            1
+          ],
+          "dividerThickness": 0.03,
+          "panelDepth": 0.01,
+          "panelInset": 0.04
+        },
+        {
+          "type": "panel",
+          "heightRatio": 0.6,
+          "columnRatios": [
+            1
+          ],
+          "dividerThickness": 0.03,
+          "panelDepth": 0.01,
+          "panelInset": 0.04
+        }
+      ],
+      "handle": true,
+      "handleHeight": 1.05,
+      "handleSide": "right",
+      "contentPadding": [
+        0.11,
+        0.11
+      ],
+      "doorCloser": false,
+      "panicBar": false,
+      "panicBarStyle": "crossbar",
+      "panicBarRods": false,
+      "panicBarHeight": 1
+    },
+    "door_6m4knu18n8chxbas": {
+      "object": "node",
+      "id": "door_6m4knu18n8chxbas",
+      "type": "door",
+      "name": "Door 5",
+      "parentId": "wall_9fkb9zh0p9h3kcfm",
+      "visible": true,
+      "metadata": {},
+      "position": [
+        0.5251999999999999,
+        1.025,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "side": "front",
+      "floorThresholdVersion": 1,
+      "wallId": "wall_9fkb9zh0p9h3kcfm",
+      "width": 0.85,
+      "height": 2.05,
+      "constructionType": "framed",
+      "dimensionReference": "nominal",
+      "doorCategory": "interior",
+      "doorType": "hinged",
+      "leafCount": 1,
+      "operationState": 0,
+      "slideDirection": "left",
+      "trackStyle": "none",
+      "garagePanelCount": 4,
+      "openingKind": "door",
+      "openingShape": "rectangle",
+      "openingRadiusMode": "all",
+      "openingTopRadii": [
+        0.15,
+        0.15
+      ],
+      "cornerRadius": 0.15,
+      "archHeight": 0.45,
+      "openingRevealRadius": 0.025,
+      "frameThickness": 0.02,
+      "threshold": true,
+      "thresholdHeight": 0.02,
+      "casingFaceA": true,
+      "casingFaceB": true,
+      "hingesSide": "left",
+      "swingDirection": "inward",
+      "swingAngle": 0,
+      "segments": [
+        {
+          "type": "panel",
+          "heightRatio": 0.4,
+          "columnRatios": [
+            1
+          ],
+          "dividerThickness": 0.03,
+          "panelDepth": 0.01,
+          "panelInset": 0.04
+        },
+        {
+          "type": "panel",
+          "heightRatio": 0.6,
+          "columnRatios": [
+            1
+          ],
+          "dividerThickness": 0.03,
+          "panelDepth": 0.01,
+          "panelInset": 0.04
+        }
+      ],
+      "handle": true,
+      "handleHeight": 1.05,
+      "handleSide": "right",
+      "contentPadding": [
+        0.11,
+        0.11
+      ],
+      "doorCloser": false,
+      "panicBar": false,
+      "panicBarStyle": "crossbar",
+      "panicBarRods": false,
+      "panicBarHeight": 1
+    },
+    "door_dvgcwfb4kszc9tl4": {
+      "object": "node",
+      "id": "door_dvgcwfb4kszc9tl4",
+      "type": "door",
+      "name": "Door 6",
+      "parentId": "wall_wm0zqdpqj4qkobed",
+      "visible": true,
+      "metadata": {},
+      "position": [
+        1.8751200000000003,
+        1.025,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "side": "front",
+      "floorThresholdVersion": 1,
+      "wallId": "wall_wm0zqdpqj4qkobed",
+      "width": 0.85,
+      "height": 2.05,
+      "constructionType": "framed",
+      "dimensionReference": "nominal",
+      "doorCategory": "interior",
+      "doorType": "hinged",
+      "leafCount": 1,
+      "operationState": 0,
+      "slideDirection": "left",
+      "trackStyle": "none",
+      "garagePanelCount": 4,
+      "openingKind": "door",
+      "openingShape": "rectangle",
+      "openingRadiusMode": "all",
+      "openingTopRadii": [
+        0.15,
+        0.15
+      ],
+      "cornerRadius": 0.15,
+      "archHeight": 0.45,
+      "openingRevealRadius": 0.025,
+      "frameThickness": 0.02,
+      "threshold": true,
+      "thresholdHeight": 0.02,
+      "casingFaceA": true,
+      "casingFaceB": true,
+      "hingesSide": "left",
+      "swingDirection": "inward",
+      "swingAngle": 0,
+      "segments": [
+        {
+          "type": "panel",
+          "heightRatio": 0.4,
+          "columnRatios": [
+            1
+          ],
+          "dividerThickness": 0.03,
+          "panelDepth": 0.01,
+          "panelInset": 0.04
+        },
+        {
+          "type": "panel",
+          "heightRatio": 0.6,
+          "columnRatios": [
+            1
+          ],
+          "dividerThickness": 0.03,
+          "panelDepth": 0.01,
+          "panelInset": 0.04
+        }
+      ],
+      "handle": true,
+      "handleHeight": 1.05,
+      "handleSide": "right",
+      "contentPadding": [
+        0.11,
+        0.11
+      ],
+      "doorCloser": false,
+      "panicBar": false,
+      "panicBarStyle": "crossbar",
+      "panicBarRods": false,
+      "panicBarHeight": 1
+    },
+    "ceiling_8n9r1jc8mawq41i3": {
+      "object": "node",
+      "id": "ceiling_8n9r1jc8mawq41i3",
+      "type": "ceiling",
+      "name": "Ruang Tengah / Keluarga Ceiling",
+      "parentId": "level_fmgff6a1cpjb8yro",
+      "visible": true,
+      "metadata": {},
+      "children": [],
+      "polygon": [
+        [
+          2.3,
+          -10
+        ],
+        [
+          4.7,
+          -10
+        ],
+        [
+          5,
+          -10
+        ],
+        [
+          5,
+          -6
+        ],
+        [
+          2.3,
+          -6
+        ]
+      ],
+      "holes": [],
+      "holeMetadata": [],
+      "boundary": "auto",
+      "zoneId": "zone_d492mp6m8n1epl5q",
+      "autoFromWalls": true
+    },
+    "wall_eopvergfk7uef0ld": {
+      "object": "node",
+      "id": "wall_eopvergfk7uef0ld",
+      "type": "wall",
+      "name": "Wall 12",
+      "parentId": "level_fmgff6a1cpjb8yro",
+      "visible": true,
+      "metadata": {},
+      "children": [],
+      "thickness": 0.15,
+      "height": 2.9,
+      "start": [
+        2.3,
+        -10
+      ],
+      "end": [
+        0,
+        -10
+      ],
+      "frontSide": "interior",
+      "backSide": "interior"
+    },
+    "wall_ju20zvdrpw3x4hzv": {
+      "object": "node",
+      "id": "wall_ju20zvdrpw3x4hzv",
+      "type": "wall",
+      "name": "Wall 13",
+      "parentId": "level_fmgff6a1cpjb8yro",
+      "visible": true,
+      "metadata": {},
+      "children": [],
+      "thickness": 0.15,
+      "height": 2.9,
+      "start": [
+        0,
+        -10
+      ],
+      "end": [
+        0,
+        -6
+      ],
+      "frontSide": "exterior",
+      "backSide": "interior"
+    },
+    "zone_gg60xullu7511w57": {
+      "object": "node",
+      "id": "zone_gg60xullu7511w57",
+      "type": "zone",
+      "name": "Kamar Belakang",
+      "parentId": "level_fmgff6a1cpjb8yro",
+      "visible": true,
+      "metadata": {},
+      "polygon": [
+        [
+          0,
+          -10
+        ],
+        [
+          2.3,
+          -10
+        ],
+        [
+          2.3,
+          -6
+        ],
+        [
+          0,
+          -6
+        ]
+      ],
+      "holes": [],
+      "autoFromWalls": true,
+      "boundaryWallIds": [
+        "wall_32fhswp6ov5fx7br",
+        "wall_eopvergfk7uef0ld",
+        "wall_jjfm29gddypbiagv",
+        "wall_ju20zvdrpw3x4hzv"
+      ],
+      "boundarySeparatorIds": [],
+      "seed": [
+        1.15,
+        -8
+      ],
+      "spaceRole": "room",
+      "roomNumber": "",
+      "enclosureStatus": "enclosed",
+      "floorFinish": "",
+      "wallFinish": "",
+      "ceilingFinish": "",
+      "ceilingHeight": 2.7,
+      "occupancy": "",
+      "clearDimensionPolicy": "none",
+      "color": "#F3EDE1"
+    },
+    "ceiling_pf2vau58jn1p1b5v": {
+      "object": "node",
+      "id": "ceiling_pf2vau58jn1p1b5v",
+      "type": "ceiling",
+      "name": "Kamar Belakang Ceiling",
+      "parentId": "level_fmgff6a1cpjb8yro",
+      "visible": true,
+      "metadata": {},
+      "children": [],
+      "polygon": [
+        [
+          0,
+          -10
+        ],
+        [
+          2.3,
+          -10
+        ],
+        [
+          2.3,
+          -6
+        ],
+        [
+          0,
+          -6
+        ]
+      ],
+      "holes": [],
+      "holeMetadata": [],
+      "boundary": "auto",
+      "zoneId": "zone_gg60xullu7511w57",
+      "autoFromWalls": true
+    },
+    "wall_fw332kollmc2ihvi": {
+      "object": "node",
+      "id": "wall_fw332kollmc2ihvi",
+      "type": "wall",
+      "name": "Wall 10",
+      "parentId": "level_fmgff6a1cpjb8yro",
+      "visible": true,
+      "metadata": {},
+      "children": [],
+      "thickness": 0.15,
+      "height": 2.9,
+      "start": [
+        5,
+        -10
+      ],
+      "end": [
+        4.7,
+        -10
+      ],
+      "frontSide": "interior",
+      "backSide": "interior"
+    },
+    "wall_wm0zqdpqj4qkobed": {
+      "object": "node",
+      "id": "wall_wm0zqdpqj4qkobed",
+      "type": "wall",
+      "name": "Wall 10",
+      "parentId": "level_fmgff6a1cpjb8yro",
+      "visible": true,
+      "metadata": {},
+      "children": [
+        "door_dvgcwfb4kszc9tl4"
+      ],
+      "thickness": 0.15,
+      "height": 2.9,
+      "start": [
+        4.7,
+        -10
+      ],
+      "end": [
+        2.3,
+        -10
+      ],
+      "frontSide": "interior",
+      "backSide": "interior"
+    },
+    "wall_dmw32qqss2vkb4nz": {
+      "object": "node",
+      "id": "wall_dmw32qqss2vkb4nz",
+      "type": "wall",
+      "name": "Wall 14",
+      "parentId": "level_fmgff6a1cpjb8yro",
+      "visible": true,
+      "metadata": {},
+      "children": [
+        "door_cctfb2jboj1bcmnr"
+      ],
+      "thickness": 0.15,
+      "height": 2.8,
+      "start": [
+        4.7,
+        -10
+      ],
+      "end": [
+        4.7,
+        -11.8
+      ],
+      "frontSide": "interior",
+      "backSide": "interior"
+    },
+    "wall_bl01vmb9fepswibn": {
+      "object": "node",
+      "id": "wall_bl01vmb9fepswibn",
+      "type": "wall",
+      "name": "Wall 16",
+      "parentId": "level_fmgff6a1cpjb8yro",
+      "visible": true,
+      "metadata": {},
+      "children": [
+        "window_2oxbef5f52frwjd6"
+      ],
+      "thickness": 0.15,
+      "height": 2.8,
+      "start": [
+        4.7,
+        -11.8
+      ],
+      "end": [
+        0,
+        -11.8
+      ],
+      "frontSide": "exterior",
+      "backSide": "interior"
+    },
+    "wall_hvqsrhclhh6bhufu": {
+      "object": "node",
+      "id": "wall_hvqsrhclhh6bhufu",
+      "type": "wall",
+      "name": "Wall 17",
+      "parentId": "level_fmgff6a1cpjb8yro",
+      "visible": true,
+      "metadata": {},
+      "children": [],
+      "thickness": 0.15,
+      "height": 2.8,
+      "start": [
+        0,
+        -11.8
+      ],
+      "end": [
+        0,
+        -10
+      ],
+      "frontSide": "exterior",
+      "backSide": "interior"
+    },
+    "zone_fegjwkwx5fvbd69z": {
+      "object": "node",
+      "id": "zone_fegjwkwx5fvbd69z",
+      "type": "zone",
+      "name": "Dapur (galley)",
+      "parentId": "level_fmgff6a1cpjb8yro",
+      "visible": true,
+      "metadata": {},
+      "polygon": [
+        [
+          0,
+          -11.8
+        ],
+        [
+          4.7,
+          -11.8
+        ],
+        [
+          4.7,
+          -10
+        ],
+        [
+          2.3,
+          -10
+        ],
+        [
+          0,
+          -10
+        ]
+      ],
+      "holes": [],
+      "autoFromWalls": true,
+      "boundaryWallIds": [
+        "wall_bl01vmb9fepswibn",
+        "wall_dmw32qqss2vkb4nz",
+        "wall_eopvergfk7uef0ld",
+        "wall_hvqsrhclhh6bhufu",
+        "wall_wm0zqdpqj4qkobed"
+      ],
+      "boundarySeparatorIds": [],
+      "seed": [
+        2.35,
+        -10.899999999999997
+      ],
+      "spaceRole": "room",
+      "roomNumber": "",
+      "enclosureStatus": "enclosed",
+      "floorFinish": "",
+      "wallFinish": "",
+      "ceilingFinish": "",
+      "ceilingHeight": 2.7,
+      "occupancy": "",
+      "clearDimensionPolicy": "none",
+      "color": "#F5EFE4"
+    },
+    "window_2oxbef5f52frwjd6": {
+      "object": "node",
+      "id": "window_2oxbef5f52frwjd6",
+      "type": "window",
+      "name": "Window 2",
+      "parentId": "wall_bl01vmb9fepswibn",
+      "visible": true,
+      "metadata": {},
+      "position": [
+        1.8000999999999998,
+        2.425,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "floorThresholdVersion": 1,
+      "wallId": "wall_bl01vmb9fepswibn",
+      "width": 1.2,
+      "height": 0.25,
+      "constructionType": "framed",
+      "dimensionReference": "nominal",
+      "openingKind": "window",
+      "windowType": "fixed",
+      "operationState": 0,
+      "awningDirection": "up",
+      "casementStyle": "single",
+      "hingesSide": "left",
+      "openingShape": "rectangle",
+      "openingRadiusMode": "all",
+      "openingCornerRadii": [
+        0.15,
+        0.15,
+        0.15,
+        0.15
+      ],
+      "cornerRadius": 0.15,
+      "archHeight": 0.35,
+      "openingRevealRadius": 0.025,
+      "frameThickness": 0.02,
+      "columnRatios": [
+        1
+      ],
+      "rowRatios": [
+        1
+      ],
+      "columnDividerThickness": 0.03,
+      "rowDividerThickness": 0.03,
+      "sill": true,
+      "sillDepth": 0.08,
+      "sillThickness": 0.03,
+      "casingFaceA": true,
+      "casingFaceB": true
+    },
+    "ceiling_8aubonsfnc8emqa3": {
+      "object": "node",
+      "id": "ceiling_8aubonsfnc8emqa3",
+      "type": "ceiling",
+      "name": "Dapur (galley) Ceiling",
+      "parentId": "level_fmgff6a1cpjb8yro",
+      "visible": true,
+      "metadata": {},
+      "children": [],
+      "polygon": [
+        [
+          0,
+          -11.8
+        ],
+        [
+          4.7,
+          -11.8
+        ],
+        [
+          4.7,
+          -10
+        ],
+        [
+          2.3,
+          -10
+        ],
+        [
+          0,
+          -10
+        ]
+      ],
+      "holes": [],
+      "holeMetadata": [],
+      "boundary": "auto",
+      "zoneId": "zone_fegjwkwx5fvbd69z",
+      "autoFromWalls": true
+    },
+    "wall_u4pgtn3sqv6yh7bl": {
+      "object": "node",
+      "id": "wall_u4pgtn3sqv6yh7bl",
+      "type": "wall",
+      "name": "Wall 18",
+      "parentId": "level_fmgff6a1cpjb8yro",
+      "visible": true,
+      "metadata": {},
+      "children": [],
+      "thickness": 0.15,
+      "height": 2.6,
+      "start": [
+        5,
+        -10
+      ],
+      "end": [
+        6.300000000000001,
+        -10
+      ],
+      "frontSide": "interior",
+      "backSide": "interior"
+    },
+    "wall_aa7qpknsf66zmspf": {
+      "object": "node",
+      "id": "wall_aa7qpknsf66zmspf",
+      "type": "wall",
+      "name": "Wall 19",
+      "parentId": "level_fmgff6a1cpjb8yro",
+      "visible": true,
+      "metadata": {},
+      "children": [],
+      "thickness": 0.15,
+      "height": 2.6,
+      "start": [
+        6.300000000000001,
+        -10
+      ],
+      "end": [
+        6.300000000000001,
+        -11.8
+      ],
+      "frontSide": "exterior",
+      "backSide": "interior"
+    },
+    "wall_9unt3v0lymzwtxf6": {
+      "object": "node",
+      "id": "wall_9unt3v0lymzwtxf6",
+      "type": "wall",
+      "name": "Wall 20",
+      "parentId": "level_fmgff6a1cpjb8yro",
+      "visible": true,
+      "metadata": {},
+      "children": [],
+      "thickness": 0.15,
+      "height": 2.6,
+      "start": [
+        6.300000000000001,
+        -11.8
+      ],
+      "end": [
+        4.7,
+        -11.8
+      ],
+      "frontSide": "exterior",
+      "backSide": "interior"
+    },
+    "zone_9tgih8km5z7mu9iy": {
+      "object": "node",
+      "id": "zone_9tgih8km5z7mu9iy",
+      "type": "zone",
+      "name": "Kamar Mandi",
+      "parentId": "level_fmgff6a1cpjb8yro",
+      "visible": true,
+      "metadata": {},
+      "polygon": [
+        [
+          4.7,
+          -11.8
+        ],
+        [
+          6.300000000000001,
+          -11.8
+        ],
+        [
+          6.300000000000001,
+          -10
+        ],
+        [
+          5,
+          -10
+        ],
+        [
+          4.7,
+          -10
+        ]
+      ],
+      "holes": [],
+      "autoFromWalls": true,
+      "boundaryWallIds": [
+        "wall_9unt3v0lymzwtxf6",
+        "wall_aa7qpknsf66zmspf",
+        "wall_dmw32qqss2vkb4nz",
+        "wall_fw332kollmc2ihvi",
+        "wall_u4pgtn3sqv6yh7bl"
+      ],
+      "boundarySeparatorIds": [],
+      "seed": [
+        5.500000000000002,
+        -10.900000000000006
+      ],
+      "spaceRole": "room",
+      "roomNumber": "",
+      "enclosureStatus": "enclosed",
+      "floorFinish": "",
+      "wallFinish": "",
+      "ceilingFinish": "",
+      "ceilingHeight": 2.7,
+      "occupancy": "",
+      "clearDimensionPolicy": "none",
+      "color": "#FFFFFF"
+    },
+    "door_cctfb2jboj1bcmnr": {
+      "object": "node",
+      "id": "door_cctfb2jboj1bcmnr",
+      "type": "door",
+      "name": "Door 7",
+      "parentId": "wall_dmw32qqss2vkb4nz",
+      "visible": true,
+      "metadata": {},
+      "position": [
+        0.44999999999999934,
+        1,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "side": "front",
+      "floorThresholdVersion": 1,
+      "wallId": "wall_dmw32qqss2vkb4nz",
+      "width": 0.7,
+      "height": 2,
+      "constructionType": "framed",
+      "dimensionReference": "nominal",
+      "doorCategory": "interior",
+      "doorType": "hinged",
+      "leafCount": 1,
+      "operationState": 0,
+      "slideDirection": "left",
+      "trackStyle": "none",
+      "garagePanelCount": 4,
+      "openingKind": "door",
+      "openingShape": "rectangle",
+      "openingRadiusMode": "all",
+      "openingTopRadii": [
+        0.15,
+        0.15
+      ],
+      "cornerRadius": 0.15,
+      "archHeight": 0.45,
+      "openingRevealRadius": 0.025,
+      "frameThickness": 0.02,
+      "threshold": true,
+      "thresholdHeight": 0.02,
+      "casingFaceA": true,
+      "casingFaceB": true,
+      "hingesSide": "left",
+      "swingDirection": "inward",
+      "swingAngle": 0,
+      "segments": [
+        {
+          "type": "panel",
+          "heightRatio": 0.4,
+          "columnRatios": [
+            1
+          ],
+          "dividerThickness": 0.03,
+          "panelDepth": 0.01,
+          "panelInset": 0.04
+        },
+        {
+          "type": "panel",
+          "heightRatio": 0.6,
+          "columnRatios": [
+            1
+          ],
+          "dividerThickness": 0.03,
+          "panelDepth": 0.01,
+          "panelInset": 0.04
+        }
+      ],
+      "handle": true,
+      "handleHeight": 1.05,
+      "handleSide": "right",
+      "contentPadding": [
+        0.11,
+        0.11
+      ],
+      "doorCloser": false,
+      "panicBar": false,
+      "panicBarStyle": "crossbar",
+      "panicBarRods": false,
+      "panicBarHeight": 1
+    },
+    "ceiling_syldrogqugspshxf": {
+      "object": "node",
+      "id": "ceiling_syldrogqugspshxf",
+      "type": "ceiling",
+      "name": "Kamar Mandi Ceiling",
+      "parentId": "level_fmgff6a1cpjb8yro",
+      "visible": true,
+      "metadata": {},
+      "children": [],
+      "polygon": [
+        [
+          4.7,
+          -11.8
+        ],
+        [
+          6.300000000000001,
+          -11.8
+        ],
+        [
+          6.300000000000001,
+          -10
+        ],
+        [
+          5,
+          -10
+        ],
+        [
+          4.7,
+          -10
+        ]
+      ],
+      "holes": [],
+      "holeMetadata": [],
+      "boundary": "auto",
+      "zoneId": "zone_9tgih8km5z7mu9iy",
+      "autoFromWalls": true
+    },
+    "wall_m4ekjavr1he930ik": {
+      "object": "node",
+      "id": "wall_m4ekjavr1he930ik",
+      "type": "wall",
+      "name": "Wall 7",
+      "parentId": "level_fmgff6a1cpjb8yro",
+      "visible": true,
+      "metadata": {},
+      "children": [],
+      "thickness": 0.15,
+      "height": 2.9,
+      "start": [
+        5,
+        -2
+      ],
+      "end": [
+        5,
+        -5
+      ],
+      "frontSide": "exterior",
+      "backSide": "interior"
+    },
+    "wall_dqcsu0wdcj4is6qx": {
+      "object": "node",
+      "id": "wall_dqcsu0wdcj4is6qx",
+      "type": "wall",
+      "name": "Wall 7",
+      "parentId": "level_fmgff6a1cpjb8yro",
+      "visible": true,
+      "metadata": {},
+      "children": [],
+      "thickness": 0.15,
+      "height": 2.9,
+      "start": [
+        5,
+        -5
+      ],
+      "end": [
+        5,
+        -6
+      ],
+      "frontSide": "interior",
+      "backSide": "interior"
+    },
+    "wall_ilxys1g3ivq90ysp": {
+      "object": "node",
+      "id": "wall_ilxys1g3ivq90ysp",
+      "type": "wall",
+      "name": "Wall 21",
+      "parentId": "level_fmgff6a1cpjb8yro",
+      "visible": true,
+      "metadata": {},
+      "children": [
+        "door_eavuzs8urnkax786"
+      ],
+      "thickness": 0.15,
+      "height": 2.7,
+      "start": [
+        5,
+        -5
+      ],
+      "end": [
+        8.15,
+        -5
+      ],
+      "frontSide": "exterior",
+      "backSide": "interior"
+    },
+    "wall_30mxxb3ualk9hd89": {
+      "object": "node",
+      "id": "wall_30mxxb3ualk9hd89",
+      "type": "wall",
+      "name": "Wall 23",
+      "parentId": "level_fmgff6a1cpjb8yro",
+      "visible": true,
+      "metadata": {},
+      "children": [],
+      "thickness": 0.15,
+      "height": 2.7,
+      "start": [
+        8.15,
+        -5
+      ],
+      "end": [
+        8.15,
+        -10
+      ],
+      "frontSide": "exterior",
+      "backSide": "interior"
+    },
+    "wall_9medd2zk4uha0024": {
+      "object": "node",
+      "id": "wall_9medd2zk4uha0024",
+      "type": "wall",
+      "name": "Wall 24",
+      "parentId": "level_fmgff6a1cpjb8yro",
+      "visible": true,
+      "metadata": {},
+      "children": [
+        "window_yto9slmq02u3wqum"
+      ],
+      "thickness": 0.15,
+      "height": 2.7,
+      "start": [
+        8.15,
+        -10
+      ],
+      "end": [
+        6.300000000000001,
+        -10
+      ],
+      "frontSide": "exterior",
+      "backSide": "interior"
+    },
+    "zone_zo9vslgve1funuee": {
+      "object": "node",
+      "id": "zone_zo9vslgve1funuee",
+      "type": "zone",
+      "name": "Ruang Belakang (makan + tempat sepatu + utilitas)",
+      "parentId": "level_fmgff6a1cpjb8yro",
+      "visible": true,
+      "metadata": {},
+      "polygon": [
+        [
+          5,
+          -10
+        ],
+        [
+          6.300000000000001,
+          -10
+        ],
+        [
+          8.15,
+          -10
+        ],
+        [
+          8.15,
+          -5
+        ],
+        [
+          5,
+          -5
+        ],
+        [
+          5,
+          -6
+        ]
+      ],
+      "holes": [],
+      "autoFromWalls": true,
+      "boundaryWallIds": [
+        "wall_30mxxb3ualk9hd89",
+        "wall_9fkb9zh0p9h3kcfm",
+        "wall_9medd2zk4uha0024",
+        "wall_dqcsu0wdcj4is6qx",
+        "wall_ilxys1g3ivq90ysp",
+        "wall_u4pgtn3sqv6yh7bl"
+      ],
+      "boundarySeparatorIds": [],
+      "seed": [
+        6.575000000000001,
+        -7.5
+      ],
+      "spaceRole": "room",
+      "roomNumber": "",
+      "enclosureStatus": "enclosed",
+      "floorFinish": "",
+      "wallFinish": "",
+      "ceilingFinish": "",
+      "ceilingHeight": 2.7,
+      "occupancy": "",
+      "clearDimensionPolicy": "none",
+      "color": "#F5EFE4"
+    },
+    "door_eavuzs8urnkax786": {
+      "object": "node",
+      "id": "door_eavuzs8urnkax786",
+      "type": "door",
+      "name": "Door 8",
+      "parentId": "wall_ilxys1g3ivq90ysp",
+      "visible": true,
+      "metadata": {},
+      "position": [
+        0.7251299999999999,
+        1.025,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "side": "front",
+      "floorThresholdVersion": 1,
+      "wallId": "wall_ilxys1g3ivq90ysp",
+      "width": 0.85,
+      "height": 2.05,
+      "constructionType": "framed",
+      "dimensionReference": "nominal",
+      "doorCategory": "interior",
+      "doorType": "hinged",
+      "leafCount": 1,
+      "operationState": 0,
+      "slideDirection": "left",
+      "trackStyle": "none",
+      "garagePanelCount": 4,
+      "openingKind": "door",
+      "openingShape": "rectangle",
+      "openingRadiusMode": "all",
+      "openingTopRadii": [
+        0.15,
+        0.15
+      ],
+      "cornerRadius": 0.15,
+      "archHeight": 0.45,
+      "openingRevealRadius": 0.025,
+      "frameThickness": 0.02,
+      "threshold": true,
+      "thresholdHeight": 0.02,
+      "casingFaceA": true,
+      "casingFaceB": true,
+      "hingesSide": "left",
+      "swingDirection": "inward",
+      "swingAngle": 0,
+      "segments": [
+        {
+          "type": "panel",
+          "heightRatio": 0.4,
+          "columnRatios": [
+            1
+          ],
+          "dividerThickness": 0.03,
+          "panelDepth": 0.01,
+          "panelInset": 0.04
+        },
+        {
+          "type": "panel",
+          "heightRatio": 0.6,
+          "columnRatios": [
+            1
+          ],
+          "dividerThickness": 0.03,
+          "panelDepth": 0.01,
+          "panelInset": 0.04
+        }
+      ],
+      "handle": true,
+      "handleHeight": 1.05,
+      "handleSide": "right",
+      "contentPadding": [
+        0.11,
+        0.11
+      ],
+      "doorCloser": false,
+      "panicBar": false,
+      "panicBarStyle": "crossbar",
+      "panicBarRods": false,
+      "panicBarHeight": 1
+    },
+    "window_yto9slmq02u3wqum": {
+      "object": "node",
+      "id": "window_yto9slmq02u3wqum",
+      "type": "window",
+      "name": "Window 3",
+      "parentId": "wall_9medd2zk4uha0024",
+      "visible": true,
+      "metadata": {},
+      "position": [
+        0.9999999999999997,
+        2.425,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "floorThresholdVersion": 1,
+      "wallId": "wall_9medd2zk4uha0024",
+      "width": 1.7,
+      "height": 0.25,
+      "constructionType": "framed",
+      "dimensionReference": "nominal",
+      "openingKind": "window",
+      "windowType": "fixed",
+      "operationState": 0,
+      "awningDirection": "up",
+      "casementStyle": "single",
+      "hingesSide": "left",
+      "openingShape": "rectangle",
+      "openingRadiusMode": "all",
+      "openingCornerRadii": [
+        0.15,
+        0.15,
+        0.15,
+        0.15
+      ],
+      "cornerRadius": 0.15,
+      "archHeight": 0.35,
+      "openingRevealRadius": 0.025,
+      "frameThickness": 0.02,
+      "columnRatios": [
+        1
+      ],
+      "rowRatios": [
+        1
+      ],
+      "columnDividerThickness": 0.03,
+      "rowDividerThickness": 0.03,
+      "sill": true,
+      "sillDepth": 0.08,
+      "sillThickness": 0.03,
+      "casingFaceA": true,
+      "casingFaceB": true
+    },
+    "ceiling_jjqjsqi3zibmkg3a": {
+      "object": "node",
+      "id": "ceiling_jjqjsqi3zibmkg3a",
+      "type": "ceiling",
+      "name": "Ruang Belakang (makan + tempat sepatu + utilitas) Ceiling",
+      "parentId": "level_fmgff6a1cpjb8yro",
+      "visible": true,
+      "metadata": {},
+      "children": [],
+      "polygon": [
+        [
+          5,
+          -10
+        ],
+        [
+          6.300000000000001,
+          -10
+        ],
+        [
+          8.15,
+          -10
+        ],
+        [
+          8.15,
+          -5
+        ],
+        [
+          5,
+          -5
+        ],
+        [
+          5,
+          -6
+        ]
+      ],
+      "holes": [],
+      "holeMetadata": [],
+      "boundary": "auto",
+      "zoneId": "zone_zo9vslgve1funuee",
+      "autoFromWalls": true
+    },
+    "separator_md6865uvtc8t2eau": {
+      "object": "node",
+      "id": "separator_md6865uvtc8t2eau",
+      "type": "separator",
+      "parentId": "level_fmgff6a1cpjb8yro",
+      "visible": true,
+      "metadata": {},
+      "start": [
+        2.3,
+        0
+      ],
+      "end": [
+        5,
+        0
+      ]
+    },
+    "separator_iuvexwkz40mn42h9": {
+      "object": "node",
+      "id": "separator_iuvexwkz40mn42h9",
+      "type": "separator",
+      "parentId": "level_fmgff6a1cpjb8yro",
+      "visible": true,
+      "metadata": {},
+      "start": [
+        5,
+        0
+      ],
+      "end": [
+        5,
+        -2
+      ]
+    },
+    "zone_5plu3xdkff41ybj1": {
+      "object": "node",
+      "id": "zone_5plu3xdkff41ybj1",
+      "type": "zone",
+      "name": "Teras",
+      "parentId": "level_fmgff6a1cpjb8yro",
+      "visible": true,
+      "metadata": {},
+      "polygon": [
+        [
+          2.3,
+          -2
+        ],
+        [
+          5,
+          -2
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          2.3,
+          0
+        ]
+      ],
+      "holes": [],
+      "autoFromWalls": true,
+      "boundaryWallIds": [
+        "wall_antyacldfiplzell",
+        "wall_ukdhbwazbsgtaxtu"
+      ],
+      "boundarySeparatorIds": [
+        "separator_md6865uvtc8t2eau",
+        "separator_san1oh6k8vreb1w6"
+      ],
+      "seed": [
+        3.65,
+        -1
+      ],
+      "hasCeiling": false,
+      "spaceRole": "room",
+      "roomNumber": "",
+      "enclosureStatus": "enclosed",
+      "floorFinish": "",
+      "wallFinish": "",
+      "ceilingFinish": "",
+      "ceilingHeight": 2.7,
+      "occupancy": "",
+      "clearDimensionPolicy": "none",
+      "color": "#EFE8DA"
+    },
+    "separator_c4e6t08jtut67tb3": {
+      "object": "node",
+      "id": "separator_c4e6t08jtut67tb3",
+      "type": "separator",
+      "parentId": "level_fmgff6a1cpjb8yro",
+      "visible": true,
+      "metadata": {},
+      "start": [
+        5,
+        0
+      ],
+      "end": [
+        8.15,
+        0
+      ]
+    },
+    "separator_5n5bgcyksu654l92": {
+      "object": "node",
+      "id": "separator_5n5bgcyksu654l92",
+      "type": "separator",
+      "parentId": "level_fmgff6a1cpjb8yro",
+      "visible": true,
+      "metadata": {},
+      "start": [
+        8.15,
+        0
+      ],
+      "end": [
+        8.15,
+        -5
+      ]
+    },
+    "separator_san1oh6k8vreb1w6": {
+      "object": "node",
+      "id": "separator_san1oh6k8vreb1w6",
+      "type": "separator",
+      "parentId": "level_fmgff6a1cpjb8yro",
+      "visible": true,
+      "metadata": {},
+      "start": [
+        5,
+        -2
+      ],
+      "end": [
+        5,
+        0
+      ]
+    },
+    "zone_ferxgs06k3ekzewa": {
+      "object": "node",
+      "id": "zone_ferxgs06k3ekzewa",
+      "type": "zone",
+      "name": "Carport",
+      "parentId": "level_fmgff6a1cpjb8yro",
+      "visible": true,
+      "metadata": {},
+      "polygon": [
+        [
+          5,
+          -5
+        ],
+        [
+          8.15,
+          -5
+        ],
+        [
+          8.15,
+          0
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          5,
+          -2
+        ]
+      ],
+      "holes": [],
+      "autoFromWalls": true,
+      "boundaryWallIds": [
+        "wall_ilxys1g3ivq90ysp",
+        "wall_m4ekjavr1he930ik"
+      ],
+      "boundarySeparatorIds": [
+        "separator_5n5bgcyksu654l92",
+        "separator_c4e6t08jtut67tb3",
+        "separator_iuvexwkz40mn42h9"
+      ],
+      "seed": [
+        6.575000000000001,
+        -2.5
+      ],
+      "hasCeiling": false,
+      "spaceRole": "room",
+      "roomNumber": "",
+      "enclosureStatus": "enclosed",
+      "floorFinish": "",
+      "wallFinish": "",
+      "ceilingFinish": "",
+      "ceilingHeight": 2.7,
+      "occupancy": "",
+      "clearDimensionPolicy": "none",
+      "color": "#EFE8DA"
+    }
+  },
+  "rootNodeIds": [
+    "site_3lh7l3xxd9vm1oyt"
+  ],
+  "collections": {},
+  "materials": {}
+}
