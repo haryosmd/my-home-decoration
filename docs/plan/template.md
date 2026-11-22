@@ -1,14 +1,17 @@
-# Rencana Penataan Rumah Blok DD-30
+# Rencana Penataan Rumah Blok DD-30 — Draft v2
 
 Disusun dari 26 foto (16 foto awal + 10 foto tambahan dapur, kamar belakang, dan sisi rumah) dan koreksi pemilik (panjang kamar mandi, warna keramik tiap ruang). Semua ukuran adalah **perkiraan dari foto**, belum diukur dengan meteran. Semua harga adalah **kisaran** tahun 2026 dengan asumsi tarif kota di Jawa di luar Jakarta (asumsi saya; sesuaikan dengan kota Anda dan cek ulang di toko).
 
 ## Ringkasan
 
+**Draft v2.** Perubahan dari versi sebelumnya: pemilik adalah programmer yang bekerja remote penuh waktu, jadi kamar depan dirancang ulang sebagai ruang kerja + tidur (bagian 5), ada paket anggaran "kerja remote", dan urutan kerja digeser supaya zona kerja siap paling awal. Pertanyaan putaran 1 belum dijawab, jadi semua jawaban bawaan dipakai.
+
 1. **Perbaiki bangunan dulu, baru dekorasi.** Atap ruang belakang bocor, dinding bawah lembap di hampir semua ruang, kamar belakang dan dapur tidak punya ventilasi, dan kabel listrik menumpuk. Mengecat sebelum ini beres berarti cat mengelupas lagi dalam satu musim hujan.
-2. **Konsep: Tropis Hangat** (Japandi tropis). Dinding putih gading di seluruh rumah, kayu jati yang sudah ada dipertahankan, hijau ubin diulang sebagai hijau sage, dan semua barang masuk lemari tertutup.
-3. **Ubin hijau dipertahankan** di teras, ruang tamu, ruang tengah, kamar belakang, dan dapur. Hanya kamar depan yang ditutup SPC motif kayu terang. Tidak ada bongkar lantai.
-4. **Perubahan fungsi terbesar:** TV pindah ke ruang tamu, kulkas pindah ke dapur, dispenser dan galon pindah ke ruang belakang, ruang belakang jadi ruang makan + tempat sepatu + utilitas.
-5. **Anggaran:** hemat {{T_HEMAT}}, menengah {{T_MENENGAH}}, premium {{T_PREMIUM}} (sudah termasuk cadangan 10%). Rekomendasi saya: **menengah, dikerjakan bertahap** selama 6–12 bulan. Tahap wajib pertama (perbaikan + cat) di tingkat menengah sekitar {{AB_MENENGAH}}; furnitur menyusul ruang demi ruang.
+2. **Ruang kerja remote di kamar depan:** meja sit-stand 140×70 di dinding kanan (layar tegak lurus terhadap jendela), monitor di lengan monitor, UPS menggantikan stabilizer, jalur listrik sendiri, LAN kabel ke meja, mesh Wi-Fi sampai ruang belakang, dinding sage sebagai latar video call, panel akustik, dan tempat tidur 160×200 berlaci yang dipisah tirai.
+3. **Konsep: Tropis Hangat** (Japandi tropis). Dinding putih gading di seluruh rumah, kayu jati yang sudah ada dipertahankan, hijau ubin diulang sebagai hijau sage, dan semua barang masuk lemari tertutup.
+4. **Ubin hijau dipertahankan** di semua ruang yang memakainya. Hanya kamar depan yang ditutup SPC motif kayu terang. Tidak ada bongkar lantai.
+5. **Perubahan fungsi terbesar:** TV pindah ke ruang tamu, kulkas pindah ke dapur, dispenser dan galon pindah ke ruang belakang, ruang belakang jadi ruang makan + tempat sepatu + utilitas + tempat kerja cadangan.
+6. **Anggaran:** hemat {{T_HEMAT}}, menengah {{T_MENENGAH}}, premium {{T_PREMIUM}} (sudah termasuk cadangan 10%). Rekomendasi saya: **menengah, dikerjakan bertahap** selama 6–12 bulan. Dua tahap pertama: paket kerja remote tingkat menengah ({{R_MENENGAH}}) dan perbaikan + cat ({{AB_MENENGAH}}); furnitur lain menyusul ruang demi ruang.
 
 ---
 
@@ -173,6 +176,20 @@ Minta toko cat mencocokkan (tinting) ke kode hex ini atau memilih warna terdekat
 
 ## 4. Redesign per ruang
 
+### Sebelum → sesudah
+
+| Ruang | Sebelum (kondisi foto) | Sesudah (fungsi) |
+|---|---|---|
+| Teras | Set jati + meja kopi menghalangi jendela dan jalan ke pintu; dinding kuning | Tempat duduk tamu berbentuk L di pojok, jalan ke pintu 1,2 m bebas |
+| Ruang tamu | Kosong, satu kursi penuh bantal, keranjang cucian, foto tersebar | Terima tamu + ruang keluarga + salat: sofa, TV, galeri foto, karpet tengah kosong |
+| Ruang tengah | Kasur berdiri, kulkas, dispenser, bangku penuh kardus, kabel melintang | Persimpangan yang lapang: satu lemari serbaguna, bangku ukir, mesh Wi-Fi |
+| Kamar depan | Kasur di lantai, meja kaca penuh barang, stabilizer dan kabel bertumpuk, lemari kaca | Ruang kerja remote 8–10 jam/hari + tidur 2 orang, dipisah tirai |
+| Kamar belakang | Dua lemari penuh kardus sampai plafon, tanpa ventilasi, biru tua | Kamar tidur keluarga: satu lemari geser, meja rias, exhaust, dinding terang |
+| Dapur | Karung sampah, rak papan penuh kardus, meja tambahan di jalan | Satu sisi kerja (kulkas → bak cuci → persiapan → kompor), cooker hood, tong sampah bertutup |
+| Kamar mandi | Tanpa exhaust (tata letak belum terlihat) | Zona kering dekat pintu, shower di tengah, kloset di ujung, exhaust |
+| Ruang belakang | Meja makan tertimbun, sepatu, galon, jemuran, plafon bocor | Makan + zona masuk sepatu + utilitas/laundry + pojok kerja cadangan |
+| Carport | Sepatu di lantai, kanopi berlumut | Jalur 1,2 m bebas, tong sampah beroda, jemuran lipat |
+
 Cara baca tabel: titik tengah dan rentang dalam meter pada koordinat bersama. Tapak sudah dalam posisi akhir (ukuran searah x × searah y). Semua tata letak sudah dicek: tidak ada benda di luar ruang, tidak saling tumpang, tidak ada benda dalam 85 cm di depan/belakang pintu, dan jalur jalan selebar ≥ 80 cm tersedia pada rute berikut: gerbang → teras → ruang tamu → ruang tengah → dapur → ujung kiri dapur dan kamar mandi; gerbang → carport → ruang belakang → ruang tengah; ruang belakang → meja makan; ruang tamu → kamar depan → sisi tempat tidur; ruang tengah → kamar belakang → sisi tempat tidur. (Pintu kamar mandi sendiri hanya 70 cm.)
 
 ### 4.1 Teras
@@ -209,25 +226,22 @@ Ruang ini adalah persimpangan empat pintu. Tugasnya: tetap kosong. Sisi kiri (x 
 - **Bangku ukir** diberi bantalan dudukan krem; kolongnya untuk 2 keranjang rotan.
 - **Kabel** di dinding dimasukkan ke trunking putih dekat plafon.
 - **Lampu:** 1 lampu plafon 3000K; cermin di dinding kiri memantulkan cahaya dari ruang tamu.
+- **Mesh node 2** di rak dinding kanan setinggi 2 m: titik tengah rumah, melayani kamar belakang, dapur, dan ruang belakang di balik dinding.
 
-### 4.4 Kamar depan (tidur + kerja)
+### 4.4 Kamar depan (ruang kerja remote + tidur)
 
-Ruang 2,3 × 6,0 m (bersih ±2,15 × 5,85 m) dibagi tiga zona dari depan ke belakang: tidur (y 0–1,7), rias + kerja (y 1,75–4,35), lemari + pintu (y 4,1–6,0).
+Ruang 2,3 × 6,0 m (bersih ±2,15 × 5,85 m). Siang hari ruang ini adalah kantor, jadi zona kerja mendapat tempat terbaik di tengah ruang; tempat tidur ada di ujung depan yang buntu. Zona dari depan ke belakang: tidur (y 0–1,75), kerja (y 1,85–3,25), rias (y 3,4–4,1), lemari + pintu (y 4,1–6,0). Rincian alasan dan spesifikasi ada di bagian 5.
 
 {{F_KDEPAN}}
 
-- **Tempat tidur:** rangka 160×200 berlaci, melintang di ujung depan dengan kepala di dinding kiri. Naik dari sisi panjang. **Cadangan jika lebar bersih < 2,10 m:** kasur 140×200 atau 160×200 dipasang memanjang menempel dinding kiri, kepala di dinding depan, menyisakan lorong 60–70 cm di sisi kanan; meja rias digeser 40 cm ke belakang. Jika kamar hanya untuk 1 orang, pakai 120×200.
-- **Lemari:** pintu geser 180 cm, tinggi 220 cm, di dinding kiri dekat pintu. Beri jarak 2–5 cm dari dinding dan pasang setelah dinding kering. Lemari pajangan kaca dikeluarkan.
-- **Meja kerja 120×60** di dinding kanan. Saat duduk Anda menghadap dinding kanan; dinding kiri (`#A9B59B`, dua ambalan, 2–3 bingkai) menjadi latar video call.
-- **Kabel dan perangkat:**
-  - 2 stopkontak ganda baru setinggi 90 cm di atas meja + 1 di bawah meja (pekerjaan tukang listrik).
-  - Cable tray di bawah daun meja; stopkontak panjang bersaklar dipasang di dalam tray; kabel diikat velcro dan diberi label.
-  - Stabilizer dan router masuk **kabinet teknis berventilasi** di antara meja dan pintu: pintu rotan/bilah, jarak bebas 10 cm di sekitar stabilizer, router di rak atas (jangan kotak logam, sinyal Wi-Fi terhalang).
-  - AC idealnya di jalur MCB sendiri.
-- **Meja rias slim** di antara tempat tidur dan meja kerja, supaya skincare tidak lagi di meja kerja.
-- **Roster di dinding belakang** (bila benar tembus ke kamar belakang): tutup dengan akrilik bening berengsel. AC tidak bocor, suara teredam, tetap bisa dibuka.
-- **Lantai:** SPC oak terang. Karpet zig-zag dikeluarkan.
-- **Lampu:** plafon 3000K, lampu meja 4000K CRI 90, lampu baca dinding di sisi tempat tidur.
+- **Meja sit-stand 140×70** di dinding kanan. Saat duduk Anda menghadap dinding kanan; jendela depan ada di sisi kanan badan (90° terhadap layar), dinding sage di belakang Anda menjadi latar video call. Lorong di belakang kursi ±0,9 m. **Jika lebar bersih kamar < 2,10 m, pakai meja 120×60.**
+- **Tempat tidur 160×200 berlaci**, melintang di ujung depan dengan kepala di dinding kiri, dipisah **tirai tebal di rel plafon**. **Cadangan jika lebar bersih < 2,10 m:** kasur 140×200 atau 160×200 memanjang menempel dinding kiri, kepala di dinding depan, lorong 60–70 cm di sisi kanan; meja digeser 40 cm ke belakang.
+- **Lemari** pintu geser 180 cm dengan satu pintu cermin (pengganti cermin badan), tinggi 220 cm, di dinding kiri dekat pintu. Beri jarak 2–5 cm dari dinding dan pasang setelah dinding kering. Lemari pajangan kaca dikeluarkan.
+- **Meja rias slim** di antara meja kerja dan pintu, supaya skincare tidak lagi di meja kerja.
+- **Papan tulis** rencana mingguan yang sekarang dipindah ke dinding belakang di samping lemari: terlihat dari kursi, di luar bingkai kamera.
+- **Dinding:** `#F3EDE1`; dinding kiri `#A9B59B`.
+- **Lantai:** SPC oak terang + karpet bulu pendek. Karpet zig-zag dikeluarkan.
+- **Lampu:** plafon 3000K, light bar + lampu meja 4000K CRI 90, key light untuk video call, lampu baca dinding di sisi tempat tidur.
 - **TV** pindah ke ruang tamu; monitor ultrawide cukup untuk menonton di kamar.
 
 ### 4.5 Kamar belakang
@@ -282,6 +296,7 @@ Ruang 3,15 × 5,0 m (bersih ±3,0 × 4,85 m) ini adalah pintu masuk sehari-hari 
 - **Kotak meter/panel listrik** di dinding kiri: 1 m di depannya harus selalu kosong.
 - **Pos minum (dinding kiri, y 7,8–8,6):** dispenser + rak galon 3 susun. Galon datang lewat pintu carport, tidak perlu diangkat melintasi rumah.
 - **Zona makan (y 7,5–8,9):** bangku banquette menempel dinding kanan (kolongnya laci stok), meja 120×70, 2 kursi. Muat 4–5 orang dan tetap menyisakan jalan ±0,95 m di sisi kiri. Meja bundar lama dikeluarkan.
+- **Pojok kerja cadangan:** ujung depan banquette diberi stopkontak dan lampu dinding. Latar di belakangnya dinding polos; sinyal dari mesh node 2 di balik dinding kiri.
 - **Dinding belakang:** lemari serbaguna/laundry 160 cm pintu geser + tempat parkir keranjang cucian dan jemuran lipat.
 - **Jemur:** jangan jemur di dalam ruang ini saat cuaca cerah. Pasang jemuran lipat dinding di carport. Saat hujan, jemur di sini dengan exhaust menyala.
 - **Dinding:** `#F5EFE4`; 1 m terbawah `#B7BFA9` cat washable satin supaya bekas sepatu dan galon mudah dilap.
@@ -299,7 +314,52 @@ Ruang 3,15 × 5,0 m (bersih ±3,0 × 4,85 m) ini adalah pintu masuk sehari-hari 
 
 ---
 
-## 5. Anggaran
+## 5. Ruang kerja remote
+
+Programmer remote duduk 8–10 jam sehari dan penghasilannya bergantung pada tiga hal: badan yang tidak sakit, listrik dan internet yang tidak putus, dan tampil serta terdengar baik di video call. Lembar spesifikasi ini disusun menurut tiga hal itu.
+
+### Keputusan tata letak
+
+- **Zona kerja di tengah kamar depan, di dinding kanan.** Hanya di sini layar bisa tegak lurus terhadap kedua jendela (jendela depan di sisi kanan badan, jendela teras ada di dinding yang sama dengan layar, ±0,55 m dari ujung meja dan tertutup gorden rel ganda), sehingga tidak ada pantulan di layar dan wajah tidak membelakangi cahaya.
+- **Tempat tidur tetap 160×200 berlaci, bukan sofa bed atau Murphy bed.**
+  - Sofa bed: harus dibuka-lipat setiap hari oleh dua orang, dan kasurnya tidak dirancang untuk tidur setiap malam.
+  - Murphy bed: butuh angkur kuat di dinding bata yang sekarang lembap, harga custom Rp 12–20 juta, dan lantai yang dibebaskannya adalah ujung buntu kamar yang tidak dipakai bekerja dan tidak masuk bingkai kamera.
+  - Tempat tidur berlaci: paling murah, paling nyaman, dan menambah laci penyimpanan di sisi yang terbuka. Tirai pembatas menyembunyikannya saat jam kerja.
+- **Tirai pembatas** (kain tebal, rel plafon, y≈1,8) punya tiga guna: menutup tempat tidur dari pandangan, meredam gema, dan menahan silau jendela atau cahaya layar bila salah satu bekerja saat yang lain tidur. Buka di siang hari supaya cahaya jendela depan sampai ke meja.
+- **Tidak ada kulkas kecil atau pojok ketel di kamar.** Lebar 2,15 m tidak cukup tanpa mempersempit lorong, dan pos minum hanya dua ruang jauhnya. Cukup tumbler di meja.
+
+### Lembar spesifikasi
+
+| Bagian | Spesifikasi | Alasan |
+|---|---|---|
+| Meja | Sit-stand elektrik 140×70 cm, rentang tinggi ±72–118 cm, memori ketinggian. Cadangan 120×60 jika lebar bersih kamar < 2,10 m | Berganti duduk-berdiri tiap 45–60 menit mengurangi pegal punggung; kedalaman 70 cm memberi jarak mata yang cukup untuk ultrawide |
+| Layar | Monitor ultrawide lama di lengan monitor gas spring (beban ≥ 9 kg). Tepi atas layar setinggi mata atau sedikit di bawahnya, jarak mata–layar 60–75 cm | Lengan membebaskan permukaan meja dan ikut naik saat mode berdiri |
+| Laptop | Di laptop stand di sisi belakang meja sebagai layar kedua; keyboard dan mouse eksternal | Leher tidak menunduk |
+| Kursi dan kaki | Kursi ergonomis yang ada (atur: siku 90°, lumbar terisi), footrest di kolong, alas karpet bulu pendek | Kursi sudah baik; footrest perlu karena tinggi meja duduk standar sering terlalu tinggi |
+| Cahaya kerja | Light bar di atas monitor + lampu meja, 4000K, CRI ≥ 90. Lampu plafon 3000K tetap menyala agar kontras ruangan rendah | Menerangi meja tanpa memantul di layar |
+| Kendali silau | Layar 90° terhadap jendela. Rel ganda di kedua jendela: vitrase (siang) + blackout (silau sore, tidur siang). Dinding matte | Jendela di belakang atau di depan layar adalah penyebab utama mata lelah |
+| Listrik | Jalur MCB sendiri untuk zona kerja dan jalur sendiri untuk AC, dengan RCBO. 2 stopkontak ganda setinggi 90 cm di atas meja + 1 di kolong, dengan pelindung surja | AC dan komputer tidak saling mengganggu; kompresor AC tidak membuat tegangan meja turun |
+| Cadangan daya | UPS line-interactive 1.200–1.500 VA dengan AVR, menggantikan stabilizer. Dicolok ke UPS: laptop/PC, monitor, router, ONT. Bukan untuk AC atau printer laser | AVR sudah ada di dalam UPS, jadi stabilizer tidak perlu lagi. Beban ±150 W memberi waktu ±30–60 menit untuk menyimpan pekerjaan dan menyelesaikan panggilan |
+| Kabel | Cable tray di kolong meja, laci kabel, spiral kabel yang ikut naik-turun, label di tiap ujung | Meja sit-stand menarik kabel; tanpa tray kabel tercabut |
+| Jaringan | Router utama/mesh node 1 di rak dinding setinggi 1,9 m dekat pintu kamar depan; kabel LAN Cat6 dari router ke meja; mesh node 2 di ruang tengah (tengah rumah) dengan kabel backhaul lewat trunking dekat plafon | Rumah sepanjang 11,8 m dengan dinding bata; satu router di pojok depan tidak sampai ke kamar belakang dan ruang belakang. LAN kabel ke meja membuat panggilan tidak bergantung pada Wi-Fi |
+| Internet cadangan | Opsional: modem 4G/5G dengan failover otomatis lewat router dual-WAN, atau ISP kedua | Satu jalur internet adalah titik gagal tunggal untuk penghasilan |
+| Latar video call | Dinding kiri sage `#A9B59B` dengan 2 ambalan (buku, 1–2 tanaman kecil) dan 2 panel akustik. Tempat tidur, lemari, dan papan tulis di luar bingkai | Rapi, tidak ramai, dan tetap terasa rumah |
+| Cahaya wajah | Key light panel LED lembut di ujung depan meja, 45° dari wajah, 4000–4500K, searah cahaya jendela | Wajah terang merata tanpa bayangan keras, siang maupun malam |
+| Suara | 4 panel akustik PET/kain (2 di dinding kanan di atas monitor, 2 di dinding kiri), karpet, gorden dan tirai tebal. Seal karet di kusen + seal bawah pintu. Roster ke kamar belakang ditutup akrilik | Kamar sempit berdinding keras bergema; panel di dinding depan dan belakang pembicara paling efektif. Pintu dan roster adalah jalan bocor suara terbesar |
+| Perangkat | Pegboard di dinding kanan di ujung belakang meja (headset, kabel, charger). Papan tulis lama di dinding belakang | Barang kecil punya tempat; meja tetap kosong |
+| Udara | AC ½–¾ PK cukup untuk ±14 m² (cek label unit yang ada; servis dan cuci sebelum dipakai lagi). Kipas meja kecil yang senyap untuk sirkulasi | Ruang dengan komputer dan dua orang cenderung butuh ¾ PK; unit lama kemungkinan ½ PK dan masih memadai bila roster dan pintu rapat |
+| Tempat kerja cadangan | Bangku banquette ruang belakang: stopkontak + lampu dinding, sinyal dari mesh node 2 di balik dinding | Dipakai saat kamar depan sedang dikerjakan tukang, saat pasangan beristirahat, atau untuk ganti suasana |
+
+### Urutan pasang
+
+1. Minggu 0: beli dan langsung pakai di meja lama: UPS, mesh, lengan monitor, light bar. Tidak perlu menunggu cat.
+2. Minggu 1: jalur MCB zona kerja + AC, stopkontak meja, tarik kabel LAN.
+3. Minggu 2–4: kamar depan dikerjakan paling dulu (plester lembap, kering, cat). Selama itu bekerja dari ruang tamu atau banquette ruang belakang dengan UPS dan mesh yang sudah ada.
+4. Akhir minggu 4: SPC, meja sit-stand, panel akustik, gorden, tirai. Zona kerja selesai sebelum ruang lain.
+
+---
+
+## 6. Anggaran
 
 Semua angka adalah kisaran. Tarif acuan: tukang Rp 170–200 rb/hari, kenek Rp 120–140 rb/hari, borongan cat Rp 20–30 rb/m². Luas cat ±225 m² dinding + ±60 m² plafon. Merek hanya contoh kelas harga (Dulux Catylac / Nippon Vinilex untuk ekonomis; Dulux EasyClean / Nippon Spot-less untuk washable; IKEA, Informa, atau tukang kayu lokal untuk furnitur).
 
@@ -311,6 +371,7 @@ Semua angka adalah kisaran. Tarif acuan: tukang Rp 170–200 rb/hari, kenek Rp 1
 | B. Cat | {{B_HEMAT_SUB}} | {{B_MENENGAH_SUB}} | {{B_PREMIUM_SUB}} |
 | C + D + F. Lantai, lampu, dekor | {{CDF_HEMAT}} | {{CDF_MENENGAH}} | {{CDF_PREMIUM}} |
 | E. Furnitur & penyimpanan | {{E_HEMAT}} | {{E_MENENGAH}} | {{E_PREMIUM}} |
+| R. Paket kerja remote | {{R_HEMAT}} | {{R_MENENGAH}} | {{R_PREMIUM}} |
 | Cadangan 10% | {{CAD_HEMAT}} | {{CAD_MENENGAH}} | {{CAD_PREMIUM}} |
 | **Total** | **{{T_HEMAT}}** | **{{T_MENENGAH}}** | **{{T_PREMIUM}}** |
 
@@ -320,7 +381,9 @@ Cara memilih:
 - **Menengah (rekomendasi):** atap ruang belakang diganti, lembap ditangani tuntas, cat oleh tukang, lemari tertutup baru di semua ruang, sofa, SPC kamar depan, dapur dilapis ulang.
 - **Premium:** semua custom sampai plafon, kitchen set baru, listrik ditata ulang, fasad dicat.
 
-Jika dana terbatas, kerjakan kelompok A dan B tingkat menengah dulu ({{AB_MENENGAH}}), lalu beli furnitur ruang demi ruang dengan urutan: kamar depan → dapur → ruang belakang → kamar belakang → ruang tamu.
+Jika dana terbatas, urutannya: (1) paket kerja remote, karena penghasilan bergantung padanya ({{R_MENENGAH}} di tingkat menengah; versi hemat {{R_HEMAT}}); (2) kelompok A dan B tingkat menengah ({{AB_MENENGAH}}); (3) furnitur ruang demi ruang: kamar depan → dapur → ruang belakang → kamar belakang → ruang tamu.
+
+Paket kerja remote per tingkat: **hemat** = meja kayu tetap 120×60, lengan monitor, UPS 1.200 VA merek lokal, 1 node mesh tambahan, panel akustik buatan sendiri; **menengah** = meja sit-stand elektrik, UPS bermerek, mesh 2 node dengan kabel backhaul, modem 4G cadangan dengan failover; **premium** = meja motor ganda, mesh 3 node, ISP kedua, kamera dan mikrofon, AC inverter baru. Langganan internet cadangan bulanan tidak dihitung.
 
 Opsi yang **tidak** saya masukkan ke total mana pun: mengganti ubin hijau ruang tamu + ruang tengah (±21 m², kisaran Rp 8–9 juta). Jangan dilakukan sebelum dinding terbukti kering selama satu musim hujan.
 
@@ -338,52 +401,55 @@ Opsi yang **tidak** saya masukkan ke total mana pun: mengganti ubin hijau ruang 
 
 ---
 
-## 6. Tahapan kerja (8 minggu, tingkat menengah)
+## 7. Tahapan kerja (8 minggu, tingkat menengah)
 
 DIY = dikerjakan sendiri. Tukang = perlu tukang/teknisi.
 
 | Minggu | Pekerjaan | Siapa |
 |---|---|---|
-| 0 | Ukur 7 ukuran kunci. Jawab keputusan terbuka. Saat hujan, catat titik tetes di ruang belakang dan ruang tengah. Minta 2 penawaran tukang atap dan tukang listrik. | DIY |
-| 0 | Pilah barang tahap 1: tiga tumpukan (simpan, donasi/jual, buang). Mulai dari atas lemari, dapur, dan ruang belakang. Kasur cadangan, lemari pajangan kaca, meja bundar, lemari kaca dapur, kardus, koran keluar. | DIY |
+| 0 | Ukur 7 ukuran kunci. Saat hujan, catat titik tetes di ruang belakang dan ruang tengah. Minta 2 penawaran tukang atap dan tukang listrik. | DIY |
+| 0 | **Kerja remote:** beli UPS, mesh, lengan monitor, light bar, dan langsung pakai di meja lama. | DIY |
+| 0 | Pilah barang tahap 1: tiga tumpukan (simpan, donasi/jual, buang). Mulai dari kamar depan, atas lemari, dapur, ruang belakang. Kasur cadangan, lemari pajangan kaca, meja bundar, lemari kaca dapur, kardus, koran keluar. | DIY |
+| 1 | **Listrik (zona kerja dulu):** jalur MCB zona kerja dan AC, RCBO, stopkontak meja, tarik kabel LAN + trunking, lalu titik stopkontak ruang lain. Harus selesai sebelum plester dan cat. | Tukang listrik |
 | 1 | Atap ruang belakang: ganti penutup, flashing, talang. Uji siram. Bongkar plafon lama. Cek sumber rembesan plafon ruang tengah dan teras. | Tukang |
-| 1 | Listrik: tarik titik stopkontak baru, grup MCB, RCBO, trunking kabel. Harus selesai sebelum plester dan cat. | Tukang listrik |
-| 2 | Dinding lembap: kerok cat dan plester lapuk sampai ±1,2 m, waterproofing semen 2 lapis, plester + acian ulang. Bersihkan saluran air di sekeliling rumah. | Tukang |
-| 2 | Pasang plafon baru ruang belakang. Pasang exhaust kamar belakang, cooker hood, exhaust ruang belakang. | Tukang |
-| 3 | Masa kering plester (minimal 14 hari, jendela dan kipas dibuka). Sementara itu: cuci jamur di dinding yang tidak diplester, tambal retak, amplas, cat semua plafon. | DIY + tukang |
+| 2 | Dinding lembap, **kamar depan paling dulu**, lalu ruang lain: kerok cat dan plester lapuk sampai ±1,2 m, waterproofing semen 2 lapis, plester + acian ulang. Bersihkan saluran air di sekeliling rumah. Selama kamar depan dikerjakan, bekerja dari ruang tamu atau ruang belakang. | Tukang |
+| 2 | Pasang plafon baru ruang belakang. Pasang exhaust kamar belakang, cooker hood, exhaust ruang belakang dan kamar mandi. | Tukang |
+| 3 | Masa kering plester (minimal 14 hari, jendela dan kipas dibuka). Sementara itu: cuci jamur, tambal retak, amplas, cat semua plafon. | DIY + tukang |
 | 3 | Dapur: lapis ulang top, backsplash, pintu kolong, kabinet atas. | Tukang |
-| 4 | Cat dinding yang tidak diplester ulang: sealer 1 lapis + cat 2 lapis. Cat kusen, pintu, lis. Urutan ruang: kamar belakang → dapur → ruang tengah → ruang tamu. | Tukang (hemat: DIY) |
-| 5 | Sealer + cat dinding yang diplester ulang. Cat kamar depan dan ruang belakang. Pasang lampu baru. | Tukang |
-| 6 | Pasang SPC kamar depan (setelah cat kering). Masuk furnitur besar: lemari, rangka tempat tidur, sofa, lemari serbaguna, banquette, lemari sepatu. Pindah kulkas ke dapur, dispenser ke ruang belakang, TV ke ruang tamu. | Tukang + DIY |
-| 7 | Cable management meja kerja. Isi lemari dengan aturan satu barang satu tempat. Sistem sampah baru mulai jalan. | DIY |
-| 8 | Galeri foto, gorden, karpet, tanaman, bantalan. Periksa ulang: tidak ada barang di lantai selain furnitur. | DIY |
+| 4 | **Kamar depan selesai:** sealer + cat, tutup roster, SPC, meja sit-stand, lengan monitor, UPS di kolong, cable tray, panel akustik, gorden, tirai pembatas, seal pintu. Zona kerja siap pakai. | Tukang + DIY |
+| 5 | Cat ruang lain: sealer 1 lapis + cat 2 lapis. Cat kusen, pintu, lis. Urutan: kamar belakang → dapur → ruang tengah → ruang tamu → ruang belakang. Pasang lampu baru. | Tukang (hemat: DIY) |
+| 6 | Masuk furnitur besar: tempat tidur, lemari, sofa, lemari serbaguna, banquette, lemari sepatu. Pindah kulkas ke dapur, dispenser ke ruang belakang, TV ke ruang tamu. Pasang mesh node 2 di ruang tengah dan stopkontak pojok kerja cadangan. | Tukang + DIY |
+| 7 | Isi lemari dengan aturan satu barang satu tempat. Sistem sampah baru mulai jalan. | DIY |
+| 8 | Galeri foto, gorden ruang lain, karpet, tanaman, bantalan. Periksa ulang: tidak ada barang di lantai selain furnitur. | DIY |
 
-Aturan urutan: atap → listrik → plester → kering → cat → lantai → furnitur → dekor. Jangan dibalik.
+Aturan urutan tiap ruang: atap → listrik → plester → kering → cat → lantai → furnitur → dekor. Jangan dibalik. Kamar depan menjalani urutan itu lebih dulu daripada ruang lain.
 
 ---
 
-## 7. Keputusan terbuka
+## 8. Keputusan terbuka
 
-| # | Pertanyaan | Jawaban bawaan saya |
+| # | Pertanyaan | Jawaban bawaan (dipakai di Draft v2) |
 |---|---|---|
 | 1 | Dinding kiri kamar belakang dan kamar depan itu dinding luar, atau menempel rumah tetangga? | Dianggap menempel tetangga: kamar belakang pakai exhaust plafon ber-ducting, tanpa jendela baru. Jika ternyata dinding luar, tambah jalusi 40×60 cm. |
 | 2 | Mesin cuci ada di mana, dan jemur di mana? | Mesin cuci ditempatkan di pojok kanan-belakang ruang belakang (menggantikan parkir keranjang cucian, bersebelahan dinding kamar mandi sehingga pipa pendek); jemur di carport dengan jemuran lipat dinding. |
 | 3 | Di kamar mandi, kloset, shower, dan bak ada di sebelah mana? | Shower di tengah dinding belakang, kloset di ujung kanan, dekat pintu kering. Mohon satu foto dari dalam. |
-| 4 | Kamar depan dipakai 1 atau 2 orang, dan berapa lebar bersihnya? | 2 orang, tempat tidur 160×200 melintang. Cadangan memanjang jika lebar < 2,10 m. |
+| 4 | Kamar depan dipakai 1 atau 2 orang, dan berapa lebar bersihnya? | 2 orang, tempat tidur 160×200 melintang, meja 140×70. Jika lebar < 2,10 m: tempat tidur memanjang dan meja 120×60. |
 | 5 | Setuju ubin hijau dipertahankan dan hanya kamar depan yang ditutup SPC? | Ya. |
-| 6 | TV pindah ke ruang tamu? | Ya, pakai TV 32" lama dulu. |
-| 7 | Kulkas pindah ke ujung kanan dapur? | Ya. Jika lorong dapur ternyata < 1,5 m, kulkas tetap di ruang tengah di samping pintu dapur dan lemari serbaguna diperkecil jadi 90 cm. |
-| 8 | Tingkat anggaran, dan rumah milik sendiri atau kontrak? | Menengah bertahap, rumah milik sendiri. Jika kontrak: kerjakan hanya tambal bocor, ventilasi, listrik, cat, dan furnitur lepas. |
+| 6 | Daya listrik PLN rumah berapa VA, dan di mana kabel ISP/ONT masuk? Komputer kerja laptop saja atau ada PC desktop? | Dianggap 1.300 VA, ONT di kamar depan, laptop + monitor (beban ±150 W). Jika MCB sering turun saat AC + dapur + komputer menyala, naikkan ke 2.200 VA. Jika ada PC desktop bertenaga besar, pilih UPS 1.500 VA. |
+| 7 | Kulkas pindah ke ujung kanan dapur, dan TV pindah ke ruang tamu? | Ya untuk keduanya. Jika lorong dapur ternyata < 1,5 m, kulkas tetap di ruang tengah di samping pintu dapur dan lemari serbaguna diperkecil jadi 90 cm. |
+| 8 | Tingkat anggaran, dan rumah milik sendiri atau kontrak? | Menengah bertahap, rumah milik sendiri. Jika kontrak: kerjakan hanya tambal bocor, ventilasi, listrik, cat, paket kerja remote, dan furnitur lepas. |
 
 ---
 
-## 8. SCENE_SPEC
+## 9. SCENE_SPEC
 
 Catatan untuk pembuat model 3D:
 
 - `x`, `y` furnitur = **titik tengah** tapak, koordinat absolut dalam meter.
 - `w_cm` = ukuran searah sumbu x, `d_cm` = ukuran searah sumbu y, **sudah dalam posisi akhir**. Jangan diputar lagi dengan `rotation_deg`.
 - `rotation_deg` hanya arah hadap muka benda: 0 = +y (belakang), 90 = +x (kanan), 180 = −y (jalan), 270 = −x (kiri).
+- `kind` (hanya pada benda baru zona kerja) = jenis untuk renderer: `desk_standing`, `monitor_arm`, `light_bar`, `ups`, `mesh_node`, `acoustic_panel`, `pegboard`, `curtain`, `whiteboard`, `key_light`, `footrest`.
+- `under_furniture` = benda di kolong meja (footrest, UPS); bukan penghalang lantai.
 - `z_m` = tinggi sisi bawah dari lantai. Benda dengan `wall_mounted`, `rug`, atau `on_furniture` bukan penghalang lantai.
 - Garis ruang = as dinding, tebal dinding 0,15 m (`wall_thickness_m`). Muka dalam dinding ada 0,075 m di dalam garis ruang; semua furnitur sudah ditempatkan terhadap muka dalam, jadi dinding harus digambar **berpusat di garis ruang**.
 - Isi: {{NFURN}} furnitur, {{NOPEN}} bukaan. Sudah divalidasi dengan skrip (ruang tidak tumpang, furnitur di dalam muka dalam dinding, bukaan di dinding bersama yang benar, pintu bebas 85 cm, rute ≥ 80 cm diukur dari muka dalam dinding).

@@ -228,6 +228,10 @@ export function buildHouse(THREE, spec, opts = {}) {
     } else if (/\btv\b|monitor/.test(n)) {
       box(w, h, 0.04, mat('#111111', { r: 0.25 }), 0, h / 2, 0, g);
       if (/monitor/.test(n)) { box(0.08, 0.12, 0.08, dark, 0, -0.06, 0, g); z0 = Math.max(z0, 0.74) + 0.12; }
+    } else if (/ambalan|rak dinding/.test(n)) {
+      box(w, 0.03, d, wood, 0, 0.015, 0, g);
+      for (let i = 0; i < Math.round(w / 0.07); i++) if (rnd() < 0.7) { const bh = 0.15 + rnd() * 0.1; box(0.03 + rnd() * 0.02, bh, d * 0.8, mat(['#8A9A7B', '#C4744F', '#E6DCCB', '#3B3F3A', '#D8B98A'][i % 5]), -w / 2 + 0.05 + i * 0.07, 0.03 + bh / 2, 0, g); }
+      if (/tanaman/.test(n)) { cyl(0.05, 0.04, 0.1, mat('#C9A46B'), w / 2 - 0.12, 0.08, 0, g); sph(0.09, mat('#4f7046', { r: 0.9 }), w / 2 - 0.12, 0.2, 0, g); }
     } else if (/tanaman|pot tanaman/.test(n)) {
       cyl(Math.min(w, d) * 0.4, Math.min(w, d) * 0.3, Math.min(0.4, h * 0.3), mat('#C9A46B', { r: 0.9 }), 0, Math.min(0.4, h * 0.3) / 2, 0, g);
       const leaf = mat('#4f7046', { r: 0.9 }); const r0 = Math.max(w, d) * 0.45;

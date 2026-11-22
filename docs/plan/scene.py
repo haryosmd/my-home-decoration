@@ -56,20 +56,38 @@ f("ruang_tamu","Lampu lantai 3000K",4.75,5.2,30,30,150,0,ARANG)
 # RUANG TENGAH
 f("ruang_tengah","Lemari serbaguna/pantry kering 150 cm pintu geser",4.175,9.725,150,40,220,180,PUT)
 f("ruang_tengah","Bangku kayu ukir + bantalan",4.65,8.3,55,150,85,270,"#8A5530",existing=True)
+f("ruang_tengah","Mesh node 2 di rak dinding (tengah rumah)",4.87,7.3,10,25,20,270,"#F2F2F2",z_m=2.0,wall_mounted=True,kind="mesh_node")
 f("ruang_tengah","Cermin dinding 60x150",2.39,8.2,3,60,150,90,"#DDE3E3",z_m=0.4,wall_mounted=True)
 f("ruang_tengah","Foto pasangan bingkai putih (dinding depan)",3.7,6.09,70,3,90,0,"#FFFFFF",z_m=1.1,wall_mounted=True,existing=True)
-# KAMAR DEPAN
-f("kamar_depan","Tempat tidur 160x200 berlaci (kepala di dinding kiri)",1.15,0.92,200,160,45,90,OAK)
-f("kamar_depan","Ambalan samping tempat tidur",0.175,1.92,20,35,4,90,OAK,z_m=0.55,wall_mounted=True)
-f("kamar_depan","Meja rias slim + cermin",2.025,2.1,40,70,76,270,OAK)
-f("kamar_depan","Stool rias",1.6,2.1,35,35,45,0,LIN)
-f("kamar_depan","Meja kerja 120x60 + cable tray",1.925,3.1,60,120,74,270,OAK)
-f("kamar_depan","Kursi kerja ergonomis",1.345,3.1,55,55,120,90,"#8E9093",existing=True)
-f("kamar_depan","Monitor ultrawide",2.08,3.1,20,82,45,270,"#1A1A1A",z_m=0.74,existing=True,on_furniture=True)
-f("kamar_depan","Kabinet teknis berventilasi (stabilizer, router)",2.05,4.05,35,60,70,270,OAK)
-f("kamar_depan","Lemari pakaian pintu geser 180 cm",0.395,5.0,60,180,220,90,PUT)
-f("kamar_depan","Cermin badan 50x160",1.0,5.91,50,3,160,180,"#DDE3E3",z_m=0.3,wall_mounted=True)
-f("kamar_depan","Ambalan buku 120 cm x2",0.175,2.9,20,120,4,90,OAK,z_m=1.5,wall_mounted=True)
+# KAMAR DEPAN (v2: ruang kerja remote + tidur)
+def under(**k): return dict(under_furniture=True,**k)
+f("kamar_depan","Tempat tidur 160x200 berlaci, sandaran kepala berambalan (kepala di dinding kiri)",1.15,0.92,200,160,45,90,OAK)
+f("kamar_depan","Gorden blackout + vitrase jendela depan (rel ganda)",1.15,0.11,150,7,220,0,LIN,z_m=0.1,wall_mounted=True,kind="curtain")
+f("kamar_depan","Gorden blackout + vitrase jendela ke teras (rel ganda)",2.185,0.9,7,120,220,270,LIN,z_m=0.1,wall_mounted=True,kind="curtain")
+f("kamar_depan","Tirai pembatas zona tidur (rel plafon, kain tebal)",1.15,1.785,215,6,250,0,"#B9B2A6",z_m=0.1,wall_mounted=True,kind="curtain")
+f("kamar_depan","Meja sit-stand elektrik 140x70",1.875,2.55,70,140,74,270,OAK,kind="desk_standing",height_range_cm=[72,118])
+f("kamar_depan","Kursi kerja ergonomis",1.245,2.5,55,55,120,90,"#8E9093",existing=True)
+f("kamar_depan","Lengan monitor (gas spring, jepit meja)",2.15,2.45,12,12,45,270,ARANG,z_m=0.74,on_furniture=True,kind="monitor_arm")
+f("kamar_depan","Monitor ultrawide di lengan monitor",2.02,2.45,20,82,38,270,"#1A1A1A",z_m=0.95,existing=True,on_furniture=True)
+f("kamar_depan","Light bar monitor",2.0,2.45,10,50,5,270,ARANG,z_m=1.33,on_furniture=True,kind="light_bar")
+f("kamar_depan","Laptop di laptop stand",1.85,3.05,26,34,25,270,SS,z_m=0.74,existing=True,on_furniture=True)
+f("kamar_depan","Keyboard + mouse",1.7,2.45,15,60,3,270,"#2B2B2B",z_m=0.74,on_furniture=True)
+f("kamar_depan","Key light panel LED lembut (jepit meja)",2.17,1.97,8,20,45,270,"#F2F2F2",z_m=0.74,on_furniture=True,kind="key_light")
+f("kamar_depan","Lampu meja 4000K CRI 90",2.1,3.15,15,15,45,270,ARANG,z_m=0.74,on_furniture=True)
+f("kamar_depan","Footrest (di kolong meja)",1.75,2.5,35,45,12,270,ARANG,kind="footrest",**under())
+f("kamar_depan","UPS line-interactive 1200-1500 VA (di kolong meja)",2.05,3.03,15,40,22,270,"#1A1A1A",kind="ups",**under())
+f("kamar_depan","Pegboard perangkat (headset, kabel, charger)",2.21,3.05,3,40,70,270,PUT,z_m=0.95,wall_mounted=True,kind="pegboard")
+f("kamar_depan","Panel akustik dinding kanan 1",2.21,2.15,3,60,60,270,"#A9B59B",z_m=1.65,wall_mounted=True,kind="acoustic_panel")
+f("kamar_depan","Panel akustik dinding kanan 2",2.21,2.8,3,60,60,270,"#E6DCCB",z_m=1.65,wall_mounted=True,kind="acoustic_panel")
+f("kamar_depan","Panel akustik dinding kiri 1",0.09,1.4,3,60,90,90,"#E6DCCB",z_m=1.0,wall_mounted=True,kind="acoustic_panel")
+f("kamar_depan","Panel akustik dinding kiri 2",0.09,3.6,3,60,90,90,"#E6DCCB",z_m=1.0,wall_mounted=True,kind="acoustic_panel")
+f("kamar_depan","Ambalan buku + tanaman 120 cm x2 (latar video call)",0.175,2.6,20,120,4,90,OAK,z_m=1.5,wall_mounted=True)
+f("kamar_depan","Karpet bulu pendek 120x170 (peredam, roda kursi tetap jalan)",0.8,2.75,120,170,1,0,LIN,rug=True)
+f("kamar_depan","Meja rias slim + cermin",2.025,3.75,40,70,76,270,OAK)
+f("kamar_depan","Stool rias",1.675,3.75,30,30,45,0,LIN)
+f("kamar_depan","Router utama / mesh node 1 di rak dinding",2.17,4.55,10,25,20,270,"#F2F2F2",z_m=1.9,wall_mounted=True,kind="mesh_node")
+f("kamar_depan","Lemari pakaian pintu geser 180 cm (satu pintu cermin)",0.395,5.0,60,180,220,90,PUT)
+f("kamar_depan","Papan tulis rencana mingguan",1.07,5.91,60,3,90,180,"#F7F7F7",z_m=0.9,existing=True,wall_mounted=True,kind="whiteboard")
 f("kamar_depan","AC indoor",1.15,0.175,80,20,28,0,"#FFFFFF",z_m=2.3,wall_mounted=True,existing=True)
 # KAMAR BELAKANG
 f("kamar_belakang","Tempat tidur 160x200 (rangka kayu lama, kepala di dinding kanan)",1.15,9.1,200,160,45,270,"#8A5530",existing=True)
@@ -109,6 +127,7 @@ f("ruang_belakang","Kursi makan 2",6.66,8.5,48,45,80,90,OAK)
 f("ruang_belakang","Lemari serbaguna/laundry pintu geser 160 cm",5.9,9.7,160,45,200,180,PUT)
 f("ruang_belakang","Keranjang laundry + jemuran lipat (parkir)",7.4,9.7,110,45,60,180,ROT)
 f("ruang_belakang","Lampu gantung meja makan 3000K",7.275,8.2,35,35,30,0,ROT,z_m=1.55,wall_mounted=True)
+f("ruang_belakang","Stopkontak + lampu dinding pojok kerja cadangan",8.04,7.7,6,20,25,270,ARANG,z_m=1.1,wall_mounted=True)
 f("ruang_belakang","Kotak meter/panel listrik (akses harus bebas)",5.105,7.35,6,50,50,90,"#DDDDDD",z_m=1.5,wall_mounted=True,existing=True)
 # CARPORT
 f("carport","Mobil",7.15,2.3,170,440,160,180,"#1A1A1A",existing=True)
@@ -131,7 +150,7 @@ for a,b in itertools.combinations(rooms,2):
 for e in F:
     r=inner(R[e["room_id"]]); b=box(e)
     if b[0]<r[0]-1e-6 or b[1]<r[1]-1e-6 or b[2]>r[2]+1e-6 or b[3]>r[3]+1e-6: issues.append(("OUTSIDE",e["name"],b))
-def floor(e): return not e.get("wall_mounted") and not e.get("rug") and not e.get("on_furniture")
+def floor(e): return not e.get("wall_mounted") and not e.get("rug") and not e.get("on_furniture") and not e.get("under_furniture")
 # 3 furniture overlap
 for a,b in itertools.combinations([e for e in F if floor(e)],2):
     if ov(box(a),box(b)): issues.append(("OVERLAP",a["name"],b["name"]))
@@ -213,7 +232,7 @@ def route(p,q,rw,rf):
             if 0<=n[0]<NX and 0<=n[1]<NY and n not in seen and fr(n): seen.add(n); dq.append(n)
     return False
 P=dict(gerbang=(5.7,0.3),teras=(3.6,1.4),tamu=(3.4,3.5),tengah=(3.0,8.0),dapur=(2.85,10.6),dapur_kiri=(1.2,10.6),km=(5.3,10.45),
- carport=(5.7,3.5),belakang=(5.9,7.0),makan=(5.94,9.0),kdepan=(1.3,5.3),kdepan_ranjang=(0.6,2.2),kbelakang=(1.3,6.6),kbelakang_ranjang=(1.1,7.875))
+ carport=(5.7,3.5),belakang=(5.9,7.0),makan=(5.94,9.0),kdepan=(1.3,5.3),kdepan_ranjang=(0.52,2.15),kbelakang=(1.3,6.6),kbelakang_ranjang=(1.1,7.875))
 # clear width 0.80 m diukur dari muka dalam dinding (dinding tebal) dan dari furnitur; pintu KM 0.70 m dicek 0.68
 routes=[("gerbang","teras",.40,.40),("teras","tamu",.40,.40),("tamu","tengah",.40,.40),("tengah","dapur",.40,.40),("dapur","dapur_kiri",.40,.40),
  ("dapur","km",.34,.40),("gerbang","carport",.40,.40),("carport","belakang",.40,.40),("belakang","tengah",.40,.40),("belakang","makan",.40,.40),
@@ -229,11 +248,11 @@ if __name__=="__main__":
     print("ALL OK" if not issues else "ISSUES",len(issues))
     for r_ in rep: print(r_)
     print("aisle nominal",aisle_nom,"min",aisle_min,"at fridge min",round(aisle_fridge_min,2))
-spec=dict(name="SCENE_SPEC",units="meter untuk x,y,w,d,offset,width,height; cm untuk w_cm,d_cm,h_cm",
+spec=dict(name="SCENE_SPEC",version="redesign draft v2 (ruang kerja remote)",units="meter untuk x,y,w,d,offset,width,height; cm untuk w_cm,d_cm,h_cm",
  conventions=dict(origin="sudut kiri-depan rumah pada dinding yang menghadap jalan",x="ke kanan sepanjang fasad",y="masuk ke dalam rumah (menjauhi jalan)",
   rooms="x,y = sudut kiri-depan ruang; w = lebar searah x; d = kedalaman searah y; garis ruang = AS dinding (tebal dinding 0.15 m, 0.075 m ke tiap sisi); teras dan carport tidak berdinding di sisi open_sides",
   openings="front = sisi y minimum (arah jalan), back = y maksimum, left = x minimum, right = x maksimum; offset_m dari sudut x-minimum (front/back) atau y-minimum (left/right) ruang ke tepi awal bukaan; sill_m = tinggi ambang dari lantai; tiap bukaan ditulis SATU kali, ruang seberangnya ada di connects_to",
-  furniture="x,y = TITIK TENGAH tapak (absolut); w_cm = ukuran searah sumbu x, d_cm = ukuran searah sumbu y, SUDAH dalam posisi akhir (kotak sejajar sumbu - JANGAN diputar lagi); rotation_deg HANYA arah hadap muka benda: 0 = menghadap +y (ke belakang rumah), 90 = +x (kanan), 180 = -y (ke jalan), 270 = -x (kiri); z_m = tinggi sisi bawah dari lantai (default 0); wall_mounted/rug/on_furniture = bukan penghalang lantai",
+  furniture="x,y = TITIK TENGAH tapak (absolut); w_cm = ukuran searah sumbu x, d_cm = ukuran searah sumbu y, SUDAH dalam posisi akhir (kotak sejajar sumbu - JANGAN diputar lagi); rotation_deg HANYA arah hadap muka benda: 0 = menghadap +y (ke belakang rumah), 90 = +x (kanan), 180 = -y (ke jalan), 270 = -x (kiri); z_m = tinggi sisi bawah dari lantai (default 0); wall_mounted/rug/on_furniture/under_furniture (di kolong meja) = bukan penghalang lantai; kind (opsional) = jenis benda untuk renderer",
   wall_thickness_m=0.15,
   wall_note="muka dalam dinding = 0.075 m di dalam garis ruang; semua furnitur sudah ditempatkan terhadap muka dalam (benda dinding menempel tepat di muka dalam)",
   total_footprint_m=dict(w=8.15,d=11.8),

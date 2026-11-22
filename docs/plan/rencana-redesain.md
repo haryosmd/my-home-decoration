@@ -1,14 +1,17 @@
-# Rencana Penataan Rumah Blok DD-30
+# Rencana Penataan Rumah Blok DD-30 — Draft v2
 
 Disusun dari 26 foto (16 foto awal + 10 foto tambahan dapur, kamar belakang, dan sisi rumah) dan koreksi pemilik (panjang kamar mandi, warna keramik tiap ruang). Semua ukuran adalah **perkiraan dari foto**, belum diukur dengan meteran. Semua harga adalah **kisaran** tahun 2026 dengan asumsi tarif kota di Jawa di luar Jakarta (asumsi saya; sesuaikan dengan kota Anda dan cek ulang di toko).
 
 ## Ringkasan
 
+**Draft v2.** Perubahan dari versi sebelumnya: pemilik adalah programmer yang bekerja remote penuh waktu, jadi kamar depan dirancang ulang sebagai ruang kerja + tidur (bagian 5), ada paket anggaran "kerja remote", dan urutan kerja digeser supaya zona kerja siap paling awal. Pertanyaan putaran 1 belum dijawab, jadi semua jawaban bawaan dipakai.
+
 1. **Perbaiki bangunan dulu, baru dekorasi.** Atap ruang belakang bocor, dinding bawah lembap di hampir semua ruang, kamar belakang dan dapur tidak punya ventilasi, dan kabel listrik menumpuk. Mengecat sebelum ini beres berarti cat mengelupas lagi dalam satu musim hujan.
-2. **Konsep: Tropis Hangat** (Japandi tropis). Dinding putih gading di seluruh rumah, kayu jati yang sudah ada dipertahankan, hijau ubin diulang sebagai hijau sage, dan semua barang masuk lemari tertutup.
-3. **Ubin hijau dipertahankan** di teras, ruang tamu, ruang tengah, kamar belakang, dan dapur. Hanya kamar depan yang ditutup SPC motif kayu terang. Tidak ada bongkar lantai.
-4. **Perubahan fungsi terbesar:** TV pindah ke ruang tamu, kulkas pindah ke dapur, dispenser dan galon pindah ke ruang belakang, ruang belakang jadi ruang makan + tempat sepatu + utilitas.
-5. **Anggaran:** hemat Rp 28.015.000, menengah Rp 108.760.000, premium Rp 254.150.000 (sudah termasuk cadangan 10%). Rekomendasi saya: **menengah, dikerjakan bertahap** selama 6–12 bulan. Tahap wajib pertama (perbaikan + cat) di tingkat menengah sekitar Rp 32.690.000; furnitur menyusul ruang demi ruang.
+2. **Ruang kerja remote di kamar depan:** meja sit-stand 140×70 di dinding kanan (layar tegak lurus terhadap jendela), monitor di lengan monitor, UPS menggantikan stabilizer, jalur listrik sendiri, LAN kabel ke meja, mesh Wi-Fi sampai ruang belakang, dinding sage sebagai latar video call, panel akustik, dan tempat tidur 160×200 berlaci yang dipisah tirai.
+3. **Konsep: Tropis Hangat** (Japandi tropis). Dinding putih gading di seluruh rumah, kayu jati yang sudah ada dipertahankan, hijau ubin diulang sebagai hijau sage, dan semua barang masuk lemari tertutup.
+4. **Ubin hijau dipertahankan** di semua ruang yang memakainya. Hanya kamar depan yang ditutup SPC motif kayu terang. Tidak ada bongkar lantai.
+5. **Perubahan fungsi terbesar:** TV pindah ke ruang tamu, kulkas pindah ke dapur, dispenser dan galon pindah ke ruang belakang, ruang belakang jadi ruang makan + tempat sepatu + utilitas + tempat kerja cadangan.
+6. **Anggaran:** hemat Rp 34.685.000, menengah Rp 127.460.000, premium Rp 305.950.000 (sudah termasuk cadangan 10%). Rekomendasi saya: **menengah, dikerjakan bertahap** selama 6–12 bulan. Dua tahap pertama: paket kerja remote tingkat menengah (Rp 20.250.000) dan perbaikan + cat (Rp 32.690.000); furnitur lain menyusul ruang demi ruang.
 
 ---
 
@@ -200,6 +203,20 @@ Minta toko cat mencocokkan (tinting) ke kode hex ini atau memilih warna terdekat
 
 ## 4. Redesign per ruang
 
+### Sebelum → sesudah
+
+| Ruang | Sebelum (kondisi foto) | Sesudah (fungsi) |
+|---|---|---|
+| Teras | Set jati + meja kopi menghalangi jendela dan jalan ke pintu; dinding kuning | Tempat duduk tamu berbentuk L di pojok, jalan ke pintu 1,2 m bebas |
+| Ruang tamu | Kosong, satu kursi penuh bantal, keranjang cucian, foto tersebar | Terima tamu + ruang keluarga + salat: sofa, TV, galeri foto, karpet tengah kosong |
+| Ruang tengah | Kasur berdiri, kulkas, dispenser, bangku penuh kardus, kabel melintang | Persimpangan yang lapang: satu lemari serbaguna, bangku ukir, mesh Wi-Fi |
+| Kamar depan | Kasur di lantai, meja kaca penuh barang, stabilizer dan kabel bertumpuk, lemari kaca | Ruang kerja remote 8–10 jam/hari + tidur 2 orang, dipisah tirai |
+| Kamar belakang | Dua lemari penuh kardus sampai plafon, tanpa ventilasi, biru tua | Kamar tidur keluarga: satu lemari geser, meja rias, exhaust, dinding terang |
+| Dapur | Karung sampah, rak papan penuh kardus, meja tambahan di jalan | Satu sisi kerja (kulkas → bak cuci → persiapan → kompor), cooker hood, tong sampah bertutup |
+| Kamar mandi | Tanpa exhaust (tata letak belum terlihat) | Zona kering dekat pintu, shower di tengah, kloset di ujung, exhaust |
+| Ruang belakang | Meja makan tertimbun, sepatu, galon, jemuran, plafon bocor | Makan + zona masuk sepatu + utilitas/laundry + pojok kerja cadangan |
+| Carport | Sepatu di lantai, kanopi berlumut | Jalur 1,2 m bebas, tong sampah beroda, jemuran lipat |
+
 Cara baca tabel: titik tengah dan rentang dalam meter pada koordinat bersama. Tapak sudah dalam posisi akhir (ukuran searah x × searah y). Semua tata letak sudah dicek: tidak ada benda di luar ruang, tidak saling tumpang, tidak ada benda dalam 85 cm di depan/belakang pintu, dan jalur jalan selebar ≥ 80 cm tersedia pada rute berikut: gerbang → teras → ruang tamu → ruang tengah → dapur → ujung kiri dapur dan kamar mandi; gerbang → carport → ruang belakang → ruang tengah; ruang belakang → meja makan; ruang tamu → kamar depan → sisi tempat tidur; ruang tengah → kamar belakang → sisi tempat tidur. (Pintu kamar mandi sendiri hanya 70 cm.)
 
 ### 4.1 Teras
@@ -250,6 +267,7 @@ Ruang ini adalah persimpangan empat pintu. Tugasnya: tetap kosong. Sisi kiri (x 
 |---|---|---|---|---|---|---|
 | Lemari serbaguna/pantry kering 150 cm pintu geser | baru | 150 × 40 × 220 | 4.17 ; 9.72 | 3.42–4.92 | 9.53–9.92 | −y (jalan) |
 | Bangku kayu ukir + bantalan | lama | 55 × 150 × 85 | 4.65 ; 8.30 | 4.38–4.93 | 7.55–9.05 | −x (kiri) |
+| Mesh node 2 di rak dinding (tengah rumah) — dipasang di dinding/plafon, bawah +2.00 m | baru | 10 × 25 × 20 | 4.87 ; 7.30 | 4.82–4.92 | 7.17–7.42 | −x (kiri) |
 | Cermin dinding 60x150 — dipasang di dinding/plafon, bawah +0.40 m | baru | 3 × 60 × 150 | 2.39 ; 8.20 | 2.38–2.41 | 7.90–8.50 | +x (kanan) |
 | Foto pasangan bingkai putih (dinding depan) — dipasang di dinding/plafon, bawah +1.10 m | lama | 70 × 3 × 90 | 3.70 ; 6.09 | 3.35–4.05 | 6.08–6.10 | +y (belakang) |
 
@@ -258,38 +276,51 @@ Ruang ini adalah persimpangan empat pintu. Tugasnya: tetap kosong. Sisi kiri (x 
 - **Bangku ukir** diberi bantalan dudukan krem; kolongnya untuk 2 keranjang rotan.
 - **Kabel** di dinding dimasukkan ke trunking putih dekat plafon.
 - **Lampu:** 1 lampu plafon 3000K; cermin di dinding kiri memantulkan cahaya dari ruang tamu.
+- **Mesh node 2** di rak dinding kanan setinggi 2 m: titik tengah rumah, melayani kamar belakang, dapur, dan ruang belakang di balik dinding.
 
-### 4.4 Kamar depan (tidur + kerja)
+### 4.4 Kamar depan (ruang kerja remote + tidur)
 
-Ruang 2,3 × 6,0 m (bersih ±2,15 × 5,85 m) dibagi tiga zona dari depan ke belakang: tidur (y 0–1,7), rias + kerja (y 1,75–4,35), lemari + pintu (y 4,1–6,0).
+Ruang 2,3 × 6,0 m (bersih ±2,15 × 5,85 m). Siang hari ruang ini adalah kantor, jadi zona kerja mendapat tempat terbaik di tengah ruang; tempat tidur ada di ujung depan yang buntu. Zona dari depan ke belakang: tidur (y 0–1,75), kerja (y 1,85–3,25), rias (y 3,4–4,1), lemari + pintu (y 4,1–6,0). Rincian alasan dan spesifikasi ada di bagian 5.
 
 | Benda | Status | Tapak x × y × tinggi (cm) | Titik tengah (x ; y) m | Rentang x (m) | Rentang y (m) | Muka menghadap |
 |---|---|---|---|---|---|---|
-| Tempat tidur 160x200 berlaci (kepala di dinding kiri) | baru | 200 × 160 × 45 | 1.15 ; 0.92 | 0.15–2.15 | 0.12–1.72 | +x (kanan) |
-| Ambalan samping tempat tidur — dipasang di dinding/plafon, bawah +0.55 m | baru | 20 × 35 × 4 | 0.17 ; 1.92 | 0.07–0.28 | 1.74–2.09 | +x (kanan) |
-| Meja rias slim + cermin | baru | 40 × 70 × 76 | 2.02 ; 2.10 | 1.82–2.23 | 1.75–2.45 | −x (kiri) |
-| Stool rias | baru | 35 × 35 × 45 | 1.60 ; 2.10 | 1.43–1.78 | 1.93–2.27 | +y (belakang) |
-| Meja kerja 120x60 + cable tray | baru | 60 × 120 × 74 | 1.93 ; 3.10 | 1.62–2.23 | 2.50–3.70 | −x (kiri) |
-| Kursi kerja ergonomis | lama | 55 × 55 × 120 | 1.34 ; 3.10 | 1.07–1.62 | 2.83–3.38 | +x (kanan) |
-| Monitor ultrawide — di atas meja | lama | 20 × 82 × 45 | 2.08 ; 3.10 | 1.98–2.18 | 2.69–3.51 | −x (kiri) |
-| Kabinet teknis berventilasi (stabilizer, router) | baru | 35 × 60 × 70 | 2.05 ; 4.05 | 1.87–2.22 | 3.75–4.35 | −x (kiri) |
-| Lemari pakaian pintu geser 180 cm | baru | 60 × 180 × 220 | 0.40 ; 5.00 | 0.10–0.70 | 4.10–5.90 | +x (kanan) |
-| Cermin badan 50x160 — dipasang di dinding/plafon, bawah +0.30 m | baru | 50 × 3 × 160 | 1.00 ; 5.91 | 0.75–1.25 | 5.90–5.92 | −y (jalan) |
-| Ambalan buku 120 cm x2 — dipasang di dinding/plafon, bawah +1.50 m | baru | 20 × 120 × 4 | 0.17 ; 2.90 | 0.07–0.28 | 2.30–3.50 | +x (kanan) |
+| Tempat tidur 160x200 berlaci, sandaran kepala berambalan (kepala di dinding kiri) | baru | 200 × 160 × 45 | 1.15 ; 0.92 | 0.15–2.15 | 0.12–1.72 | +x (kanan) |
+| Gorden blackout + vitrase jendela depan (rel ganda) — dipasang di dinding/plafon, bawah +0.10 m | baru | 150 × 7 × 220 | 1.15 ; 0.11 | 0.40–1.90 | 0.07–0.15 | +y (belakang) |
+| Gorden blackout + vitrase jendela ke teras (rel ganda) — dipasang di dinding/plafon, bawah +0.10 m | baru | 7 × 120 × 220 | 2.19 ; 0.90 | 2.15–2.22 | 0.30–1.50 | −x (kiri) |
+| Tirai pembatas zona tidur (rel plafon, kain tebal) — dipasang di dinding/plafon, bawah +0.10 m | baru | 215 × 6 × 250 | 1.15 ; 1.78 | 0.07–2.22 | 1.75–1.81 | +y (belakang) |
+| Meja sit-stand elektrik 140x70 | baru | 70 × 140 × 74 | 1.88 ; 2.55 | 1.52–2.23 | 1.85–3.25 | −x (kiri) |
+| Kursi kerja ergonomis | lama | 55 × 55 × 120 | 1.25 ; 2.50 | 0.97–1.52 | 2.23–2.77 | +x (kanan) |
+| Lengan monitor (gas spring, jepit meja) — di atas meja | baru | 12 × 12 × 45 | 2.15 ; 2.45 | 2.09–2.21 | 2.39–2.51 | −x (kiri) |
+| Monitor ultrawide di lengan monitor — di atas meja | lama | 20 × 82 × 38 | 2.02 ; 2.45 | 1.92–2.12 | 2.04–2.86 | −x (kiri) |
+| Light bar monitor — di atas meja | baru | 10 × 50 × 5 | 2.00 ; 2.45 | 1.95–2.05 | 2.20–2.70 | −x (kiri) |
+| Laptop di laptop stand — di atas meja | lama | 26 × 34 × 25 | 1.85 ; 3.05 | 1.72–1.98 | 2.88–3.22 | −x (kiri) |
+| Keyboard + mouse — di atas meja | baru | 15 × 60 × 3 | 1.70 ; 2.45 | 1.62–1.77 | 2.15–2.75 | −x (kiri) |
+| Key light panel LED lembut (jepit meja) — di atas meja | baru | 8 × 20 × 45 | 2.17 ; 1.97 | 2.13–2.21 | 1.87–2.07 | −x (kiri) |
+| Lampu meja 4000K CRI 90 — di atas meja | baru | 15 × 15 × 45 | 2.10 ; 3.15 | 2.02–2.18 | 3.07–3.23 | −x (kiri) |
+| Footrest (di kolong meja) | baru | 35 × 45 × 12 | 1.75 ; 2.50 | 1.57–1.93 | 2.27–2.73 | −x (kiri) |
+| UPS line-interactive 1200-1500 VA (di kolong meja) | baru | 15 × 40 × 22 | 2.05 ; 3.03 | 1.97–2.12 | 2.83–3.23 | −x (kiri) |
+| Pegboard perangkat (headset, kabel, charger) — dipasang di dinding/plafon, bawah +0.95 m | baru | 3 × 40 × 70 | 2.21 ; 3.05 | 2.19–2.23 | 2.85–3.25 | −x (kiri) |
+| Panel akustik dinding kanan 1 — dipasang di dinding/plafon, bawah +1.65 m | baru | 3 × 60 × 60 | 2.21 ; 2.15 | 2.19–2.23 | 1.85–2.45 | −x (kiri) |
+| Panel akustik dinding kanan 2 — dipasang di dinding/plafon, bawah +1.65 m | baru | 3 × 60 × 60 | 2.21 ; 2.80 | 2.19–2.23 | 2.50–3.10 | −x (kiri) |
+| Panel akustik dinding kiri 1 — dipasang di dinding/plafon, bawah +1.00 m | baru | 3 × 60 × 90 | 0.09 ; 1.40 | 0.07–0.10 | 1.10–1.70 | +x (kanan) |
+| Panel akustik dinding kiri 2 — dipasang di dinding/plafon, bawah +1.00 m | baru | 3 × 60 × 90 | 0.09 ; 3.60 | 0.07–0.10 | 3.30–3.90 | +x (kanan) |
+| Ambalan buku + tanaman 120 cm x2 (latar video call) — dipasang di dinding/plafon, bawah +1.50 m | baru | 20 × 120 × 4 | 0.17 ; 2.60 | 0.07–0.28 | 2.00–3.20 | +x (kanan) |
+| Karpet bulu pendek 120x170 (peredam, roda kursi tetap jalan) | baru | 120 × 170 × 1 | 0.80 ; 2.75 | 0.20–1.40 | 1.90–3.60 | +y (belakang) |
+| Meja rias slim + cermin | baru | 40 × 70 × 76 | 2.02 ; 3.75 | 1.82–2.23 | 3.40–4.10 | −x (kiri) |
+| Stool rias | baru | 30 × 30 × 45 | 1.68 ; 3.75 | 1.53–1.82 | 3.60–3.90 | +y (belakang) |
+| Router utama / mesh node 1 di rak dinding — dipasang di dinding/plafon, bawah +1.90 m | baru | 10 × 25 × 20 | 2.17 ; 4.55 | 2.12–2.22 | 4.42–4.67 | −x (kiri) |
+| Lemari pakaian pintu geser 180 cm (satu pintu cermin) | baru | 60 × 180 × 220 | 0.40 ; 5.00 | 0.10–0.70 | 4.10–5.90 | +x (kanan) |
+| Papan tulis rencana mingguan — dipasang di dinding/plafon, bawah +0.90 m | lama | 60 × 3 × 90 | 1.07 ; 5.91 | 0.77–1.37 | 5.90–5.92 | −y (jalan) |
 | AC indoor — dipasang di dinding/plafon, bawah +2.30 m | lama | 80 × 20 × 28 | 1.15 ; 0.17 | 0.75–1.55 | 0.07–0.28 | +y (belakang) |
 
-- **Tempat tidur:** rangka 160×200 berlaci, melintang di ujung depan dengan kepala di dinding kiri. Naik dari sisi panjang. **Cadangan jika lebar bersih < 2,10 m:** kasur 140×200 atau 160×200 dipasang memanjang menempel dinding kiri, kepala di dinding depan, menyisakan lorong 60–70 cm di sisi kanan; meja rias digeser 40 cm ke belakang. Jika kamar hanya untuk 1 orang, pakai 120×200.
-- **Lemari:** pintu geser 180 cm, tinggi 220 cm, di dinding kiri dekat pintu. Beri jarak 2–5 cm dari dinding dan pasang setelah dinding kering. Lemari pajangan kaca dikeluarkan.
-- **Meja kerja 120×60** di dinding kanan. Saat duduk Anda menghadap dinding kanan; dinding kiri (`#A9B59B`, dua ambalan, 2–3 bingkai) menjadi latar video call.
-- **Kabel dan perangkat:**
-  - 2 stopkontak ganda baru setinggi 90 cm di atas meja + 1 di bawah meja (pekerjaan tukang listrik).
-  - Cable tray di bawah daun meja; stopkontak panjang bersaklar dipasang di dalam tray; kabel diikat velcro dan diberi label.
-  - Stabilizer dan router masuk **kabinet teknis berventilasi** di antara meja dan pintu: pintu rotan/bilah, jarak bebas 10 cm di sekitar stabilizer, router di rak atas (jangan kotak logam, sinyal Wi-Fi terhalang).
-  - AC idealnya di jalur MCB sendiri.
-- **Meja rias slim** di antara tempat tidur dan meja kerja, supaya skincare tidak lagi di meja kerja.
-- **Roster di dinding belakang** (bila benar tembus ke kamar belakang): tutup dengan akrilik bening berengsel. AC tidak bocor, suara teredam, tetap bisa dibuka.
-- **Lantai:** SPC oak terang. Karpet zig-zag dikeluarkan.
-- **Lampu:** plafon 3000K, lampu meja 4000K CRI 90, lampu baca dinding di sisi tempat tidur.
+- **Meja sit-stand 140×70** di dinding kanan. Saat duduk Anda menghadap dinding kanan; jendela depan ada di sisi kanan badan (90° terhadap layar), dinding sage di belakang Anda menjadi latar video call. Lorong di belakang kursi ±0,9 m. **Jika lebar bersih kamar < 2,10 m, pakai meja 120×60.**
+- **Tempat tidur 160×200 berlaci**, melintang di ujung depan dengan kepala di dinding kiri, dipisah **tirai tebal di rel plafon**. **Cadangan jika lebar bersih < 2,10 m:** kasur 140×200 atau 160×200 memanjang menempel dinding kiri, kepala di dinding depan, lorong 60–70 cm di sisi kanan; meja digeser 40 cm ke belakang.
+- **Lemari** pintu geser 180 cm dengan satu pintu cermin (pengganti cermin badan), tinggi 220 cm, di dinding kiri dekat pintu. Beri jarak 2–5 cm dari dinding dan pasang setelah dinding kering. Lemari pajangan kaca dikeluarkan.
+- **Meja rias slim** di antara meja kerja dan pintu, supaya skincare tidak lagi di meja kerja.
+- **Papan tulis** rencana mingguan yang sekarang dipindah ke dinding belakang di samping lemari: terlihat dari kursi, di luar bingkai kamera.
+- **Dinding:** `#F3EDE1`; dinding kiri `#A9B59B`.
+- **Lantai:** SPC oak terang + karpet bulu pendek. Karpet zig-zag dikeluarkan.
+- **Lampu:** plafon 3000K, light bar + lampu meja 4000K CRI 90, key light untuk video call, lampu baca dinding di sisi tempat tidur.
 - **TV** pindah ke ruang tamu; monitor ultrawide cukup untuk menonton di kamar.
 
 ### 4.5 Kamar belakang
@@ -377,12 +408,14 @@ Ruang 3,15 × 5,0 m (bersih ±3,0 × 4,85 m) ini adalah pintu masuk sehari-hari 
 | Lemari serbaguna/laundry pintu geser 160 cm | baru | 160 × 45 × 200 | 5.90 ; 9.70 | 5.10–6.70 | 9.47–9.92 | −y (jalan) |
 | Keranjang laundry + jemuran lipat (parkir) | baru | 110 × 45 × 60 | 7.40 ; 9.70 | 6.85–7.95 | 9.47–9.92 | −y (jalan) |
 | Lampu gantung meja makan 3000K — dipasang di dinding/plafon, bawah +1.55 m | baru | 35 × 35 × 30 | 7.28 ; 8.20 | 7.10–7.45 | 8.02–8.38 | +y (belakang) |
+| Stopkontak + lampu dinding pojok kerja cadangan — dipasang di dinding/plafon, bawah +1.10 m | baru | 6 × 20 × 25 | 8.04 ; 7.70 | 8.01–8.07 | 7.60–7.80 | −x (kiri) |
 | Kotak meter/panel listrik (akses harus bebas) — dipasang di dinding/plafon, bawah +1.50 m | lama | 6 × 50 × 50 | 5.11 ; 7.35 | 5.08–5.14 | 7.10–7.60 | +x (kanan) |
 
 - **Zona masuk (y 5,0–7,0):** lemari sepatu tertutup 120 cm di dinding kanan, bangku sepatu di bawah jendela (meja kopi jati dari teras + bantalan), lemari utilitas tinggi untuk sapu, pel, vakum, setrika, dan papan setrika. Gitar digantung di dinding kanan di atas lemari sepatu sebagai hiasan.
 - **Kotak meter/panel listrik** di dinding kiri: 1 m di depannya harus selalu kosong.
 - **Pos minum (dinding kiri, y 7,8–8,6):** dispenser + rak galon 3 susun. Galon datang lewat pintu carport, tidak perlu diangkat melintasi rumah.
 - **Zona makan (y 7,5–8,9):** bangku banquette menempel dinding kanan (kolongnya laci stok), meja 120×70, 2 kursi. Muat 4–5 orang dan tetap menyisakan jalan ±0,95 m di sisi kiri. Meja bundar lama dikeluarkan.
+- **Pojok kerja cadangan:** ujung depan banquette diberi stopkontak dan lampu dinding. Latar di belakangnya dinding polos; sinyal dari mesh node 2 di balik dinding kiri.
 - **Dinding belakang:** lemari serbaguna/laundry 160 cm pintu geser + tempat parkir keranjang cucian dan jemuran lipat.
 - **Jemur:** jangan jemur di dalam ruang ini saat cuaca cerah. Pasang jemuran lipat dinding di carport. Saat hujan, jemur di sini dengan exhaust menyala.
 - **Dinding:** `#F5EFE4`; 1 m terbawah `#B7BFA9` cat washable satin supaya bekas sepatu dan galon mudah dilap.
@@ -403,7 +436,52 @@ Ruang 3,15 × 5,0 m (bersih ±3,0 × 4,85 m) ini adalah pintu masuk sehari-hari 
 
 ---
 
-## 5. Anggaran
+## 5. Ruang kerja remote
+
+Programmer remote duduk 8–10 jam sehari dan penghasilannya bergantung pada tiga hal: badan yang tidak sakit, listrik dan internet yang tidak putus, dan tampil serta terdengar baik di video call. Lembar spesifikasi ini disusun menurut tiga hal itu.
+
+### Keputusan tata letak
+
+- **Zona kerja di tengah kamar depan, di dinding kanan.** Hanya di sini layar bisa tegak lurus terhadap kedua jendela (jendela depan di sisi kanan badan, jendela teras ada di dinding yang sama dengan layar, ±0,55 m dari ujung meja dan tertutup gorden rel ganda), sehingga tidak ada pantulan di layar dan wajah tidak membelakangi cahaya.
+- **Tempat tidur tetap 160×200 berlaci, bukan sofa bed atau Murphy bed.**
+  - Sofa bed: harus dibuka-lipat setiap hari oleh dua orang, dan kasurnya tidak dirancang untuk tidur setiap malam.
+  - Murphy bed: butuh angkur kuat di dinding bata yang sekarang lembap, harga custom Rp 12–20 juta, dan lantai yang dibebaskannya adalah ujung buntu kamar yang tidak dipakai bekerja dan tidak masuk bingkai kamera.
+  - Tempat tidur berlaci: paling murah, paling nyaman, dan menambah laci penyimpanan di sisi yang terbuka. Tirai pembatas menyembunyikannya saat jam kerja.
+- **Tirai pembatas** (kain tebal, rel plafon, y≈1,8) punya tiga guna: menutup tempat tidur dari pandangan, meredam gema, dan menahan silau jendela atau cahaya layar bila salah satu bekerja saat yang lain tidur. Buka di siang hari supaya cahaya jendela depan sampai ke meja.
+- **Tidak ada kulkas kecil atau pojok ketel di kamar.** Lebar 2,15 m tidak cukup tanpa mempersempit lorong, dan pos minum hanya dua ruang jauhnya. Cukup tumbler di meja.
+
+### Lembar spesifikasi
+
+| Bagian | Spesifikasi | Alasan |
+|---|---|---|
+| Meja | Sit-stand elektrik 140×70 cm, rentang tinggi ±72–118 cm, memori ketinggian. Cadangan 120×60 jika lebar bersih kamar < 2,10 m | Berganti duduk-berdiri tiap 45–60 menit mengurangi pegal punggung; kedalaman 70 cm memberi jarak mata yang cukup untuk ultrawide |
+| Layar | Monitor ultrawide lama di lengan monitor gas spring (beban ≥ 9 kg). Tepi atas layar setinggi mata atau sedikit di bawahnya, jarak mata–layar 60–75 cm | Lengan membebaskan permukaan meja dan ikut naik saat mode berdiri |
+| Laptop | Di laptop stand di sisi belakang meja sebagai layar kedua; keyboard dan mouse eksternal | Leher tidak menunduk |
+| Kursi dan kaki | Kursi ergonomis yang ada (atur: siku 90°, lumbar terisi), footrest di kolong, alas karpet bulu pendek | Kursi sudah baik; footrest perlu karena tinggi meja duduk standar sering terlalu tinggi |
+| Cahaya kerja | Light bar di atas monitor + lampu meja, 4000K, CRI ≥ 90. Lampu plafon 3000K tetap menyala agar kontras ruangan rendah | Menerangi meja tanpa memantul di layar |
+| Kendali silau | Layar 90° terhadap jendela. Rel ganda di kedua jendela: vitrase (siang) + blackout (silau sore, tidur siang). Dinding matte | Jendela di belakang atau di depan layar adalah penyebab utama mata lelah |
+| Listrik | Jalur MCB sendiri untuk zona kerja dan jalur sendiri untuk AC, dengan RCBO. 2 stopkontak ganda setinggi 90 cm di atas meja + 1 di kolong, dengan pelindung surja | AC dan komputer tidak saling mengganggu; kompresor AC tidak membuat tegangan meja turun |
+| Cadangan daya | UPS line-interactive 1.200–1.500 VA dengan AVR, menggantikan stabilizer. Dicolok ke UPS: laptop/PC, monitor, router, ONT. Bukan untuk AC atau printer laser | AVR sudah ada di dalam UPS, jadi stabilizer tidak perlu lagi. Beban ±150 W memberi waktu ±30–60 menit untuk menyimpan pekerjaan dan menyelesaikan panggilan |
+| Kabel | Cable tray di kolong meja, laci kabel, spiral kabel yang ikut naik-turun, label di tiap ujung | Meja sit-stand menarik kabel; tanpa tray kabel tercabut |
+| Jaringan | Router utama/mesh node 1 di rak dinding setinggi 1,9 m dekat pintu kamar depan; kabel LAN Cat6 dari router ke meja; mesh node 2 di ruang tengah (tengah rumah) dengan kabel backhaul lewat trunking dekat plafon | Rumah sepanjang 11,8 m dengan dinding bata; satu router di pojok depan tidak sampai ke kamar belakang dan ruang belakang. LAN kabel ke meja membuat panggilan tidak bergantung pada Wi-Fi |
+| Internet cadangan | Opsional: modem 4G/5G dengan failover otomatis lewat router dual-WAN, atau ISP kedua | Satu jalur internet adalah titik gagal tunggal untuk penghasilan |
+| Latar video call | Dinding kiri sage `#A9B59B` dengan 2 ambalan (buku, 1–2 tanaman kecil) dan 2 panel akustik. Tempat tidur, lemari, dan papan tulis di luar bingkai | Rapi, tidak ramai, dan tetap terasa rumah |
+| Cahaya wajah | Key light panel LED lembut di ujung depan meja, 45° dari wajah, 4000–4500K, searah cahaya jendela | Wajah terang merata tanpa bayangan keras, siang maupun malam |
+| Suara | 4 panel akustik PET/kain (2 di dinding kanan di atas monitor, 2 di dinding kiri), karpet, gorden dan tirai tebal. Seal karet di kusen + seal bawah pintu. Roster ke kamar belakang ditutup akrilik | Kamar sempit berdinding keras bergema; panel di dinding depan dan belakang pembicara paling efektif. Pintu dan roster adalah jalan bocor suara terbesar |
+| Perangkat | Pegboard di dinding kanan di ujung belakang meja (headset, kabel, charger). Papan tulis lama di dinding belakang | Barang kecil punya tempat; meja tetap kosong |
+| Udara | AC ½–¾ PK cukup untuk ±14 m² (cek label unit yang ada; servis dan cuci sebelum dipakai lagi). Kipas meja kecil yang senyap untuk sirkulasi | Ruang dengan komputer dan dua orang cenderung butuh ¾ PK; unit lama kemungkinan ½ PK dan masih memadai bila roster dan pintu rapat |
+| Tempat kerja cadangan | Bangku banquette ruang belakang: stopkontak + lampu dinding, sinyal dari mesh node 2 di balik dinding | Dipakai saat kamar depan sedang dikerjakan tukang, saat pasangan beristirahat, atau untuk ganti suasana |
+
+### Urutan pasang
+
+1. Minggu 0: beli dan langsung pakai di meja lama: UPS, mesh, lengan monitor, light bar. Tidak perlu menunggu cat.
+2. Minggu 1: jalur MCB zona kerja + AC, stopkontak meja, tarik kabel LAN.
+3. Minggu 2–4: kamar depan dikerjakan paling dulu (plester lembap, kering, cat). Selama itu bekerja dari ruang tamu atau banquette ruang belakang dengan UPS dan mesh yang sudah ada.
+4. Akhir minggu 4: SPC, meja sit-stand, panel akustik, gorden, tirai. Zona kerja selesai sebelum ruang lain.
+
+---
+
+## 6. Anggaran
 
 Semua angka adalah kisaran. Tarif acuan: tukang Rp 170–200 rb/hari, kenek Rp 120–140 rb/hari, borongan cat Rp 20–30 rb/m². Luas cat ±225 m² dinding + ±60 m² plafon. Merek hanya contoh kelas harga (Dulux Catylac / Nippon Vinilex untuk ekonomis; Dulux EasyClean / Nippon Spot-less untuk washable; IKEA, Informa, atau tukang kayu lokal untuk furnitur).
 
@@ -413,10 +491,11 @@ Semua angka adalah kisaran. Tarif acuan: tukang Rp 170–200 rb/hari, kenek Rp 1
 |---|---:|---:|---:|
 | A. Perbaikan bangunan & keselamatan | Rp 8.275.000 | Rp 18.650.000 | Rp 41.000.000 |
 | B. Cat | Rp 3.550.000 | Rp 14.040.000 | Rp 30.150.000 |
-| C + D + F. Lantai, lampu, dekor | Rp 3.450.000 | Rp 13.270.000 | Rp 28.500.000 |
-| E. Furnitur & penyimpanan | Rp 10.190.000 | Rp 52.900.000 | Rp 131.400.000 |
-| Cadangan 10% | Rp 2.550.000 | Rp 9.900.000 | Rp 23.100.000 |
-| **Total** | **Rp 28.015.000** | **Rp 108.760.000** | **Rp 254.150.000** |
+| C + D + F. Lantai, lampu, dekor | Rp 3.150.000 | Rp 12.570.000 | Rp 27.000.000 |
+| E. Furnitur & penyimpanan | Rp 9.740.000 | Rp 50.350.000 | Rp 125.900.000 |
+| R. Paket kerja remote | Rp 6.820.000 | Rp 20.250.000 | Rp 54.100.000 |
+| Cadangan 10% | Rp 3.150.000 | Rp 11.600.000 | Rp 27.800.000 |
+| **Total** | **Rp 34.685.000** | **Rp 127.460.000** | **Rp 305.950.000** |
 
 Cara memilih:
 
@@ -424,7 +503,9 @@ Cara memilih:
 - **Menengah (rekomendasi):** atap ruang belakang diganti, lembap ditangani tuntas, cat oleh tukang, lemari tertutup baru di semua ruang, sofa, SPC kamar depan, dapur dilapis ulang.
 - **Premium:** semua custom sampai plafon, kitchen set baru, listrik ditata ulang, fasad dicat.
 
-Jika dana terbatas, kerjakan kelompok A dan B tingkat menengah dulu (Rp 32.690.000), lalu beli furnitur ruang demi ruang dengan urutan: kamar depan → dapur → ruang belakang → kamar belakang → ruang tamu.
+Jika dana terbatas, urutannya: (1) paket kerja remote, karena penghasilan bergantung padanya (Rp 20.250.000 di tingkat menengah; versi hemat Rp 6.820.000); (2) kelompok A dan B tingkat menengah (Rp 32.690.000); (3) furnitur ruang demi ruang: kamar depan → dapur → ruang belakang → kamar belakang → ruang tamu.
+
+Paket kerja remote per tingkat: **hemat** = meja kayu tetap 120×60, lengan monitor, UPS 1.200 VA merek lokal, 1 node mesh tambahan, panel akustik buatan sendiri; **menengah** = meja sit-stand elektrik, UPS bermerek, mesh 2 node dengan kabel backhaul, modem 4G cadangan dengan failover; **premium** = meja motor ganda, mesh 3 node, ISP kedua, kamera dan mikrofon, AC inverter baru. Langganan internet cadangan bulanan tidak dihitung.
 
 Opsi yang **tidak** saya masukkan ke total mana pun: mengganti ubin hijau ruang tamu + ruang tengah (±21 m², kisaran Rp 8–9 juta). Jangan dilakukan sebelum dinding terbukti kering selama satu musim hujan.
 
@@ -447,8 +528,7 @@ Opsi yang **tidak** saya masukkan ke total mana pun: mengganti ubin hijau ruang 
 | D. Lampu | 12 bohlam LED 3000K, 2 LED batten 4000K dapur, 3 fitting/kap, 1 lampu meja | Rp 1.100.000 |
 | E. Furnitur — kamar depan | Dipan 160×200 buatan lokal (kasur lama dipakai dulu) | Rp 1.500.000 |
 |  | Lemari pakaian 3 pintu lokal | Rp 1.900.000 |
-|  | Cable management: cable tray, kotak kabel, velcro, 2 stopkontak panjang SNI bersaklar | Rp 450.000 |
-|  | 3 ambalan dinding + pegboard | Rp 300.000 |
+|  | 3 ambalan dinding (latar video call) + pegboard | Rp 300.000 |
 | E. Furnitur — ruang tamu | Ambalan/rak TV 120 cm + bracket (TV 32" lama) | Rp 450.000 |
 |  | 4 bantal lantai + meja lipat rendah (lesehan, ganti sofa) | Rp 600.000 |
 |  | 9 bingkai foto seragam | Rp 400.000 |
@@ -460,11 +540,20 @@ Opsi yang **tidak** saya masukkan ke total mana pun: mengganti ubin hijau ruang 
 |  | Pintu kolong meja dapur 3 m (aluminium sederhana) | Rp 600.000 |
 | E. Furnitur — ruang belakang | Rak sepatu tertutup | Rp 450.000 |
 |  | Gantungan sapu dinding, rak galon, 4 kontainer bertutup | Rp 640.000 |
-| F. Dekor | Gorden polos 5 bukaan @ Rp 150 rb | Rp 750.000 |
+| F. Dekor | Gorden polos 3 bukaan ruang lain @ Rp 150 rb | Rp 450.000 |
 |  | 4 tanaman + pot | Rp 300.000 |
-| | **Subtotal** | **Rp 25.465.000** |
-| | Cadangan tak terduga 10% | Rp 2.550.000 |
-| | **TOTAL** | **Rp 28.015.000** |
+| R. Paket kerja remote | Meja kerja kayu 120×60 buatan lokal (ganti meja kaca) + cable tray, velcro, label | Rp 1.200.000 |
+|  | Lengan monitor gas spring + laptop stand | Rp 470.000 |
+|  | Light bar monitor + footrest | Rp 400.000 |
+|  | UPS line-interactive 1.200 VA merek lokal (ganti stabilizer) + stopkontak pelindung surja | Rp 1.500.000 |
+|  | Jalur MCB khusus zona kerja + AC | Rp 450.000 |
+|  | 1 node mesh tambahan + kabel LAN Cat6 20 m + trunking (pasang sendiri) | Rp 1.100.000 |
+|  | Lampu LED panel kecil untuk video call | Rp 250.000 |
+|  | 2–4 panel akustik buatan sendiri + seal pintu + penutup roster | Rp 550.000 |
+|  | Gorden blackout + vitrase 2 jendela + tirai pembatas zona tidur | Rp 900.000 |
+| | **Subtotal** | **Rp 31.535.000** |
+| | Cadangan tak terduga 10% | Rp 3.150.000 |
+| | **TOTAL** | **Rp 34.685.000** |
 
 ### Tingkat menengah
 
@@ -474,7 +563,7 @@ Opsi yang **tidak** saya masukkan ke total mana pun: mengganti ubin hijau ruang 
 |  | Plafon PVC ruang belakang 15 m² @ Rp 190 rb/m² terpasang | Rp 2.850.000 |
 |  | Penanganan lembap dinding ±45 m² (kerok plester lapuk, waterproofing semen 2 lapis, plester + acian ulang) @ Rp 110 rb/m² | Rp 4.950.000 |
 |  | Perbaikan plafon bernoda (ruang tengah, teras, dapur) + tambal retak | Rp 1.000.000 |
-|  | Listrik: 10 titik stopkontak @ Rp 200 rb, grup MCB dapur & AC, RCBO, trunking kabel | Rp 3.200.000 |
+|  | Listrik: 10 titik stopkontak @ Rp 200 rb, grup MCB dapur, RCBO, trunking kabel | Rp 3.200.000 |
 |  | Ventilasi: cooker hood slim 60 cm + ducting, exhaust plafon kamar belakang + ducting ke atap, exhaust dinding ruang belakang | Rp 2.950.000 |
 | B. Cat (tukang) | Sealer alkali 20 L + 5 L | Rp 1.230.000 |
 |  | Cat dinding washable anti-jamur 2 pail 20 L (kelas EasyClean/Spot-less) @ Rp 2,2 jt + 3 kaleng 2,5 L warna aksen | Rp 5.300.000 |
@@ -486,9 +575,8 @@ Opsi yang **tidak** saya masukkan ke total mana pun: mengganti ubin hijau ruang 
 | D. Lampu | 14 titik lampu plafon/downlight 3000K, LED strip bawah kabinet dapur 4000K, lampu gantung meja makan, lampu lantai, lampu meja | Rp 3.930.000 |
 | E. Furnitur — kamar depan | Rangka tempat tidur 160×200 berlaci | Rp 3.500.000 |
 |  | Kasur 160×200 | Rp 3.500.000 |
-|  | Lemari pintu geser 180 cm | Rp 4.200.000 |
-|  | Meja kerja 120×60 + cable management + kabinet teknis berventilasi | Rp 2.550.000 |
-|  | Meja rias slim + cermin + ambalan | Rp 1.500.000 |
+|  | Lemari pintu geser 180 cm, satu pintu cermin | Rp 4.200.000 |
+|  | Meja rias slim + cermin + 2 ambalan latar video call | Rp 1.500.000 |
 | E. Furnitur — ruang tamu | Sofa 3 dudukan kain (lebar 180 cm) | Rp 4.500.000 |
 |  | Rak TV gantung 150 cm + meja samping + bangku simpan 120 cm (TV 32" lama dipakai) | Rp 2.500.000 |
 |  | 12 bingkai galeri seragam + cetak ulang foto | Rp 900.000 |
@@ -508,12 +596,26 @@ Opsi yang **tidak** saya masukkan ke total mana pun: mengganti ubin hijau ruang 
 |  | Lemari serbaguna/laundry 160 cm pintu geser | Rp 2.800.000 |
 |  | Rak galon + bantalan bangku sepatu | Rp 400.000 |
 | E. Furnitur — kamar mandi | Exhaust fan plafon, rak sudut + gantungan handuk, nat/silikon ulang (kamar mandi ±5,6 m²) | Rp 900.000 |
-| F. Dekor | Gorden linen + vitrase 6 bukaan | Rp 2.100.000 |
+| F. Dekor | Gorden linen + vitrase 4 bukaan ruang lain | Rp 1.400.000 |
 |  | 6 tanaman + pot | Rp 900.000 |
 |  | Bantal sofa, keranjang rotan, tong sampah kecil tiap ruang | Rp 900.000 |
-| | **Subtotal** | **Rp 98.860.000** |
-| | Cadangan tak terduga 10% | Rp 9.900.000 |
-| | **TOTAL** | **Rp 108.760.000** |
+| R. Paket kerja remote | Meja sit-stand elektrik 140×70 dengan memori ketinggian | Rp 4.800.000 |
+|  | Lengan monitor gas spring untuk ultrawide | Rp 700.000 |
+|  | Laptop stand + desk mat | Rp 350.000 |
+|  | Light bar monitor + lampu meja 4000K CRI 90 | Rp 800.000 |
+|  | Footrest + karpet bulu pendek 120×170 | Rp 850.000 |
+|  | UPS line-interactive 1.200–1.500 VA bermerek (ganti stabilizer) | Rp 2.300.000 |
+|  | Jalur MCB khusus zona kerja + AC, 3 stopkontak pelindung surja, cable tray, laci kabel | Rp 1.200.000 |
+|  | Mesh Wi-Fi 6 2 node + kabel LAN Cat6 ±25 m, trunking, 2 outlet RJ45, pasang | Rp 2.700.000 |
+|  | Internet cadangan: modem 4G/5G + router dual-WAN failover (perangkat saja) | Rp 1.600.000 |
+|  | Key light panel LED lembut + jepit meja | Rp 600.000 |
+|  | Akustik: 4 panel PET + seal pintu + penutup roster akrilik | Rp 1.450.000 |
+|  | Gorden blackout + vitrase 2 jendela (rel ganda) + tirai pembatas rel plafon | Rp 2.100.000 |
+|  | Pegboard perangkat + pasang ulang papan tulis | Rp 250.000 |
+|  | Servis + cuci AC, stopkontak + lampu dinding pojok kerja cadangan | Rp 550.000 |
+| | **Subtotal** | **Rp 115.860.000** |
+| | Cadangan tak terduga 10% | Rp 11.600.000 |
+| | **TOTAL** | **Rp 127.460.000** |
 
 ### Tingkat premium
 
@@ -537,7 +639,6 @@ Opsi yang **tidak** saya masukkan ke total mana pun: mengganti ubin hijau ruang 
 | E. Furnitur — kamar depan | Tempat tidur hidrolik 160×200 | Rp 5.500.000 |
 |  | Kasur 160×200 kelas atas | Rp 7.000.000 |
 |  | Lemari custom HPL 1,8 m sampai plafon, pintu geser | Rp 6.000.000 |
-|  | Meja kerja custom + kabinet teknis + rak dinding | Rp 5.500.000 |
 |  | Meja rias custom | Rp 2.500.000 |
 | E. Furnitur — ruang tamu | Sofa 3 dudukan premium | Rp 9.000.000 |
 |  | Panel TV custom + konsol gantung | Rp 6.500.000 |
@@ -559,69 +660,86 @@ Opsi yang **tidak** saya masukkan ke total mana pun: mengganti ubin hijau ruang 
 |  | Dispenser galon bawah | Rp 2.200.000 |
 | E. Furnitur — kamar mandi | Waterproofing ulang lantai ±5,6 m² + kaki dinding, exhaust, aksesori | Rp 5.500.000 |
 | E. Furnitur — teras | Refinishing set jati + bantal outdoor + lampu dinding | Rp 2.100.000 |
-| F. Dekor | Gorden custom + vitrase | Rp 5.500.000 |
+| F. Dekor | Gorden custom + vitrase ruang lain | Rp 4.000.000 |
 |  | Tanaman, pot, aksesori | Rp 3.500.000 |
-| | **Subtotal** | **Rp 231.050.000** |
-| | Cadangan tak terduga 10% | Rp 23.100.000 |
-| | **TOTAL** | **Rp 254.150.000** |
+| R. Paket kerja remote | Meja sit-stand motor ganda 140×70, top kayu solid | Rp 9.000.000 |
+|  | Lengan monitor kelas atas | Rp 3.000.000 |
+|  | Light bar kelas atas + lampu meja | Rp 2.600.000 |
+|  | Footrest, alas kursi, karpet wool | Rp 1.800.000 |
+|  | UPS line-interactive 1.500 VA gelombang sinus | Rp 5.500.000 |
+|  | Stopkontak pelindung surja + cable management lengkap | Rp 1.200.000 |
+|  | Mesh 3 node (Wi-Fi 6E/7) + backhaul kabel + switch 8 port + instalasi rapi | Rp 6.500.000 |
+|  | Internet cadangan: pemasangan ISP kedua + router dual-WAN | Rp 2.500.000 |
+|  | Video call: key light + fill light, webcam 4K, mikrofon USB | Rp 5.000.000 |
+|  | Akustik: 6 panel PET + pintu kamar solid berseal + penutup roster | Rp 4.500.000 |
+|  | Gorden blackout custom + vitrase + tirai pembatas akustik | Rp 4.500.000 |
+|  | AC ¾ PK inverter baru (bila unit lama kurang/boros) | Rp 5.500.000 |
+|  | Pegboard, papan tulis kaca, ambalan custom, pojok kerja cadangan | Rp 2.500.000 |
+| | **Subtotal** | **Rp 278.150.000** |
+| | Cadangan tak terduga 10% | Rp 27.800.000 |
+| | **TOTAL** | **Rp 305.950.000** |
 
 ---
 
-## 6. Tahapan kerja (8 minggu, tingkat menengah)
+## 7. Tahapan kerja (8 minggu, tingkat menengah)
 
 DIY = dikerjakan sendiri. Tukang = perlu tukang/teknisi.
 
 | Minggu | Pekerjaan | Siapa |
 |---|---|---|
-| 0 | Ukur 7 ukuran kunci. Jawab keputusan terbuka. Saat hujan, catat titik tetes di ruang belakang dan ruang tengah. Minta 2 penawaran tukang atap dan tukang listrik. | DIY |
-| 0 | Pilah barang tahap 1: tiga tumpukan (simpan, donasi/jual, buang). Mulai dari atas lemari, dapur, dan ruang belakang. Kasur cadangan, lemari pajangan kaca, meja bundar, lemari kaca dapur, kardus, koran keluar. | DIY |
+| 0 | Ukur 7 ukuran kunci. Saat hujan, catat titik tetes di ruang belakang dan ruang tengah. Minta 2 penawaran tukang atap dan tukang listrik. | DIY |
+| 0 | **Kerja remote:** beli UPS, mesh, lengan monitor, light bar, dan langsung pakai di meja lama. | DIY |
+| 0 | Pilah barang tahap 1: tiga tumpukan (simpan, donasi/jual, buang). Mulai dari kamar depan, atas lemari, dapur, ruang belakang. Kasur cadangan, lemari pajangan kaca, meja bundar, lemari kaca dapur, kardus, koran keluar. | DIY |
+| 1 | **Listrik (zona kerja dulu):** jalur MCB zona kerja dan AC, RCBO, stopkontak meja, tarik kabel LAN + trunking, lalu titik stopkontak ruang lain. Harus selesai sebelum plester dan cat. | Tukang listrik |
 | 1 | Atap ruang belakang: ganti penutup, flashing, talang. Uji siram. Bongkar plafon lama. Cek sumber rembesan plafon ruang tengah dan teras. | Tukang |
-| 1 | Listrik: tarik titik stopkontak baru, grup MCB, RCBO, trunking kabel. Harus selesai sebelum plester dan cat. | Tukang listrik |
-| 2 | Dinding lembap: kerok cat dan plester lapuk sampai ±1,2 m, waterproofing semen 2 lapis, plester + acian ulang. Bersihkan saluran air di sekeliling rumah. | Tukang |
-| 2 | Pasang plafon baru ruang belakang. Pasang exhaust kamar belakang, cooker hood, exhaust ruang belakang. | Tukang |
-| 3 | Masa kering plester (minimal 14 hari, jendela dan kipas dibuka). Sementara itu: cuci jamur di dinding yang tidak diplester, tambal retak, amplas, cat semua plafon. | DIY + tukang |
+| 2 | Dinding lembap, **kamar depan paling dulu**, lalu ruang lain: kerok cat dan plester lapuk sampai ±1,2 m, waterproofing semen 2 lapis, plester + acian ulang. Bersihkan saluran air di sekeliling rumah. Selama kamar depan dikerjakan, bekerja dari ruang tamu atau ruang belakang. | Tukang |
+| 2 | Pasang plafon baru ruang belakang. Pasang exhaust kamar belakang, cooker hood, exhaust ruang belakang dan kamar mandi. | Tukang |
+| 3 | Masa kering plester (minimal 14 hari, jendela dan kipas dibuka). Sementara itu: cuci jamur, tambal retak, amplas, cat semua plafon. | DIY + tukang |
 | 3 | Dapur: lapis ulang top, backsplash, pintu kolong, kabinet atas. | Tukang |
-| 4 | Cat dinding yang tidak diplester ulang: sealer 1 lapis + cat 2 lapis. Cat kusen, pintu, lis. Urutan ruang: kamar belakang → dapur → ruang tengah → ruang tamu. | Tukang (hemat: DIY) |
-| 5 | Sealer + cat dinding yang diplester ulang. Cat kamar depan dan ruang belakang. Pasang lampu baru. | Tukang |
-| 6 | Pasang SPC kamar depan (setelah cat kering). Masuk furnitur besar: lemari, rangka tempat tidur, sofa, lemari serbaguna, banquette, lemari sepatu. Pindah kulkas ke dapur, dispenser ke ruang belakang, TV ke ruang tamu. | Tukang + DIY |
-| 7 | Cable management meja kerja. Isi lemari dengan aturan satu barang satu tempat. Sistem sampah baru mulai jalan. | DIY |
-| 8 | Galeri foto, gorden, karpet, tanaman, bantalan. Periksa ulang: tidak ada barang di lantai selain furnitur. | DIY |
+| 4 | **Kamar depan selesai:** sealer + cat, tutup roster, SPC, meja sit-stand, lengan monitor, UPS di kolong, cable tray, panel akustik, gorden, tirai pembatas, seal pintu. Zona kerja siap pakai. | Tukang + DIY |
+| 5 | Cat ruang lain: sealer 1 lapis + cat 2 lapis. Cat kusen, pintu, lis. Urutan: kamar belakang → dapur → ruang tengah → ruang tamu → ruang belakang. Pasang lampu baru. | Tukang (hemat: DIY) |
+| 6 | Masuk furnitur besar: tempat tidur, lemari, sofa, lemari serbaguna, banquette, lemari sepatu. Pindah kulkas ke dapur, dispenser ke ruang belakang, TV ke ruang tamu. Pasang mesh node 2 di ruang tengah dan stopkontak pojok kerja cadangan. | Tukang + DIY |
+| 7 | Isi lemari dengan aturan satu barang satu tempat. Sistem sampah baru mulai jalan. | DIY |
+| 8 | Galeri foto, gorden ruang lain, karpet, tanaman, bantalan. Periksa ulang: tidak ada barang di lantai selain furnitur. | DIY |
 
-Aturan urutan: atap → listrik → plester → kering → cat → lantai → furnitur → dekor. Jangan dibalik.
+Aturan urutan tiap ruang: atap → listrik → plester → kering → cat → lantai → furnitur → dekor. Jangan dibalik. Kamar depan menjalani urutan itu lebih dulu daripada ruang lain.
 
 ---
 
-## 7. Keputusan terbuka
+## 8. Keputusan terbuka
 
-| # | Pertanyaan | Jawaban bawaan saya |
+| # | Pertanyaan | Jawaban bawaan (dipakai di Draft v2) |
 |---|---|---|
 | 1 | Dinding kiri kamar belakang dan kamar depan itu dinding luar, atau menempel rumah tetangga? | Dianggap menempel tetangga: kamar belakang pakai exhaust plafon ber-ducting, tanpa jendela baru. Jika ternyata dinding luar, tambah jalusi 40×60 cm. |
 | 2 | Mesin cuci ada di mana, dan jemur di mana? | Mesin cuci ditempatkan di pojok kanan-belakang ruang belakang (menggantikan parkir keranjang cucian, bersebelahan dinding kamar mandi sehingga pipa pendek); jemur di carport dengan jemuran lipat dinding. |
 | 3 | Di kamar mandi, kloset, shower, dan bak ada di sebelah mana? | Shower di tengah dinding belakang, kloset di ujung kanan, dekat pintu kering. Mohon satu foto dari dalam. |
-| 4 | Kamar depan dipakai 1 atau 2 orang, dan berapa lebar bersihnya? | 2 orang, tempat tidur 160×200 melintang. Cadangan memanjang jika lebar < 2,10 m. |
+| 4 | Kamar depan dipakai 1 atau 2 orang, dan berapa lebar bersihnya? | 2 orang, tempat tidur 160×200 melintang, meja 140×70. Jika lebar < 2,10 m: tempat tidur memanjang dan meja 120×60. |
 | 5 | Setuju ubin hijau dipertahankan dan hanya kamar depan yang ditutup SPC? | Ya. |
-| 6 | TV pindah ke ruang tamu? | Ya, pakai TV 32" lama dulu. |
-| 7 | Kulkas pindah ke ujung kanan dapur? | Ya. Jika lorong dapur ternyata < 1,5 m, kulkas tetap di ruang tengah di samping pintu dapur dan lemari serbaguna diperkecil jadi 90 cm. |
-| 8 | Tingkat anggaran, dan rumah milik sendiri atau kontrak? | Menengah bertahap, rumah milik sendiri. Jika kontrak: kerjakan hanya tambal bocor, ventilasi, listrik, cat, dan furnitur lepas. |
+| 6 | Daya listrik PLN rumah berapa VA, dan di mana kabel ISP/ONT masuk? Komputer kerja laptop saja atau ada PC desktop? | Dianggap 1.300 VA, ONT di kamar depan, laptop + monitor (beban ±150 W). Jika MCB sering turun saat AC + dapur + komputer menyala, naikkan ke 2.200 VA. Jika ada PC desktop bertenaga besar, pilih UPS 1.500 VA. |
+| 7 | Kulkas pindah ke ujung kanan dapur, dan TV pindah ke ruang tamu? | Ya untuk keduanya. Jika lorong dapur ternyata < 1,5 m, kulkas tetap di ruang tengah di samping pintu dapur dan lemari serbaguna diperkecil jadi 90 cm. |
+| 8 | Tingkat anggaran, dan rumah milik sendiri atau kontrak? | Menengah bertahap, rumah milik sendiri. Jika kontrak: kerjakan hanya tambal bocor, ventilasi, listrik, cat, paket kerja remote, dan furnitur lepas. |
 
 ---
 
-## 8. SCENE_SPEC
+## 9. SCENE_SPEC
 
 Catatan untuk pembuat model 3D:
 
 - `x`, `y` furnitur = **titik tengah** tapak, koordinat absolut dalam meter.
 - `w_cm` = ukuran searah sumbu x, `d_cm` = ukuran searah sumbu y, **sudah dalam posisi akhir**. Jangan diputar lagi dengan `rotation_deg`.
 - `rotation_deg` hanya arah hadap muka benda: 0 = +y (belakang), 90 = +x (kanan), 180 = −y (jalan), 270 = −x (kiri).
+- `kind` (hanya pada benda baru zona kerja) = jenis untuk renderer: `desk_standing`, `monitor_arm`, `light_bar`, `ups`, `mesh_node`, `acoustic_panel`, `pegboard`, `curtain`, `whiteboard`, `key_light`, `footrest`.
+- `under_furniture` = benda di kolong meja (footrest, UPS); bukan penghalang lantai.
 - `z_m` = tinggi sisi bawah dari lantai. Benda dengan `wall_mounted`, `rug`, atau `on_furniture` bukan penghalang lantai.
 - Garis ruang = as dinding, tebal dinding 0,15 m (`wall_thickness_m`). Muka dalam dinding ada 0,075 m di dalam garis ruang; semua furnitur sudah ditempatkan terhadap muka dalam, jadi dinding harus digambar **berpusat di garis ruang**.
-- Isi: 68 furnitur, 16 bukaan. Sudah divalidasi dengan skrip (ruang tidak tumpang, furnitur di dalam muka dalam dinding, bukaan di dinding bersama yang benar, pintu bebas 85 cm, rute ≥ 80 cm diukur dari muka dalam dinding).
+- Isi: 86 furnitur, 16 bukaan. Sudah divalidasi dengan skrip (ruang tidak tumpang, furnitur di dalam muka dalam dinding, bukaan di dinding bersama yang benar, pintu bebas 85 cm, rute ≥ 80 cm diukur dari muka dalam dinding).
 
 ### SCENE_SPEC
 
 ```json
 {
  "name": "SCENE_SPEC",
+ "version": "redesign draft v2 (ruang kerja remote)",
  "units": "meter untuk x,y,w,d,offset,width,height; cm untuk w_cm,d_cm,h_cm",
  "conventions": {
   "origin": "sudut kiri-depan rumah pada dinding yang menghadap jalan",
@@ -629,7 +747,7 @@ Catatan untuk pembuat model 3D:
   "y": "masuk ke dalam rumah (menjauhi jalan)",
   "rooms": "x,y = sudut kiri-depan ruang; w = lebar searah x; d = kedalaman searah y; garis ruang = AS dinding (tebal dinding 0.15 m, 0.075 m ke tiap sisi); teras dan carport tidak berdinding di sisi open_sides",
   "openings": "front = sisi y minimum (arah jalan), back = y maksimum, left = x minimum, right = x maksimum; offset_m dari sudut x-minimum (front/back) atau y-minimum (left/right) ruang ke tepi awal bukaan; sill_m = tinggi ambang dari lantai; tiap bukaan ditulis SATU kali, ruang seberangnya ada di connects_to",
-  "furniture": "x,y = TITIK TENGAH tapak (absolut); w_cm = ukuran searah sumbu x, d_cm = ukuran searah sumbu y, SUDAH dalam posisi akhir (kotak sejajar sumbu - JANGAN diputar lagi); rotation_deg HANYA arah hadap muka benda: 0 = menghadap +y (ke belakang rumah), 90 = +x (kanan), 180 = -y (ke jalan), 270 = -x (kiri); z_m = tinggi sisi bawah dari lantai (default 0); wall_mounted/rug/on_furniture = bukan penghalang lantai",
+  "furniture": "x,y = TITIK TENGAH tapak (absolut); w_cm = ukuran searah sumbu x, d_cm = ukuran searah sumbu y, SUDAH dalam posisi akhir (kotak sejajar sumbu - JANGAN diputar lagi); rotation_deg HANYA arah hadap muka benda: 0 = menghadap +y (ke belakang rumah), 90 = +x (kanan), 180 = -y (ke jalan), 270 = -x (kiri); z_m = tinggi sisi bawah dari lantai (default 0); wall_mounted/rug/on_furniture/under_furniture (di kolong meja) = bukan penghalang lantai; kind (opsional) = jenis benda untuk renderer",
   "wall_thickness_m": 0.15,
   "wall_note": "muka dalam dinding = 0.075 m di dalam garis ruang; semua furnitur sudah ditempatkan terhadap muka dalam (benda dinding menempel tepat di muka dalam)",
   "total_footprint_m": {
@@ -1175,6 +1293,20 @@ Catatan untuk pembuat model 3D:
   },
   {
    "room_id": "ruang_tengah",
+   "name": "Mesh node 2 di rak dinding (tengah rumah)",
+   "x": 4.87,
+   "y": 7.3,
+   "w_cm": 10,
+   "d_cm": 25,
+   "h_cm": 20,
+   "rotation_deg": 270,
+   "color_hex": "#F2F2F2",
+   "z_m": 2.0,
+   "wall_mounted": true,
+   "kind": "mesh_node"
+  },
+  {
+   "room_id": "ruang_tengah",
    "name": "Cermin dinding 60x150",
    "x": 2.39,
    "y": 8.2,
@@ -1202,7 +1334,7 @@ Catatan untuk pembuat model 3D:
   },
   {
    "room_id": "kamar_depan",
-   "name": "Tempat tidur 160x200 berlaci (kepala di dinding kiri)",
+   "name": "Tempat tidur 160x200 berlaci, sandaran kepala berambalan (kepala di dinding kiri)",
    "x": 1.15,
    "y": 0.92,
    "w_cm": 200,
@@ -1213,55 +1345,67 @@ Catatan untuk pembuat model 3D:
   },
   {
    "room_id": "kamar_depan",
-   "name": "Ambalan samping tempat tidur",
-   "x": 0.175,
-   "y": 1.92,
-   "w_cm": 20,
-   "d_cm": 35,
-   "h_cm": 4,
-   "rotation_deg": 90,
-   "color_hex": "#D8B98A",
-   "z_m": 0.55,
-   "wall_mounted": true
-  },
-  {
-   "room_id": "kamar_depan",
-   "name": "Meja rias slim + cermin",
-   "x": 2.025,
-   "y": 2.1,
-   "w_cm": 40,
-   "d_cm": 70,
-   "h_cm": 76,
-   "rotation_deg": 270,
-   "color_hex": "#D8B98A"
-  },
-  {
-   "room_id": "kamar_depan",
-   "name": "Stool rias",
-   "x": 1.6,
-   "y": 2.1,
-   "w_cm": 35,
-   "d_cm": 35,
-   "h_cm": 45,
+   "name": "Gorden blackout + vitrase jendela depan (rel ganda)",
+   "x": 1.15,
+   "y": 0.11,
+   "w_cm": 150,
+   "d_cm": 7,
+   "h_cm": 220,
    "rotation_deg": 0,
-   "color_hex": "#E6DCCB"
+   "color_hex": "#E6DCCB",
+   "z_m": 0.1,
+   "wall_mounted": true,
+   "kind": "curtain"
   },
   {
    "room_id": "kamar_depan",
-   "name": "Meja kerja 120x60 + cable tray",
-   "x": 1.925,
-   "y": 3.1,
-   "w_cm": 60,
+   "name": "Gorden blackout + vitrase jendela ke teras (rel ganda)",
+   "x": 2.185,
+   "y": 0.9,
+   "w_cm": 7,
    "d_cm": 120,
+   "h_cm": 220,
+   "rotation_deg": 270,
+   "color_hex": "#E6DCCB",
+   "z_m": 0.1,
+   "wall_mounted": true,
+   "kind": "curtain"
+  },
+  {
+   "room_id": "kamar_depan",
+   "name": "Tirai pembatas zona tidur (rel plafon, kain tebal)",
+   "x": 1.15,
+   "y": 1.785,
+   "w_cm": 215,
+   "d_cm": 6,
+   "h_cm": 250,
+   "rotation_deg": 0,
+   "color_hex": "#B9B2A6",
+   "z_m": 0.1,
+   "wall_mounted": true,
+   "kind": "curtain"
+  },
+  {
+   "room_id": "kamar_depan",
+   "name": "Meja sit-stand elektrik 140x70",
+   "x": 1.875,
+   "y": 2.55,
+   "w_cm": 70,
+   "d_cm": 140,
    "h_cm": 74,
    "rotation_deg": 270,
-   "color_hex": "#D8B98A"
+   "color_hex": "#D8B98A",
+   "kind": "desk_standing",
+   "height_range_cm": [
+    72,
+    118
+   ]
   },
   {
    "room_id": "kamar_depan",
    "name": "Kursi kerja ergonomis",
-   "x": 1.345,
-   "y": 3.1,
+   "x": 1.245,
+   "y": 2.5,
    "w_cm": 55,
    "d_cm": 55,
    "h_cm": 120,
@@ -1271,32 +1415,260 @@ Catatan untuk pembuat model 3D:
   },
   {
    "room_id": "kamar_depan",
-   "name": "Monitor ultrawide",
-   "x": 2.08,
-   "y": 3.1,
-   "w_cm": 20,
-   "d_cm": 82,
+   "name": "Lengan monitor (gas spring, jepit meja)",
+   "x": 2.15,
+   "y": 2.45,
+   "w_cm": 12,
+   "d_cm": 12,
    "h_cm": 45,
    "rotation_deg": 270,
+   "color_hex": "#3B3F3A",
+   "z_m": 0.74,
+   "on_furniture": true,
+   "kind": "monitor_arm"
+  },
+  {
+   "room_id": "kamar_depan",
+   "name": "Monitor ultrawide di lengan monitor",
+   "x": 2.02,
+   "y": 2.45,
+   "w_cm": 20,
+   "d_cm": 82,
+   "h_cm": 38,
+   "rotation_deg": 270,
    "color_hex": "#1A1A1A",
+   "z_m": 0.95,
+   "existing": true,
+   "on_furniture": true
+  },
+  {
+   "room_id": "kamar_depan",
+   "name": "Light bar monitor",
+   "x": 2.0,
+   "y": 2.45,
+   "w_cm": 10,
+   "d_cm": 50,
+   "h_cm": 5,
+   "rotation_deg": 270,
+   "color_hex": "#3B3F3A",
+   "z_m": 1.33,
+   "on_furniture": true,
+   "kind": "light_bar"
+  },
+  {
+   "room_id": "kamar_depan",
+   "name": "Laptop di laptop stand",
+   "x": 1.85,
+   "y": 3.05,
+   "w_cm": 26,
+   "d_cm": 34,
+   "h_cm": 25,
+   "rotation_deg": 270,
+   "color_hex": "#B8BABD",
    "z_m": 0.74,
    "existing": true,
    "on_furniture": true
   },
   {
    "room_id": "kamar_depan",
-   "name": "Kabinet teknis berventilasi (stabilizer, router)",
-   "x": 2.05,
-   "y": 4.05,
-   "w_cm": 35,
+   "name": "Keyboard + mouse",
+   "x": 1.7,
+   "y": 2.45,
+   "w_cm": 15,
    "d_cm": 60,
+   "h_cm": 3,
+   "rotation_deg": 270,
+   "color_hex": "#2B2B2B",
+   "z_m": 0.74,
+   "on_furniture": true
+  },
+  {
+   "room_id": "kamar_depan",
+   "name": "Key light panel LED lembut (jepit meja)",
+   "x": 2.17,
+   "y": 1.97,
+   "w_cm": 8,
+   "d_cm": 20,
+   "h_cm": 45,
+   "rotation_deg": 270,
+   "color_hex": "#F2F2F2",
+   "z_m": 0.74,
+   "on_furniture": true,
+   "kind": "key_light"
+  },
+  {
+   "room_id": "kamar_depan",
+   "name": "Lampu meja 4000K CRI 90",
+   "x": 2.1,
+   "y": 3.15,
+   "w_cm": 15,
+   "d_cm": 15,
+   "h_cm": 45,
+   "rotation_deg": 270,
+   "color_hex": "#3B3F3A",
+   "z_m": 0.74,
+   "on_furniture": true
+  },
+  {
+   "room_id": "kamar_depan",
+   "name": "Footrest (di kolong meja)",
+   "x": 1.75,
+   "y": 2.5,
+   "w_cm": 35,
+   "d_cm": 45,
+   "h_cm": 12,
+   "rotation_deg": 270,
+   "color_hex": "#3B3F3A",
+   "kind": "footrest",
+   "under_furniture": true
+  },
+  {
+   "room_id": "kamar_depan",
+   "name": "UPS line-interactive 1200-1500 VA (di kolong meja)",
+   "x": 2.05,
+   "y": 3.03,
+   "w_cm": 15,
+   "d_cm": 40,
+   "h_cm": 22,
+   "rotation_deg": 270,
+   "color_hex": "#1A1A1A",
+   "kind": "ups",
+   "under_furniture": true
+  },
+  {
+   "room_id": "kamar_depan",
+   "name": "Pegboard perangkat (headset, kabel, charger)",
+   "x": 2.21,
+   "y": 3.05,
+   "w_cm": 3,
+   "d_cm": 40,
    "h_cm": 70,
+   "rotation_deg": 270,
+   "color_hex": "#F7F4EE",
+   "z_m": 0.95,
+   "wall_mounted": true,
+   "kind": "pegboard"
+  },
+  {
+   "room_id": "kamar_depan",
+   "name": "Panel akustik dinding kanan 1",
+   "x": 2.21,
+   "y": 2.15,
+   "w_cm": 3,
+   "d_cm": 60,
+   "h_cm": 60,
+   "rotation_deg": 270,
+   "color_hex": "#A9B59B",
+   "z_m": 1.65,
+   "wall_mounted": true,
+   "kind": "acoustic_panel"
+  },
+  {
+   "room_id": "kamar_depan",
+   "name": "Panel akustik dinding kanan 2",
+   "x": 2.21,
+   "y": 2.8,
+   "w_cm": 3,
+   "d_cm": 60,
+   "h_cm": 60,
+   "rotation_deg": 270,
+   "color_hex": "#E6DCCB",
+   "z_m": 1.65,
+   "wall_mounted": true,
+   "kind": "acoustic_panel"
+  },
+  {
+   "room_id": "kamar_depan",
+   "name": "Panel akustik dinding kiri 1",
+   "x": 0.09,
+   "y": 1.4,
+   "w_cm": 3,
+   "d_cm": 60,
+   "h_cm": 90,
+   "rotation_deg": 90,
+   "color_hex": "#E6DCCB",
+   "z_m": 1.0,
+   "wall_mounted": true,
+   "kind": "acoustic_panel"
+  },
+  {
+   "room_id": "kamar_depan",
+   "name": "Panel akustik dinding kiri 2",
+   "x": 0.09,
+   "y": 3.6,
+   "w_cm": 3,
+   "d_cm": 60,
+   "h_cm": 90,
+   "rotation_deg": 90,
+   "color_hex": "#E6DCCB",
+   "z_m": 1.0,
+   "wall_mounted": true,
+   "kind": "acoustic_panel"
+  },
+  {
+   "room_id": "kamar_depan",
+   "name": "Ambalan buku + tanaman 120 cm x2 (latar video call)",
+   "x": 0.175,
+   "y": 2.6,
+   "w_cm": 20,
+   "d_cm": 120,
+   "h_cm": 4,
+   "rotation_deg": 90,
+   "color_hex": "#D8B98A",
+   "z_m": 1.5,
+   "wall_mounted": true
+  },
+  {
+   "room_id": "kamar_depan",
+   "name": "Karpet bulu pendek 120x170 (peredam, roda kursi tetap jalan)",
+   "x": 0.8,
+   "y": 2.75,
+   "w_cm": 120,
+   "d_cm": 170,
+   "h_cm": 1,
+   "rotation_deg": 0,
+   "color_hex": "#E6DCCB",
+   "rug": true
+  },
+  {
+   "room_id": "kamar_depan",
+   "name": "Meja rias slim + cermin",
+   "x": 2.025,
+   "y": 3.75,
+   "w_cm": 40,
+   "d_cm": 70,
+   "h_cm": 76,
    "rotation_deg": 270,
    "color_hex": "#D8B98A"
   },
   {
    "room_id": "kamar_depan",
-   "name": "Lemari pakaian pintu geser 180 cm",
+   "name": "Stool rias",
+   "x": 1.675,
+   "y": 3.75,
+   "w_cm": 30,
+   "d_cm": 30,
+   "h_cm": 45,
+   "rotation_deg": 0,
+   "color_hex": "#E6DCCB"
+  },
+  {
+   "room_id": "kamar_depan",
+   "name": "Router utama / mesh node 1 di rak dinding",
+   "x": 2.17,
+   "y": 4.55,
+   "w_cm": 10,
+   "d_cm": 25,
+   "h_cm": 20,
+   "rotation_deg": 270,
+   "color_hex": "#F2F2F2",
+   "z_m": 1.9,
+   "wall_mounted": true,
+   "kind": "mesh_node"
+  },
+  {
+   "room_id": "kamar_depan",
+   "name": "Lemari pakaian pintu geser 180 cm (satu pintu cermin)",
    "x": 0.395,
    "y": 5.0,
    "w_cm": 60,
@@ -1307,29 +1679,18 @@ Catatan untuk pembuat model 3D:
   },
   {
    "room_id": "kamar_depan",
-   "name": "Cermin badan 50x160",
-   "x": 1.0,
+   "name": "Papan tulis rencana mingguan",
+   "x": 1.07,
    "y": 5.91,
-   "w_cm": 50,
+   "w_cm": 60,
    "d_cm": 3,
-   "h_cm": 160,
+   "h_cm": 90,
    "rotation_deg": 180,
-   "color_hex": "#DDE3E3",
-   "z_m": 0.3,
-   "wall_mounted": true
-  },
-  {
-   "room_id": "kamar_depan",
-   "name": "Ambalan buku 120 cm x2",
-   "x": 0.175,
-   "y": 2.9,
-   "w_cm": 20,
-   "d_cm": 120,
-   "h_cm": 4,
-   "rotation_deg": 90,
-   "color_hex": "#D8B98A",
-   "z_m": 1.5,
-   "wall_mounted": true
+   "color_hex": "#F7F7F7",
+   "z_m": 0.9,
+   "existing": true,
+   "wall_mounted": true,
+   "kind": "whiteboard"
   },
   {
    "room_id": "kamar_depan",
@@ -1752,6 +2113,19 @@ Catatan untuk pembuat model 3D:
    "rotation_deg": 0,
    "color_hex": "#C9A46B",
    "z_m": 1.55,
+   "wall_mounted": true
+  },
+  {
+   "room_id": "ruang_belakang",
+   "name": "Stopkontak + lampu dinding pojok kerja cadangan",
+   "x": 8.04,
+   "y": 7.7,
+   "w_cm": 6,
+   "d_cm": 20,
+   "h_cm": 25,
+   "rotation_deg": 270,
+   "color_hex": "#3B3F3A",
+   "z_m": 1.1,
    "wall_mounted": true
   },
   {

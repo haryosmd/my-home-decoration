@@ -177,7 +177,7 @@ export function drawKind(THREE, H, kind, w, d, h, c, g, f, rnd) {
     case 'mirror': box(w, h, 0.025, mat(col('#7a3b22')), 0, h / 2, 0, g); box(w - 0.06, h - 0.06, 0.03, mat('#c9d8dd', { r: 0.12, m: 0.15 }), 0, h / 2, 0.002, g); return true;
     case 'frame': case 'calligraphy': box(w, h, 0.03, mat(col(kind === 'calligraphy' ? '#6b4a2b' : '#2b2b2b')), 0, h / 2, 0, g); box(w - 0.06, h - 0.06, 0.034, mat(kind === 'calligraphy' ? '#e9dfc7' : pick(['#a89a8a', '#8c9aa6', '#b39e86', '#c9c2b5']), { r: 0.9 }), 0, h / 2, 0.002, g); return true;
     case 'clock': { const m = cyl(w / 2, w / 2, 0.04, mat(col('#ffffff'), { r: 0.4 }), 0, w / 2, 0, g); m.rotation.x = Math.PI / 2; return true; }
-    case 'curtain': { const n = Math.max(3, Math.round(w / 0.08)); for (let i = 0; i < n; i++) box(w / n + 0.01, h, 0.04 + (i % 2) * 0.03, mat(col('#a0743c'), { r: 1, map: tex('curtain') }), -w / 2 + (i + 0.5) * w / n, h / 2, (i % 2) * 0.02, g); return true; }
+    case 'curtain': { const n = Math.max(3, Math.round(w / 0.08)); for (let i = 0; i < n; i++) box(w / n + 0.01, h, 0.04 + (i % 2) * 0.03, mat(col('#a0743c'), { r: 1 }), -w / 2 + (i + 0.5) * w / n, h / 2, (i % 2) * 0.02, g); return true; }
     case 'pots_hanging': { const n = f.count || 6; for (let i = 0; i < n; i++) { const r = 0.08 + rnd() * 0.1; const m = cyl(r, r, 0.04, metal, -w / 2 + (i + 0.5) * w / n, h * (0.3 + rnd() * 0.6), 0.03, g); m.rotation.x = Math.PI / 2; } return true; }
     case 'dish_rack': { box(w, 0.02, d, mat('#ffffff'), 0, 0.01, 0, g); box(w, 0.02, d, mat('#ffffff'), 0, h * 0.55, 0, g); for (let i = 0; i < 8; i++) { const m = cyl(0.1, 0.1, 0.01, mat(pick(['#ffffff', '#e8d9c0', '#2e86c1'])), -w / 2 + 0.06 + i * (w - 0.12) / 7, 0.13, 0, g); m.rotation.z = Math.PI / 2; } return true; }
     case 'toilet': box(w, 0.42, d * 0.6, mat('#FFFFFF', { r: 0.2 }), 0, 0.21, d * 0.1, g); box(w, 0.4, 0.18, mat('#FFFFFF', { r: 0.2 }), 0, 0.6, -d / 2 + 0.09, g); return true;
@@ -196,6 +196,34 @@ export function drawKind(THREE, H, kind, w, d, h, c, g, f, rnd) {
       return true;
     }
     case 'generic_box': box(w, h, d, mat(col('#9a8f80'), { r: 0.8 }), 0, h / 2, 0, g); return true;
+    // ---- remote-work kit (redesign) ----
+    case 'desk_standing': {
+      const top = mat(col('#D8B98A'), { r: 0.55 }), frame = mat('#2f3236', { m: 0.4, r: 0.4 });
+      box(w, 0.03, d, top, 0, h - 0.015, 0, g);
+      for (const sx of [-1, 1]) { box(0.07, h - 0.03, 0.07, frame, sx * (w / 2 - 0.12), (h - 0.03) / 2, 0, g); box(0.07, 0.04, d * 0.9, frame, sx * (w / 2 - 0.12), 0.02, 0, g); }
+      box(w - 0.3, 0.05, 0.05, frame, 0, h - 0.06, 0, g);
+      box(w * 0.75, 0.08, 0.14, frame, 0, h - 0.11, -d / 2 + 0.1, g); // cable tray
+      box(w * 0.38, 0.003, 0.32, mat('#2d3436'), 0, h + 0.002, d * 0.2, g); // desk mat
+      box(0.06, 0.02, 0.03, mat('#555'), w / 2 - 0.12, h - 0.05, d / 2 - 0.02, g); // handset
+      return true;
+    }
+    case 'monitor_arm': {
+      const m = mat('#2f3236', { m: 0.5, r: 0.35 });
+      box(0.08, 0.06, 0.1, m, 0, 0.03, -d / 2 + 0.06, g); cyl(0.018, 0.018, 0.38, m, 0, 0.22, -d / 2 + 0.06, g);
+      box(0.04, 0.04, d * 0.5, m, 0, 0.4, -d / 4 + 0.06, g);
+      return true;
+    }
+    case 'light_bar': box(w, 0.025, 0.06, mat('#1c1c1c', { r: 0.3 }), 0, 0.012, 0, g); box(w * 0.95, 0.006, 0.02, mat('#fff7e8', { e: '#ffe9c4', ei: 1.5 }), 0, -0.002, 0.01, g); return true;
+    case 'ups': box(w, h, d, mat(col('#1c1c1c'), { r: 0.45 }), 0, h / 2, 0, g); box(w * 0.6, 0.04, 0.004, mat('#7fd38f', { e: '#3fbf5f', ei: 0.8 }), 0, h * 0.75, d / 2 + 0.002, g); return true;
+    case 'mesh_node': cyl(Math.min(w, d) / 2, Math.min(w, d) / 2, h, mat('#f4f4f2', { r: 0.4 }), 0, h / 2, 0, g); cyl(Math.min(w, d) / 2.4, Math.min(w, d) / 2.4, 0.004, mat('#8fd0ff', { e: '#8fd0ff', ei: 1 }), 0, h + 0.002, 0, g); return true;
+    case 'acoustic_panel': box(w, h, Math.max(0.03, d), mat(col('#8A9A7B'), { r: 1 }), 0, h / 2, 0, g); return true;
+    case 'pegboard': {
+      box(w, h, 0.018, mat(col('#E6DCCB'), { r: 0.8 }), 0, h / 2, 0, g);
+      for (let i = 0; i < 6; i++) box(0.05 + rnd() * 0.12, 0.04 + rnd() * 0.1, 0.05, mat(pick(['#2f3236', '#C4744F', '#8A9A7B', '#ffffff', '#D8B98A'])), (rnd() - 0.5) * (w - 0.15), 0.1 + rnd() * (h - 0.2), 0.035, g);
+      return true;
+    }
+    case 'key_light': { cyl(0.01, 0.01, h * 0.7, mat('#222'), 0, h * 0.35, 0, g); const p = box(Math.max(0.2, w), 0.25, 0.03, mat('#f7f3ea', { e: '#fff1d6', ei: 0.9 }), 0, h * 0.78, 0, g); p.rotation.x = -0.25; return true; }
+    case 'footrest': { const p = box(w, 0.04, d, mat(col('#3b3f3a'), { r: 0.8 }), 0, Math.max(0.06, h) - 0.02, 0, g); p.rotation.x = 0.18; return true; }
   }
   return false;
 }
